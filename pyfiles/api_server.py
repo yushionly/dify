@@ -451,23 +451,25 @@ def report_part2_hazards(req: ReportRequest):
 @app.post("/report/part3_trends")
 def report_part3_trends(req: ReportRequest):
     """
-    Generate Part 3: Trend Analysis (Current vs Previous Period)
+    Generate Part 3: Trend Analysis (Detailed for Report Section 3)
+    Includes: Cycle Comparison, Workshop Rankings (Red/Black/Green), Device Trends
     """
     conn = None
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
         
-        # Parse Dates
+        # 1. Date Calculations
         curr_s = datetime.datetime.strptime(req.start_date, "%Y-%m-%d")
         curr_e_incl = datetime.datetime.strptime(req.end_date, "%Y-%m-%d")
-        # Included end date -> Excluded timestamp (next day 00:00)
         curr_e_excl = curr_e_incl + datetime.timedelta(days=1)
         
         curr_s_ts = int(curr_s.replace(tzinfo=datetime.timezone.utc).timestamp())
         curr_e_ts = int(curr_e_excl.replace(tzinfo=datetime.timezone.utc).timestamp())
         
-        # Calculate Previous Period (Same Duration, sequential)
+        days_count = (curr_e_incl - curr_s).days + 1
+        
+        # Previous Period
         duration = curr_e_excl - curr_s
         prev_s = curr_s - duration
         prev_e_excl = curr_s
@@ -475,49 +477,223 @@ def report_part3_trends(req: ReportRequest):
         prev_s_ts = int(prev_s.replace(tzinfo=datetime.timezone.utc).timestamp())
         prev_e_ts = int(prev_e_excl.replace(tzinfo=datetime.timezone.utc).timestamp())
 
-        def get_period_stats(t_start, t_end):
-            # Try to query total and skylight (maintanceflag=1)
-            # Assuming maintanceflag exists based on user's sql files
+        # 2. Data Fetching Helper
+        def fetch_period_data(t_start, t_end):
+            data = {}
+            
+            # A. Global Stats (Total, Skylight, Non-Skylight, Processed)
+            # maintanceflag != 0 -> Skylight
+            # processstatus != 0 -> Processed (Fixed typo: processtatus -> processstatus)
             try:
-                sql = """
-                    SELECT count(*) as total,
-                           sum(case when maintanceflag = 1 then 1 else 0 end) as skylight_cnt
+                sql_global = """
+                    SELECT 
+                        count(*) as total,
+                        sum(case when maintanceflag != 0 then 1 else 0 end) as skylight,
+                        sum(case when maintanceflag = 0 or maintanceflag is null then 1 else 0 end) as non_skylight,
+                        sum(case when processstatus != 0 then 1 else 0 end) as processed
                     FROM ALARM
                     WHERE createtime >= :1 AND createtime < :2
                 """
-                cursor.execute(sql, [t_start, t_end])
+                cursor.execute(sql_global, [t_start, t_end])
                 row = cursor.fetchone()
-                return {"total": row[0], "skylight": row[1] if row[1] else 0}
-            except Exception:
-                # Fallback if column missing
-                sql_basic = "SELECT count(*) FROM ALARM WHERE createtime >= :1 AND createtime < :2"
-                cursor.execute(sql_basic, [t_start, t_end])
-                return {"total": cursor.fetchone()[0], "skylight": 0}
+                data["global"] = {
+                    "total": row[0],
+                    "skylight": row[1] or 0,
+                    "non_skylight": row[2] or 0,
+                    "processed": row[3] or 0
+                }
+            except Exception as e:
+                print(f"Global stats query failed: {e}")
+                data["global"] = {"total": 0, "skylight": 0, "non_skylight": 0, "processed": 0}
 
-        curr_stats = get_period_stats(curr_s_ts, curr_e_ts)
-        prev_stats = get_period_stats(prev_s_ts, prev_e_ts)
+            # B. Workshop Stats (Group by Station -> Map to Workshop later)
+            try:
+                sql_station = """
+                    SELECT telename, count(*), sum(case when processstatus != 0 then 1 else 0 end)
+                    FROM ALARM
+                    WHERE createtime >= :1 AND createtime < :2
+                    GROUP BY telename
+                """
+                cursor.execute(sql_station, [t_start, t_end])
+                data["stations"] = cursor.fetchall() # list of (name, total, processed)
+            except Exception:
+                data["stations"] = []
+
+            # C. Device Type Stats
+            try:
+                sql_device = """
+                    SELECT devicetype, count(*)
+                    FROM ALARM
+                    WHERE createtime >= :1 AND createtime < :2
+                    GROUP BY devicetype
+                """
+                cursor.execute(sql_device, [t_start, t_end])
+                data["devices"] = cursor.fetchall()
+            except Exception:
+                data["devices"] = []
+                
+            return data
+
+        curr_data = fetch_period_data(curr_s_ts, curr_e_ts)
+        prev_data = fetch_period_data(prev_s_ts, prev_e_ts)
+
+        # 3. Processing Section 1: Cycle Indicators
+        def calc_kpi(c_data, p_data, days):
+             # Access inner "global" dict
+            c = c_data["global"]
+            p = p_data["global"]
+            
+            def safe_rate(num, denom): return round((num / denom * 100), 1) if denom > 0 else 0.0
+            def daily_avg(total, d): return round(total / d, 1) if d > 0 else 0
+            
+            # Growth format
+            def growth(curr, prev):
+                if prev == 0: return "100.0%" if curr > 0 else "0.0%"
+                diff = ((curr - prev) / prev) * 100
+                return f"{diff:+.1f}%"
+
+            return {
+                "daily_avg_total": {
+                    "curr": daily_avg(c["total"], days),
+                    "prev": daily_avg(p["total"], days),
+                    "growth": growth(daily_avg(c["total"], days), daily_avg(p["total"], days))
+                },
+                "skylight_count": {
+                    "curr": c["skylight"], 
+                    "prev": p["skylight"],
+                    "growth": growth(c["skylight"], p["skylight"])
+                },
+                "non_skylight_count": {
+                    "curr": c["non_skylight"],
+                    "prev": p["non_skylight"],
+                    "growth": growth(c["non_skylight"], p["non_skylight"])
+                },
+                "process_rate": {
+                    "curr": f"{safe_rate(c['processed'], c['total'])}%",
+                    "prev": f"{safe_rate(p['processed'], p['total'])}%",
+                    "diff_pp": f"{safe_rate(c['processed'], c['total']) - safe_rate(p['processed'], p['total']):+.1f} pp"
+                }
+            }
+
+        kpi_stats = calc_kpi(curr_data, prev_data, days_count)
+
+        # 4. Processing Section 2: Workshop Analysis
+        def aggregate_workshops(station_rows):
+            ws_stats = collections.defaultdict(lambda: {"total": 0, "processed": 0})
+            for row in station_rows:
+                st_name = row[0].strip() if row[0] else "Unknown"
+                cnt = row[1]
+                proc = row[2] or 0
+                
+                info = STATION_MAP.get(st_name, {})
+                ws_name = info.get("workshop", "Unknown Workshop")
+                
+                ws_stats[ws_name]["total"] += cnt
+                ws_stats[ws_name]["processed"] += proc
+            return ws_stats
+
+        curr_ws = aggregate_workshops(curr_data["stations"])
+        prev_ws = aggregate_workshops(prev_data["stations"])
+
+        # Compare and List
+        ws_comparison = []
+        all_workshops = set(list(curr_ws.keys()) + list(prev_ws.keys()))
         
-        def calc_growth(curr, prev):
-            if prev == 0: return "100.0%" if curr > 0 else "0.0%"
-            pct = ((curr - prev) / prev) * 100
-            return f"{pct:.1f}%"
+        for ws in all_workshops:
+            if ws == "Unknown Workshop": continue
+            
+            c = curr_ws.get(ws, {"total": 0, "processed": 0})
+            p = prev_ws.get(ws, {"total": 0, "processed": 0})
+            
+            if c["total"] == 0 and p["total"] == 0: continue
+            
+            c_rate = (c["processed"] / c["total"] * 100) if c["total"] > 0 else 0.0
+            p_rate = (p["processed"] / p["total"] * 100) if p["total"] > 0 else 0.0
+            
+            ws_comparison.append({
+                "workshop": ws,
+                "total_alarms": c["total"],
+                "curr_rate": round(c_rate, 1),
+                "prev_rate": round(p_rate, 1),
+                "diff_pp": round(c_rate - p_rate, 1)
+            })
+
+        # Sort lists for Red/Black/Green boards
+        # Red: Lowest processing rate (with some volume > 0)
+        valid_ws = [w for w in ws_comparison if w["total_alarms"] > 0]
+        
+        # Sort by rate ascending (Lowest first)
+        lowest_rate_list = sorted(valid_ws, key=lambda x: x["curr_rate"])[:5]
+        
+        # Sort by rate drop (Biggest drop first -> most negative diff)
+        biggest_drop_list = sorted(valid_ws, key=lambda x: x["diff_pp"])[:5]
+        
+        # Sort by rate descending (Best first)
+        best_rate_list = sorted(valid_ws, key=lambda x: x["curr_rate"], reverse=True)[:5]
+        
+        # Sort by growth in rate (Best improvement)
+        best_improvement_list = sorted(valid_ws, key=lambda x: x["diff_pp"], reverse=True)[:5]
+
+
+        # 5. Processing Section 3: Device Trends
+        def aggregate_devices(device_rows):
+            # Cats: switch(23,90), track(25,50), control(1,6,15,16,51,52,65), power(24,27)
+            cats = {"switch": 0, "track": 0, "control": 0, "power": 0, "other": 0}
+            mapping = {
+                23: "switch", 90: "switch",
+                25: "track", 50: "track",
+                1: "control", 6: "control", 15: "control", 16: "control", 51: "control", 52: "control", 65: "control",
+                24: "power", 27: "power"
+            }
+            for row in device_rows:
+                dtype = row[0]
+                cnt = row[1]
+                cat = mapping.get(dtype, "other")
+                cats[cat] += cnt
+            return cats
+
+        curr_dev = aggregate_devices(curr_data["devices"])
+        prev_dev = aggregate_devices(prev_data["devices"])
+        
+        device_trends = []
+        for cat in ["switch", "track", "control", "power"]:
+            c_cnt = curr_dev[cat]
+            p_cnt = prev_dev[cat]
+            
+            trend_pct = "0%"
+            if p_cnt > 0:
+                trend_pct = f"{((c_cnt - p_cnt)/p_cnt * 100):+.1f}%"
+            elif c_cnt > 0:
+                trend_pct = "+100%"
+                
+            device_trends.append({
+                "device_type": cat,
+                "curr_count": c_cnt,
+                "prev_count": p_cnt,
+                "trend": trend_pct
+            })
+
 
         result = {
-            "current_period": {
-                "date_range": f"{curr_s.date()} - {curr_e_incl.date()}",
-                "stats": curr_stats
+            "period": f"{req.start_date} to {req.end_date}",
+            "kpi_comparison": kpi_stats,
+            "workshop_analysis": {
+                "red_board_candidates": {
+                    "lowest_process_rate": lowest_rate_list,
+                    "biggest_quality_drop": biggest_drop_list
+                },
+                "green_board_candidates": {
+                    "highest_process_rate": best_rate_list,
+                    "best_improvement": best_improvement_list
+                },
+                "full_ranking": sorted(ws_comparison, key=lambda x: x["curr_rate"]) 
             },
-            "previous_period": {
-                "date_range": f"{prev_s.date()} - {(prev_e_excl - datetime.timedelta(days=1)).date()}",
-                "stats": prev_stats
-            },
-            "growth_rates": {
-                "total_alarms": calc_growth(curr_stats["total"], prev_stats["total"]),
-                "skylight_alarms": calc_growth(curr_stats["skylight"], prev_stats["skylight"])
-            }
+            "device_trends": device_trends
         }
+        
         save_debug_json(result, "part3_trends")
         return result
+
     except Exception as e:
         import traceback
         traceback.print_exc()

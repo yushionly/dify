@@ -1,20 +1,634 @@
 {
-    "current_period": {
-        "date_range": "2024-09-09 - 2024-09-16",
-        "stats": {
-            "total": 208850,
-            "skylight": 0
+    "period": "2024-09-09 to 2024-09-16",
+    "kpi_comparison": {
+        "daily_avg_total": {
+            "curr": 26106.2,
+            "prev": 35660.4,
+            "growth": "-26.8%"
+        },
+        "skylight_count": {
+            "curr": 101390,
+            "prev": 131811,
+            "growth": "-23.1%"
+        },
+        "non_skylight_count": {
+            "curr": 107460,
+            "prev": 153472,
+            "growth": "-30.0%"
+        },
+        "process_rate": {
+            "curr": "72.9%",
+            "prev": "68.6%",
+            "diff_pp": "+4.3 pp"
         }
     },
-    "previous_period": {
-        "date_range": "2024-09-01 - 2024-09-08",
-        "stats": {
-            "total": 285283,
-            "skylight": 0
-        }
+    "workshop_analysis": {
+        "red_board_candidates": {
+            "lowest_process_rate": [
+                {
+                    "workshop": "东孚驼峰车间",
+                    "total_alarms": 1402,
+                    "curr_rate": 0.0,
+                    "prev_rate": 0.1,
+                    "diff_pp": -0.1
+                },
+                {
+                    "workshop": "武夷山信号车间",
+                    "total_alarms": 2723,
+                    "curr_rate": 0.1,
+                    "prev_rate": 0.0,
+                    "diff_pp": 0.1
+                },
+                {
+                    "workshop": "新余信号车间",
+                    "total_alarms": 2162,
+                    "curr_rate": 0.2,
+                    "prev_rate": 0.5,
+                    "diff_pp": -0.3
+                },
+                {
+                    "workshop": "来舟信号车间",
+                    "total_alarms": 1197,
+                    "curr_rate": 1.1,
+                    "prev_rate": 0.0,
+                    "diff_pp": 1.0
+                },
+                {
+                    "workshop": "厦门北信号车间",
+                    "total_alarms": 5353,
+                    "curr_rate": 7.5,
+                    "prev_rate": 13.6,
+                    "diff_pp": -6.2
+                }
+            ],
+            "biggest_quality_drop": [
+                {
+                    "workshop": "厦门信号车间",
+                    "total_alarms": 2739,
+                    "curr_rate": 65.8,
+                    "prev_rate": 92.9,
+                    "diff_pp": -27.1
+                },
+                {
+                    "workshop": "婺源综合维修车间",
+                    "total_alarms": 1472,
+                    "curr_rate": 42.5,
+                    "prev_rate": 58.8,
+                    "diff_pp": -16.3
+                },
+                {
+                    "workshop": "永安信号车间",
+                    "total_alarms": 300,
+                    "curr_rate": 41.3,
+                    "prev_rate": 55.7,
+                    "diff_pp": -14.3
+                },
+                {
+                    "workshop": "南昌西综合维修车间",
+                    "total_alarms": 10164,
+                    "curr_rate": 79.6,
+                    "prev_rate": 93.6,
+                    "diff_pp": -13.9
+                },
+                {
+                    "workshop": "泰宁信号车间",
+                    "total_alarms": 2769,
+                    "curr_rate": 84.3,
+                    "prev_rate": 97.9,
+                    "diff_pp": -13.6
+                }
+            ]
+        },
+        "green_board_candidates": {
+            "highest_process_rate": [
+                {
+                    "workshop": "鹰潭北综合维修车间",
+                    "total_alarms": 1779,
+                    "curr_rate": 100.0,
+                    "prev_rate": 100.0,
+                    "diff_pp": 0.0
+                },
+                {
+                    "workshop": "井冈山信号车间",
+                    "total_alarms": 787,
+                    "curr_rate": 100.0,
+                    "prev_rate": 100.0,
+                    "diff_pp": 0.0
+                },
+                {
+                    "workshop": "景德镇信号车间",
+                    "total_alarms": 2177,
+                    "curr_rate": 100.0,
+                    "prev_rate": 100.0,
+                    "diff_pp": 0.0
+                },
+                {
+                    "workshop": "新余北综合维修车间",
+                    "total_alarms": 1523,
+                    "curr_rate": 100.0,
+                    "prev_rate": 100.0,
+                    "diff_pp": 0.0
+                },
+                {
+                    "workshop": "吉安西高铁车间",
+                    "total_alarms": 2470,
+                    "curr_rate": 100.0,
+                    "prev_rate": 100.0,
+                    "diff_pp": 0.0
+                }
+            ],
+            "best_improvement": [
+                {
+                    "workshop": "福州信号车间",
+                    "total_alarms": 2717,
+                    "curr_rate": 90.0,
+                    "prev_rate": 50.9,
+                    "diff_pp": 39.1
+                },
+                {
+                    "workshop": "樟树信号车间",
+                    "total_alarms": 3094,
+                    "curr_rate": 98.0,
+                    "prev_rate": 60.4,
+                    "diff_pp": 37.6
+                },
+                {
+                    "workshop": "龙岩信号车间",
+                    "total_alarms": 1373,
+                    "curr_rate": 61.1,
+                    "prev_rate": 25.9,
+                    "diff_pp": 35.2
+                },
+                {
+                    "workshop": "吉安信号车间",
+                    "total_alarms": 4472,
+                    "curr_rate": 96.4,
+                    "prev_rate": 61.2,
+                    "diff_pp": 35.1
+                },
+                {
+                    "workshop": "抚州信号车间",
+                    "total_alarms": 5433,
+                    "curr_rate": 84.5,
+                    "prev_rate": 58.0,
+                    "diff_pp": 26.6
+                }
+            ]
+        },
+        "full_ranking": [
+            {
+                "workshop": "东孚驼峰车间",
+                "total_alarms": 1402,
+                "curr_rate": 0.0,
+                "prev_rate": 0.1,
+                "diff_pp": -0.1
+            },
+            {
+                "workshop": "武夷山信号车间",
+                "total_alarms": 2723,
+                "curr_rate": 0.1,
+                "prev_rate": 0.0,
+                "diff_pp": 0.1
+            },
+            {
+                "workshop": "新余信号车间",
+                "total_alarms": 2162,
+                "curr_rate": 0.2,
+                "prev_rate": 0.5,
+                "diff_pp": -0.3
+            },
+            {
+                "workshop": "来舟信号车间",
+                "total_alarms": 1197,
+                "curr_rate": 1.1,
+                "prev_rate": 0.0,
+                "diff_pp": 1.0
+            },
+            {
+                "workshop": "厦门北信号车间",
+                "total_alarms": 5353,
+                "curr_rate": 7.5,
+                "prev_rate": 13.6,
+                "diff_pp": -6.2
+            },
+            {
+                "workshop": "永安南信号车间",
+                "total_alarms": 2293,
+                "curr_rate": 11.9,
+                "prev_rate": 24.7,
+                "diff_pp": -12.9
+            },
+            {
+                "workshop": "漳州信号车间",
+                "total_alarms": 9152,
+                "curr_rate": 23.5,
+                "prev_rate": 21.5,
+                "diff_pp": 2.1
+            },
+            {
+                "workshop": "瑞金信号车间",
+                "total_alarms": 2511,
+                "curr_rate": 30.2,
+                "prev_rate": 33.2,
+                "diff_pp": -3.0
+            },
+            {
+                "workshop": "永修城际车间",
+                "total_alarms": 4172,
+                "curr_rate": 34.6,
+                "prev_rate": 39.1,
+                "diff_pp": -4.5
+            },
+            {
+                "workshop": "邵武信号车间",
+                "total_alarms": 3831,
+                "curr_rate": 41.3,
+                "prev_rate": 24.8,
+                "diff_pp": 16.5
+            },
+            {
+                "workshop": "永安信号车间",
+                "total_alarms": 300,
+                "curr_rate": 41.3,
+                "prev_rate": 55.7,
+                "diff_pp": -14.3
+            },
+            {
+                "workshop": "南平综合维修车间",
+                "total_alarms": 4233,
+                "curr_rate": 42.1,
+                "prev_rate": 36.3,
+                "diff_pp": 5.8
+            },
+            {
+                "workshop": "婺源综合维修车间",
+                "total_alarms": 1472,
+                "curr_rate": 42.5,
+                "prev_rate": 58.8,
+                "diff_pp": -16.3
+            },
+            {
+                "workshop": "九江信号车间",
+                "total_alarms": 1855,
+                "curr_rate": 55.5,
+                "prev_rate": 35.0,
+                "diff_pp": 20.5
+            },
+            {
+                "workshop": "龙岩信号车间",
+                "total_alarms": 1373,
+                "curr_rate": 61.1,
+                "prev_rate": 25.9,
+                "diff_pp": 35.2
+            },
+            {
+                "workshop": "厦门北高铁信号车间",
+                "total_alarms": 2656,
+                "curr_rate": 64.0,
+                "prev_rate": 77.2,
+                "diff_pp": -13.2
+            },
+            {
+                "workshop": "龙岩高铁信号车间",
+                "total_alarms": 9354,
+                "curr_rate": 64.3,
+                "prev_rate": 59.9,
+                "diff_pp": 4.4
+            },
+            {
+                "workshop": "厦门信号车间",
+                "total_alarms": 2739,
+                "curr_rate": 65.8,
+                "prev_rate": 92.9,
+                "diff_pp": -27.1
+            },
+            {
+                "workshop": "福州南信号车间",
+                "total_alarms": 6242,
+                "curr_rate": 71.2,
+                "prev_rate": 67.9,
+                "diff_pp": 3.3
+            },
+            {
+                "workshop": "向西驼峰车间",
+                "total_alarms": 1956,
+                "curr_rate": 73.1,
+                "prev_rate": 80.8,
+                "diff_pp": -7.7
+            },
+            {
+                "workshop": "漳平信号车间",
+                "total_alarms": 2450,
+                "curr_rate": 76.9,
+                "prev_rate": 82.6,
+                "diff_pp": -5.7
+            },
+            {
+                "workshop": "庐山信号车间",
+                "total_alarms": 2741,
+                "curr_rate": 78.5,
+                "prev_rate": 87.9,
+                "diff_pp": -9.4
+            },
+            {
+                "workshop": "南昌西综合维修车间",
+                "total_alarms": 10164,
+                "curr_rate": 79.6,
+                "prev_rate": 93.6,
+                "diff_pp": -13.9
+            },
+            {
+                "workshop": "鹰潭驼峰车间",
+                "total_alarms": 1212,
+                "curr_rate": 79.8,
+                "prev_rate": 86.1,
+                "diff_pp": -6.3
+            },
+            {
+                "workshop": "宁化信号车间",
+                "total_alarms": 546,
+                "curr_rate": 80.6,
+                "prev_rate": 62.9,
+                "diff_pp": 17.7
+            },
+            {
+                "workshop": "兴国信号车间",
+                "total_alarms": 13371,
+                "curr_rate": 80.8,
+                "prev_rate": 71.8,
+                "diff_pp": 9.0
+            },
+            {
+                "workshop": "三明北信号车间",
+                "total_alarms": 7282,
+                "curr_rate": 80.8,
+                "prev_rate": 83.9,
+                "diff_pp": -3.1
+            },
+            {
+                "workshop": "延平综合维修车间",
+                "total_alarms": 2274,
+                "curr_rate": 83.1,
+                "prev_rate": 87.0,
+                "diff_pp": -3.9
+            },
+            {
+                "workshop": "萍乡普速车间",
+                "total_alarms": 6354,
+                "curr_rate": 83.4,
+                "prev_rate": 60.0,
+                "diff_pp": 23.4
+            },
+            {
+                "workshop": "永泰信号车间",
+                "total_alarms": 3699,
+                "curr_rate": 83.5,
+                "prev_rate": 89.1,
+                "diff_pp": -5.6
+            },
+            {
+                "workshop": "泰宁信号车间",
+                "total_alarms": 2769,
+                "curr_rate": 84.3,
+                "prev_rate": 97.9,
+                "diff_pp": -13.6
+            },
+            {
+                "workshop": "抚州信号车间",
+                "total_alarms": 5433,
+                "curr_rate": 84.5,
+                "prev_rate": 58.0,
+                "diff_pp": 26.6
+            },
+            {
+                "workshop": "福州信号车间",
+                "total_alarms": 2717,
+                "curr_rate": 90.0,
+                "prev_rate": 50.9,
+                "diff_pp": 39.1
+            },
+            {
+                "workshop": "莆田信号车间",
+                "total_alarms": 5185,
+                "curr_rate": 90.5,
+                "prev_rate": 66.9,
+                "diff_pp": 23.7
+            },
+            {
+                "workshop": "南昌信号车间",
+                "total_alarms": 4732,
+                "curr_rate": 90.6,
+                "prev_rate": 86.4,
+                "diff_pp": 4.1
+            },
+            {
+                "workshop": "鹰潭普速车间",
+                "total_alarms": 6965,
+                "curr_rate": 91.4,
+                "prev_rate": 74.7,
+                "diff_pp": 16.7
+            },
+            {
+                "workshop": "南昌电子设备车间",
+                "total_alarms": 139,
+                "curr_rate": 92.1,
+                "prev_rate": 96.1,
+                "diff_pp": -4.0
+            },
+            {
+                "workshop": "向塘信号车间",
+                "total_alarms": 6774,
+                "curr_rate": 92.2,
+                "prev_rate": 71.9,
+                "diff_pp": 20.3
+            },
+            {
+                "workshop": "上饶信号车间",
+                "total_alarms": 3167,
+                "curr_rate": 93.1,
+                "prev_rate": 73.5,
+                "diff_pp": 19.6
+            },
+            {
+                "workshop": "赣州信号车间",
+                "total_alarms": 1765,
+                "curr_rate": 93.1,
+                "prev_rate": 83.9,
+                "diff_pp": 9.2
+            },
+            {
+                "workshop": "上饶综合维修车间",
+                "total_alarms": 3051,
+                "curr_rate": 93.6,
+                "prev_rate": 89.4,
+                "diff_pp": 4.1
+            },
+            {
+                "workshop": "樟林驼峰车间",
+                "total_alarms": 3012,
+                "curr_rate": 94.1,
+                "prev_rate": 98.0,
+                "diff_pp": -3.9
+            },
+            {
+                "workshop": "宁德信号车间",
+                "total_alarms": 2915,
+                "curr_rate": 94.2,
+                "prev_rate": 99.4,
+                "diff_pp": -5.2
+            },
+            {
+                "workshop": "吉安信号车间",
+                "total_alarms": 4472,
+                "curr_rate": 96.4,
+                "prev_rate": 61.2,
+                "diff_pp": 35.1
+            },
+            {
+                "workshop": "樟树信号车间",
+                "total_alarms": 3094,
+                "curr_rate": 98.0,
+                "prev_rate": 60.4,
+                "diff_pp": 37.6
+            },
+            {
+                "workshop": "泉州信号车间",
+                "total_alarms": 4148,
+                "curr_rate": 98.1,
+                "prev_rate": 98.0,
+                "diff_pp": 0.1
+            },
+            {
+                "workshop": "信丰信号车间",
+                "total_alarms": 1848,
+                "curr_rate": 99.0,
+                "prev_rate": 98.4,
+                "diff_pp": 0.6
+            },
+            {
+                "workshop": "南昌东高铁信号车间",
+                "total_alarms": 2284,
+                "curr_rate": 99.2,
+                "prev_rate": 84.1,
+                "diff_pp": 15.1
+            },
+            {
+                "workshop": "景德镇北信号车间",
+                "total_alarms": 3471,
+                "curr_rate": 99.3,
+                "prev_rate": 78.7,
+                "diff_pp": 20.6
+            },
+            {
+                "workshop": "宁都信号车间",
+                "total_alarms": 814,
+                "curr_rate": 99.8,
+                "prev_rate": 100.0,
+                "diff_pp": -0.2
+            },
+            {
+                "workshop": "屏南信号车间",
+                "total_alarms": 1667,
+                "curr_rate": 99.9,
+                "prev_rate": 99.9,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "鹰潭北综合维修车间",
+                "total_alarms": 1779,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "井冈山信号车间",
+                "total_alarms": 787,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "景德镇信号车间",
+                "total_alarms": 2177,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "新余北综合维修车间",
+                "total_alarms": 1523,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "吉安西高铁车间",
+                "total_alarms": 2470,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "赣州西高铁车间",
+                "total_alarms": 4815,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": -0.0
+            },
+            {
+                "workshop": "福州电子设备车间",
+                "total_alarms": 27,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "庐山城际车间",
+                "total_alarms": 2051,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": -0.0
+            },
+            {
+                "workshop": "永安南普速信号车间",
+                "total_alarms": 1178,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "都昌信号车间",
+                "total_alarms": 2890,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            }
+        ]
     },
-    "growth_rates": {
-        "total_alarms": "-26.8%",
-        "skylight_alarms": "0.0%"
-    }
+    "device_trends": [
+        {
+            "device_type": "switch",
+            "curr_count": 13858,
+            "prev_count": 26525,
+            "trend": "-47.8%"
+        },
+        {
+            "device_type": "track",
+            "curr_count": 171511,
+            "prev_count": 226351,
+            "trend": "-24.2%"
+        },
+        {
+            "device_type": "control",
+            "curr_count": 10120,
+            "prev_count": 15172,
+            "trend": "-33.3%"
+        },
+        {
+            "device_type": "power",
+            "curr_count": 3202,
+            "prev_count": 7484,
+            "trend": "-57.2%"
+        }
+    ]
 }
