@@ -5,6 +5,16 @@
     },
     "table1_station_stats": [
         {
+            "name": "南昌高铁基础设施段",
+            "station_count": 0,
+            "turnout_count": 0,
+            "total": 24496,
+            "level1": 9319,
+            "level2": 10857,
+            "level3": 4320,
+            "total_no_ext": 23487
+        },
+        {
             "name": "南昌电务段",
             "station_count": 0,
             "turnout_count": 0,
@@ -23,86 +33,78 @@
             "level2": 38699,
             "level3": 21203,
             "total_no_ext": 85631
-        },
-        {
-            "name": "南昌高铁基础设施段",
-            "station_count": 0,
-            "turnout_count": 0,
-            "total": 24496,
-            "level1": 9319,
-            "level2": 10857,
-            "level3": 4320,
-            "total_no_ext": 23487
         }
     ],
     "table2_self_diagnosis": [
         {
-            "name": "南昌电务段",
-            "count": 4236,
+            "name": "南昌高铁基础设施段",
+            "count": 18299,
             "breakdown": {
-                "total": 4236,
-                "other": 2198,
-                "elec_char": 734,
-                "self_alarm": 1304
+                "total": 18299,
+                "other": 12238,
+                "elec_char": 4805,
+                "switch_no_rep": 1209,
+                "safety": 47
+            }
+        },
+        {
+            "name": "南昌电务段",
+            "count": 75460,
+            "breakdown": {
+                "total": 75460,
+                "other": 18969,
+                "elec_char": 46889,
+                "switch_no_rep": 9599,
+                "safety": 3
             }
         },
         {
             "name": "福州电务段",
-            "count": 1288,
+            "count": 52198,
             "breakdown": {
-                "total": 1288,
-                "self_alarm": 461,
-                "other": 509,
-                "elec_char": 318
-            }
-        },
-        {
-            "name": "南昌高铁基础设施段",
-            "count": 1016,
-            "breakdown": {
-                "total": 1016,
-                "elec_char": 871,
-                "other": 52,
-                "self_alarm": 93
+                "total": 52198,
+                "switch_no_rep": 5210,
+                "other": 30182,
+                "elec_char": 16676,
+                "safety": 130
             }
         }
     ],
     "table3_external_interface": [
         {
             "name": "南昌电务段",
-            "count": 92246,
+            "count": 21022,
             "breakdown": {
-                "total": 92246,
-                "other": 4410,
-                "atp": 1923,
-                "zpw2000": 83976,
-                "interlock": 1340,
-                "power": 597
+                "total": 21022,
+                "zpw2000": 20386,
+                "other": 126,
+                "power": 424,
+                "atp": 33,
+                "interlock": 53
             }
         },
         {
             "name": "福州电务段",
-            "count": 84922,
+            "count": 34012,
             "breakdown": {
-                "total": 84922,
-                "zpw2000": 64168,
-                "atp": 1984,
-                "other": 15292,
-                "power": 2384,
-                "interlock": 1062,
-                "gap": 32
+                "total": 34012,
+                "zpw2000": 27396,
+                "power": 2264,
+                "atp": 851,
+                "other": 3309,
+                "gap": 32,
+                "interlock": 160
             }
         },
         {
             "name": "南昌高铁基础设施段",
-            "count": 23480,
+            "count": 6197,
             "breakdown": {
-                "total": 23480,
-                "zpw2000": 13856,
-                "interlock": 996,
-                "atp": 1079,
-                "power": 217,
-                "other": 7332
+                "total": 6197,
+                "zpw2000": 6058,
+                "power": 97,
+                "other": 29,
+                "interlock": 13
             }
         }
     ],
@@ -126,6 +128,22 @@
         {
             "name": "福州电务段 - 三明北信号车间",
             "count": 7282
+        },
+        {
+            "name": "南昌电务段 - 鹰潭普速车间",
+            "count": 6965
+        },
+        {
+            "name": "南昌电务段 - 向塘信号车间",
+            "count": 6774
+        },
+        {
+            "name": "南昌高铁基础设施段 - 南平综合维修车间",
+            "count": 4233
+        },
+        {
+            "name": "南昌高铁基础设施段 - 上饶综合维修车间",
+            "count": 3051
         }
     ],
     "top_issues": [

@@ -6,6 +6,7 @@ from pydantic import BaseModel
 from typing import List, Dict, Any
 from datetime import timedelta
 import collections
+import os
 
 # Attempt to initialize Oracle Instant Client (Thick mode)
 # This is required for connecting to older Oracle databases (e.g. 11g) that Thin mode doesn't support.
@@ -40,6 +41,26 @@ DEVICE_TYPE_MAP = {
     44: "GSM-R", 27: "电源屏", 1: "计算机联锁", 90: "道岔"
 }
 
+# 报警分类映射表 (Type based)
+# "道岔无表示报警" (0x96=150) -> switch_no_rep
+# "电气特性超限报警" (0x71=113) -> elec_char
+# "电气特性智能分析" (0x36=54) -> elec_char
+# "道岔动作智能分析" (0x90=144) -> other
+# "安全监督" (0xCF=207) -> safety (安全监督)
+ALARM_TYPE_MAP = {
+    150: 'switch_no_rep', 
+    113: 'elec_char', 
+    54: 'elec_char', 
+    144: 'other',
+    207: 'safety'
+}
+
+# 监测系统自诊断报警 (无子报警)
+# 包含: 163(故障通知), 132(破封), 133(瞬间断电), 135(灯丝), 136(熔丝), 201(列控), 140(错序), 237(放电), 210(电源屏), 50(ZPW), 55(长期占用), 219(室外监测), 124(采集机)
+SELF_DIAG_ALARM_TYPES = {
+    163, 132, 133, 135, 136, 201, 140, 237, 210, 50, 55, 219, 124
+}
+
 # 加载基础数据映射
 try:
     with open('station_map.json', 'r', encoding='utf-8') as f:
@@ -55,6 +76,18 @@ class ReportRequest(BaseModel):
 def get_db_connection():
     return oracledb.connect(**DB_CONFIG)
 
+def get_table2_category(alarmtype):
+    """根据 alarmtype 判断是否属于表2 (监测自诊断) 及其分类"""
+    # 1. Check mapped types
+    if alarmtype in ALARM_TYPE_MAP:
+        return ALARM_TYPE_MAP[alarmtype]
+        
+    # 2. Check general self-diag types
+    if alarmtype in SELF_DIAG_ALARM_TYPES:
+        return "other"
+        
+    return None
+
 @app.post("/get_alarm_stats")
 def get_stats(req: ReportRequest):
     conn = None
@@ -62,23 +95,19 @@ def get_stats(req: ReportRequest):
         conn = get_db_connection()
         cursor = conn.cursor()
         
-        # 转换日期字符为 Unix 时间戳 (因为数据库 createtime 是 NUMBER 类型)
-        # 假设输入是 'YYYY-MM-DD'，对应 UTC 0点
+        # 转换日期字符为 Unix 时间戳
         start_dt = datetime.datetime.strptime(req.start_date, "%Y-%m-%d")
         end_dt = datetime.datetime.strptime(req.end_date, "%Y-%m-%d") + datetime.timedelta(days=1)
-        
-        # 强制使用 UTC 时区以生成标准的 Unix Timestamp
         start_ts = int(start_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
         end_ts = int(end_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
 
-        # 1. 核心聚合查询：增加 devicetype 和 alarmdes 字段
-        # 注意：为了性能，尽量不要全表扫，这里依赖 createtime 索引
+        # 1. 聚合查询：增加 alarmtype (对应 XML 中的 type)
         sql_raw = """
-            SELECT telename, alarmlevel, devicetype, alarmdes, count(*) as cnt 
+            SELECT telename, alarmlevel, devicetype, alarmdes, alarmtype, count(*) as cnt 
             FROM ALARM 
             WHERE createtime >= :1 
               AND createtime < :2
-            GROUP BY telename, alarmlevel, devicetype, alarmdes
+            GROUP BY telename, alarmlevel, devicetype, alarmdes, alarmtype
         """
         cursor.execute(sql_raw, [start_ts, end_ts])
         rows = cursor.fetchall()
@@ -95,14 +124,14 @@ def get_stats(req: ReportRequest):
         # 表3：外部接口系统报警
         table3_stats = collections.defaultdict(lambda: collections.defaultdict(int))
         
-        # 表4：重点车间排名
-        workshop_stats = collections.defaultdict(int)
+        # 表4：重点车间排名 (按段分组)
+        workshop_stats = collections.defaultdict(lambda: collections.defaultdict(int))
 
         # 全局统计
         total_alarms = 0
         
         # ================= 数据处理循环 =================
-        for telename, level, dtype, des, cnt in rows:
+        for telename, level, dtype, des, atype, cnt in rows:
             telename = telename.strip()
             total_alarms += cnt
             
@@ -116,10 +145,11 @@ def get_stats(req: ReportRequest):
 
             # --- 逻辑判定 ---
             # 1. 外电网判定 (简单的关键词匹配)
-            is_external_power = "外电网" in str(des)
+            des_str = str(des) if des else ""
+            is_external_power = "外电网" in des_str
             
             # 2. 设备类型归类
-            dtype_name = DEVICE_TYPE_MAP.get(dtype, "其他")
+            # dtype_name = DEVICE_TYPE_MAP.get(dtype, "其他")
             
             # --- 填充表1 (站段统计) ---
             s_stat = table1_stats[section]
@@ -131,18 +161,25 @@ def get_stats(req: ReportRequest):
                 s_stat["total_no_ext"] += cnt
 
             # --- 填充表2 (监测自诊断) ---
-            # 逻辑：如果是微机监测(5) 或 包含特定关键字
-            if dtype == 5 or "监测" in str(des):
+            t2_cat = get_table2_category(atype)
+            
+            if t2_cat:
                 t2_row = table2_stats[section]
                 t2_row["total"] += cnt
-                # 细分逻辑 (关键词需根据实际调整)
-                if "通信" in str(des) or "状态" in str(des): t2_row["self_alarm"] += cnt
-                elif "模拟量" in str(des): t2_row["elec_char"] += cnt
-                elif "无表示" in str(des): t2_row["switch_no_rep"] += cnt
+                # 分类统计
+                if t2_cat == "elec_char": t2_row["elec_char"] += cnt
+                elif t2_cat == "switch_no_rep": t2_row["switch_no_rep"] += cnt
+                elif t2_cat == "safety": t2_row["safety"] += cnt
                 else: t2_row["other"] += cnt
             
             # --- 填充表3 (外部接口) ---
-            # 逻辑：非监测类报警
+            # 兜底监测相关报警也归为表2 other (可选，根据需求)
+            elif dtype == 5 or "监测" in des_str:
+                 t2_row = table2_stats[section]
+                 t2_row["total"] += cnt
+                 t2_row["other"] += cnt
+
+            # --- 余下为表3 ---
             else:
                 t3_row = table3_stats[section]
                 t3_row["total"] += cnt
@@ -155,7 +192,7 @@ def get_stats(req: ReportRequest):
                 else: t3_row["other"] += cnt
 
             # --- 填充表4 (车间统计) ---
-            workshop_stats[f"{section} - {workshop}"] += cnt
+            workshop_stats[section][workshop] += cnt
 
         # ================= 格式化输出 =================
         
@@ -188,9 +225,22 @@ def get_stats(req: ReportRequest):
                 "breakdown": data
             })
 
-        # 格式化表4 (排序)
-        sorted_workshops = sorted(workshop_stats.items(), key=lambda x: x[1], reverse=True)
-        table4_output = [{"name": k, "count": v} for k, v in sorted_workshops[:5]] # 取前5
+        # 格式化表4 (每个站段取前3)
+        table4_output = []
+        for section, w_dict in workshop_stats.items():
+            # 对该段的车间按报警数倒序排列
+            sorted_ws = sorted(w_dict.items(), key=lambda x: x[1], reverse=True)
+            # 取前3名
+            top3 = sorted_ws[:3]
+            for w_name, w_count in top3:
+                table4_output.append({
+                    "name": f"{section} - {w_name}",
+                    "count": w_count
+                })
+        
+        # 可选：最后再对 table4_output 整体排序，或者保持按段分组顺序
+        # 这里按总数排序一下以保证原来的风格，或者直接就这样
+        table4_output.sort(key=lambda x: x["count"], reverse=True)
 
         # Top 10 隐患 (用于文本分析)
         sql_top = """
