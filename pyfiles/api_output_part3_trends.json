@@ -1,0 +1,20 @@
+{
+    "current_period": {
+        "date_range": "2024-09-09 - 2024-09-16",
+        "stats": {
+            "total": 208850,
+            "skylight": 0
+        }
+    },
+    "previous_period": {
+        "date_range": "2024-09-01 - 2024-09-08",
+        "stats": {
+            "total": 285283,
+            "skylight": 0
+        }
+    },
+    "growth_rates": {
+        "total_alarms": "-26.8%",
+        "skylight_alarms": "0.0%"
+    }
+}

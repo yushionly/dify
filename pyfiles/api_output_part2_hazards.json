@@ -1,0 +1,226 @@
+{
+    "period": "2024-09-09 to 2024-09-16",
+    "overview": {
+        "total_valid_alarms": 107460,
+        "unhandled_alarms": 26126,
+        "retention_rate": "24.31%"
+    },
+    "categories": {
+        "switch": {
+            "top_alarm_types": [
+                {
+                    "name": "17/21-A#道岔动作时间超过曲线动作时间报警上限值12.18s",
+                    "count": 138
+                },
+                {
+                    "name": "电流(C)小于标准曲线0.32秒，道岔曲线时间6.36秒，参考曲线时间6.68秒",
+                    "count": 110
+                },
+                {
+                    "name": "28/32-A#道岔动作时间超过曲线动作时间报警上限值13.74s",
+                    "count": 91
+                },
+                {
+                    "name": "20/26#道岔动作时间超过曲线动作时间报警上限值21.18s",
+                    "count": 76
+                },
+                {
+                    "name": "17/21-A#道岔动作时间超过曲线动作时间报警上限值12.34s",
+                    "count": 70
+                },
+                {
+                    "name": "电流(C) 道岔定反位之间时间差超过0.28(定6.52秒，反6.20秒)",
+                    "count": 63
+                }
+            ],
+            "top_faulty_stations": [
+                {
+                    "name": "ZPS",
+                    "count": 904
+                },
+                {
+                    "name": "NCX",
+                    "count": 659
+                },
+                {
+                    "name": "ZLY",
+                    "count": 186
+                },
+                {
+                    "name": "YTB",
+                    "count": 147
+                },
+                {
+                    "name": "RCX",
+                    "count": 136
+                },
+                {
+                    "name": "MQB",
+                    "count": 109
+                }
+            ]
+        },
+        "track": {
+            "top_alarm_types": [
+                {
+                    "name": "Unknown",
+                    "count": 13673
+                },
+                {
+                    "name": "道岔电流定反位对比时间超标0.15秒，达到0.16秒",
+                    "count": 2878
+                },
+                {
+                    "name": "4047-L灯丝断丝",
+                    "count": 2707
+                },
+                {
+                    "name": "0.00,超下限报警",
+                    "count": 2144
+                },
+                {
+                    "name": "道岔电流定反位对比时间超标0.15秒，达到0.2秒",
+                    "count": 1698
+                },
+                {
+                    "name": "41.00 ℃ 超上限",
+                    "count": 1377
+                }
+            ],
+            "top_faulty_stations": [
+                {
+                    "name": "P15",
+                    "count": 2757
+                },
+                {
+                    "name": "YZJ",
+                    "count": 2400
+                },
+                {
+                    "name": "YJS",
+                    "count": 2000
+                },
+                {
+                    "name": "NXC",
+                    "count": 1881
+                },
+                {
+                    "name": "ZAZ",
+                    "count": 1827
+                },
+                {
+                    "name": "XAA",
+                    "count": 1621
+                }
+            ]
+        },
+        "control": {
+            "top_alarm_types": [
+                {
+                    "name": "移频轨道电路主轨入电压模拟量突变预警",
+                    "count": 718
+                },
+                {
+                    "name": "电源屏电压模拟量超下限（13.06）",
+                    "count": 418
+                },
+                {
+                    "name": "接收主机主轨出电压调整超下限",
+                    "count": 193
+                },
+                {
+                    "name": "接收并机主轨出电压调整超下限",
+                    "count": 192
+                },
+                {
+                    "name": "电源屏电压模拟量超下限（0.00）",
+                    "count": 146
+                },
+                {
+                    "name": "移频轨道电路主轨出电压模拟量突变预警",
+                    "count": 138
+                }
+            ],
+            "top_faulty_stations": [
+                {
+                    "name": "C16",
+                    "count": 379
+                },
+                {
+                    "name": "RCX",
+                    "count": 246
+                },
+                {
+                    "name": "CSZ",
+                    "count": 241
+                },
+                {
+                    "name": "FNE",
+                    "count": 240
+                },
+                {
+                    "name": "WJ4",
+                    "count": 233
+                },
+                {
+                    "name": "PTZ",
+                    "count": 201
+                }
+            ]
+        },
+        "power": {
+            "top_alarm_types": [
+                {
+                    "name": "破封按钮报警",
+                    "count": 157
+                },
+                {
+                    "name": "Unknown",
+                    "count": 23
+                },
+                {
+                    "name": "联锁信号故障关闭报警",
+                    "count": 12
+                },
+                {
+                    "name": "联锁接口断开报警",
+                    "count": 4
+                },
+                {
+                    "name": "工作状态故障",
+                    "count": 4
+                },
+                {
+                    "name": "34挤岔报警",
+                    "count": 2
+                }
+            ],
+            "top_faulty_stations": [
+                {
+                    "name": "FND",
+                    "count": 26
+                },
+                {
+                    "name": "NCX",
+                    "count": 22
+                },
+                {
+                    "name": "LSZ",
+                    "count": 17
+                },
+                {
+                    "name": "ZPS",
+                    "count": 15
+                },
+                {
+                    "name": "PTZ",
+                    "count": 15
+                },
+                {
+                    "name": "NDZ",
+                    "count": 13
+                }
+            ]
+        }
+    }
+}

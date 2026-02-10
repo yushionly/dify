@@ -88,6 +88,18 @@ def get_table2_category(alarmtype):
         
     return None
 
+def save_debug_json(data: Dict[str, Any], filename_part: str):
+    try:
+        # 确保保存到脚本所在目录
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        output_filename = os.path.join(script_dir, f"api_output_{filename_part}.json")
+        
+        with open(output_filename, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        print(f"API output saved to {output_filename}")
+    except Exception as io_err:
+        print(f"Error saving API output to file: {io_err}")
+
 @app.post("/get_alarm_stats")
 def get_stats(req: ReportRequest):
     conn = None
@@ -284,17 +296,7 @@ def get_stats(req: ReportRequest):
         }
 
         # 将输出写入文件，以便调试查看
-        try:
-            import os
-            # 确保保存到脚本所在目录
-            script_dir = os.path.dirname(os.path.abspath(__file__))
-            output_filename = os.path.join(script_dir, "api_output.json")
-            
-            with open(output_filename, "w", encoding="utf-8") as f:
-                json.dump(result_data, f, ensure_ascii=False, indent=4)
-            print(f"API output saved to {output_filename}")
-        except Exception as io_err:
-            print(f"Error saving API output to file: {io_err}")
+        save_debug_json(result_data, "part1_overview")
 
         return result_data
 
@@ -307,6 +309,290 @@ def get_stats(req: ReportRequest):
             error_detail += " [HINT: You are currently using python-oracledb in THIN mode which does not support this old Oracle database version. Please install Oracle Instant Client on this Windows machine and add it to PATH to enable THICK mode.]"
             
         raise HTTPException(status_code=500, detail=error_detail)
+    finally:
+        if conn: conn.close()
+
+# --- New Report Endpoints (Option 1) ---
+
+@app.post("/report/part1_overview")
+def report_part1_overview(req: ReportRequest):
+    """
+    Generate Part 1: Alarm Overview (Reuses existing get_stats logic)
+    """
+    return get_stats(req)
+
+@app.post("/report/part2_hazards")
+def report_part2_hazards(req: ReportRequest):
+    """
+    Generate Part 2: Key Hazards Analysis (Excluding Skylight)
+    """
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # Time calc
+        start_dt = datetime.datetime.strptime(req.start_date, "%Y-%m-%d")
+        end_dt = datetime.datetime.strptime(req.end_date, "%Y-%m-%d") + datetime.timedelta(days=1)
+        start_ts = int(start_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
+        end_ts = int(end_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
+
+        # Define Skylight Filter: maintanceflag != 0 means skylight. 
+        # So Valid/Hazard = (maintanceflag = 0 OR maintanceflag IS NULL)
+        valid_condition = "AND (maintanceflag = 0 OR maintanceflag IS NULL)"
+
+        # 1. Overview: Total and Unhandled
+        # User specified logic: 
+        # - processstatus != 0 means processed. So 0 or NULL means unhandled.
+        # - restoretime is available for recovery info if needed, but 'unhandled' usually refers to process status.
+        total_valid = 0
+        unhandled_count = -1
+        
+        try:
+            sql_overview = f"""
+                SELECT 
+                    count(*) as total,
+                    sum(case when processstatus = 0 or processstatus is null then 1 else 0 end) as unhandled
+                FROM ALARM
+                WHERE createtime >= :1 AND createtime < :2
+                {valid_condition}
+            """
+            cursor.execute(sql_overview, [start_ts, end_ts])
+            row = cursor.fetchone()
+            if row:
+                total_valid = row[0]
+                unhandled_count = row[1] if row[1] is not None else 0
+        except Exception as e:
+            # Fallback if processstatus column missing
+            print(f"Warning: 'processstatus' query failed: {e}")
+            sql_fallback = f"""
+                SELECT count(*) FROM ALARM 
+                WHERE createtime >= :1 AND createtime < :2 {valid_condition}
+            """
+            cursor.execute(sql_fallback, [start_ts, end_ts])
+            total_valid = cursor.fetchone()[0]
+
+        retention_rate = 0.0
+        if total_valid > 0 and unhandled_count >= 0:
+            retention_rate = round((unhandled_count / total_valid) * 100, 2)
+
+        # 2. Detailed Analysis by Category
+        # We fetch aggregated data and categorize in Python to ensure flexibility
+        sql_details = f"""
+            SELECT devicetype, alarmdes, telename, count(*) as cnt
+            FROM ALARM
+            WHERE createtime >= :1 AND createtime < :2
+            {valid_condition}
+            GROUP BY devicetype, alarmdes, telename
+        """
+        cursor.execute(sql_details, [start_ts, end_ts])
+        rows = cursor.fetchall()
+        
+        # Categorization Logic
+        # Switch: 23, 90; Track: 25, 50; Control: 16, 6, 15, 65, 52, 1; Power: 24, 27
+        categories = {
+            "switch": {"ids": [23, 90], "data": []},
+            "track": {"ids": [25, 50], "data": []},
+            "control": {"ids": [16, 6, 15, 65, 52, 1], "data": []}, # Added 1 (Interlock), 15 (TCC)
+            "power": {"ids": [24, 27], "data": []}
+        }
+        
+        # Helper to hold stats
+        class CatStats:
+            def __init__(self):
+                self.alarms = collections.defaultdict(int)
+                self.stations = collections.defaultdict(int)
+
+        stats_map = {k: CatStats() for k in categories}
+
+        for dtype, des, station, cnt in rows:
+            station = station.strip() if station else "Unknown"
+            des = des.strip() if des else "Unknown"
+            
+            target_cat = "other"
+            for cat_key, cat_cfg in categories.items():
+                if dtype in cat_cfg["ids"]:
+                    target_cat = cat_key
+                    break
+            
+            if target_cat != "other":
+                stats_map[target_cat].alarms[des] += cnt
+                stats_map[target_cat].stations[station] += cnt
+        
+        # Format Output
+        def get_top_n(counter_dict, n=5):
+            return [{"name": k, "count": v} for k, v in sorted(counter_dict.items(), key=lambda x: x[1], reverse=True)[:n]]
+
+        category_analysis = {}
+        for cat_key, stat_obj in stats_map.items():
+            category_analysis[cat_key] = {
+                "top_alarm_types": get_top_n(stat_obj.alarms, 6),
+                "top_faulty_stations": get_top_n(stat_obj.stations, 6)
+            }
+
+        result = {
+            "period": f"{req.start_date} to {req.end_date}",
+            "overview": {
+                "total_valid_alarms": total_valid,
+                "unhandled_alarms": unhandled_count,
+                "retention_rate": f"{retention_rate}%"
+            },
+            "categories": category_analysis
+        }
+        save_debug_json(result, "part2_hazards")
+        return result
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        if conn: conn.close()
+
+@app.post("/report/part3_trends")
+def report_part3_trends(req: ReportRequest):
+    """
+    Generate Part 3: Trend Analysis (Current vs Previous Period)
+    """
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # Parse Dates
+        curr_s = datetime.datetime.strptime(req.start_date, "%Y-%m-%d")
+        curr_e_incl = datetime.datetime.strptime(req.end_date, "%Y-%m-%d")
+        # Included end date -> Excluded timestamp (next day 00:00)
+        curr_e_excl = curr_e_incl + datetime.timedelta(days=1)
+        
+        curr_s_ts = int(curr_s.replace(tzinfo=datetime.timezone.utc).timestamp())
+        curr_e_ts = int(curr_e_excl.replace(tzinfo=datetime.timezone.utc).timestamp())
+        
+        # Calculate Previous Period (Same Duration, sequential)
+        duration = curr_e_excl - curr_s
+        prev_s = curr_s - duration
+        prev_e_excl = curr_s
+        
+        prev_s_ts = int(prev_s.replace(tzinfo=datetime.timezone.utc).timestamp())
+        prev_e_ts = int(prev_e_excl.replace(tzinfo=datetime.timezone.utc).timestamp())
+
+        def get_period_stats(t_start, t_end):
+            # Try to query total and skylight (maintanceflag=1)
+            # Assuming maintanceflag exists based on user's sql files
+            try:
+                sql = """
+                    SELECT count(*) as total,
+                           sum(case when maintanceflag = 1 then 1 else 0 end) as skylight_cnt
+                    FROM ALARM
+                    WHERE createtime >= :1 AND createtime < :2
+                """
+                cursor.execute(sql, [t_start, t_end])
+                row = cursor.fetchone()
+                return {"total": row[0], "skylight": row[1] if row[1] else 0}
+            except Exception:
+                # Fallback if column missing
+                sql_basic = "SELECT count(*) FROM ALARM WHERE createtime >= :1 AND createtime < :2"
+                cursor.execute(sql_basic, [t_start, t_end])
+                return {"total": cursor.fetchone()[0], "skylight": 0}
+
+        curr_stats = get_period_stats(curr_s_ts, curr_e_ts)
+        prev_stats = get_period_stats(prev_s_ts, prev_e_ts)
+        
+        def calc_growth(curr, prev):
+            if prev == 0: return "100.0%" if curr > 0 else "0.0%"
+            pct = ((curr - prev) / prev) * 100
+            return f"{pct:.1f}%"
+
+        result = {
+            "current_period": {
+                "date_range": f"{curr_s.date()} - {curr_e_incl.date()}",
+                "stats": curr_stats
+            },
+            "previous_period": {
+                "date_range": f"{prev_s.date()} - {(prev_e_excl - datetime.timedelta(days=1)).date()}",
+                "stats": prev_stats
+            },
+            "growth_rates": {
+                "total_alarms": calc_growth(curr_stats["total"], prev_stats["total"]),
+                "skylight_alarms": calc_growth(curr_stats["skylight"], prev_stats["skylight"])
+            }
+        }
+        save_debug_json(result, "part3_trends")
+        return result
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        if conn: conn.close()
+
+@app.post("/report/part4_skylight")
+def report_part4_skylight(req: ReportRequest):
+    """
+    Generate Part 4: Skylight (Maintenance) Alarm Analysis
+    """
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        start_dt = datetime.datetime.strptime(req.start_date, "%Y-%m-%d")
+        end_dt = datetime.datetime.strptime(req.end_date, "%Y-%m-%d") + datetime.timedelta(days=1)
+        start_ts = int(start_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
+        end_ts = int(end_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
+
+        # Query Alarms with maintanceflag = 1
+        # Also group by device type and description to see what happens during skylight
+        sql = """
+            SELECT alarmdes, devicetype, count(*) as cnt
+            FROM ALARM
+            WHERE createtime >= :1 AND createtime < :2 AND maintanceflag = 1
+            GROUP BY alarmdes, devicetype
+            ORDER BY cnt DESC
+        """
+        # Limit 15
+        sql_lim = f"SELECT * FROM ({sql}) WHERE ROWNUM <= 15"
+        
+        try:
+            cursor.execute(sql_lim, [start_ts, end_ts])
+            rows = cursor.fetchall()
+            
+            details = []
+            for r in rows:
+                device_name = DEVICE_TYPE_MAP.get(r[1], f"Unknown({r[1]})")
+                details.append({
+                    "alarm_description": r[0],
+                    "device_type": device_name,
+                    "count": r[1]
+                })
+            
+            # Total Skylight Count
+            try:
+                cursor.execute("SELECT count(*) FROM ALARM WHERE createtime >= :1 AND createtime < :2 AND maintanceflag = 1", [start_ts, end_ts])
+                total_skylight = cursor.fetchone()[0]
+            except:
+                total_skylight = sum(d['count'] for d in details) # specific approximation
+                
+            result = {
+                "period": f"{req.start_date} to {req.end_date}",
+                "total_skylight_alarms": total_skylight,
+                "top_skylight_issues": details
+            }
+            save_debug_json(result, "part4_skylight")
+            return result
+
+        except Exception as db_err:
+            # Fallback if maintanceflag doesn't exist
+            result = {
+                "error": "Could not filter by maintenance flag (skylight).",
+                "detail": str(db_err)
+            }
+            save_debug_json(result, "part4_skylight_error")
+            return result
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
     finally:
         if conn: conn.close()
 
