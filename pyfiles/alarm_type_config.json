@@ -1,0 +1,195 @@
+{
+  "self_diagnostic_alarms": [
+    {
+      "type": 207,
+      "name": "安全监督",
+      "level": 1,
+      "alarmtype": 0
+    },
+    {
+      "type": 130,
+      "name": "挤岔报警",
+      "level": 1,
+      "alarmtype": 0
+    },
+    {
+      "type": 141,
+      "name": "信号机非正常关闭报警",
+      "level": 1,
+      "alarmtype": 0
+    },
+    {
+      "type": 163,
+      "name": "故障通知报警",
+      "level": 1,
+      "alarmtype": 0
+    },
+    {
+      "type": 210,
+      "name": "电源屏输入双路断电报警",
+      "level": 1,
+      "alarmtype": 0
+    },
+    {
+      "type": 237,
+      "name": "UPS放电报警",
+      "level": 1,
+      "alarmtype": 0
+    },
+    {
+      "type": 67,
+      "name": "双路断电报警",
+      "level": 1,
+      "alarmtype": 0
+    },
+    {
+      "type": 150,
+      "name": "道岔无表示报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 200,
+      "name": "计算机联锁系统报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 209,
+      "name": "CTC系统报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 50,
+      "name": "ZPW2000系统报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 201,
+      "name": "列控系统报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 135,
+      "name": "列车信号机主灯丝断丝报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 219,
+      "name": "室外监测报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 136,
+      "name": "熔丝断丝报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 140,
+      "name": "外电网三相电源错序报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 133,
+      "name": "外电网输入电源瞬间断电报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 139,
+      "name": "外电网断电报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 145,
+      "name": "轨道电路故障红光带",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 227,
+      "name": "信号机灭灯报警",
+      "level": 2,
+      "alarmtype": 0
+    },
+    {
+      "type": 132,
+      "name": "破封按钮报警",
+      "level": 3,
+      "alarmtype": 0
+    },
+    {
+      "type": 124,
+      "name": "采集机通信故障报警",
+      "level": 3,
+      "alarmtype": 0
+    },
+    {
+      "type": 55,
+      "name": "轨道长期占用",
+      "level": 3,
+      "alarmtype": 0
+    },
+    {
+      "type": 113,
+      "name": "电气特性超限报警",
+      "level": 3,
+      "alarmtype": 0
+    },
+    {
+      "type": 125,
+      "name": "智能接口通信故障报警",
+      "level": 3,
+      "alarmtype": 0
+    },
+    {
+      "type": 54,
+      "name": "电气特性智能分析",
+      "level": 1,
+      "alarmtype": 1
+    },
+    {
+      "type": 144,
+      "name": "道岔动作智能分析",
+      "level": 1,
+      "alarmtype": 1
+    }
+  ],
+  "self_diagnostic_type_set": [
+    50,
+    54,
+    55,
+    67,
+    113,
+    124,
+    125,
+    130,
+    132,
+    133,
+    135,
+    136,
+    139,
+    140,
+    141,
+    144,
+    145,
+    150,
+    163,
+    200,
+    201,
+    207,
+    209,
+    210,
+    219,
+    227,
+    237
+  ]
+}

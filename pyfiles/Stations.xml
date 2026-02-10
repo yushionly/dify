@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 车站列表 -->
+<Stations version="0.0.0.0">
+  <!--  name : 汉字名  id : 地址码  telename : 电报码 -->
+ <Sta name="何家村线路所                    " ProVersion="10"  id="201 " telename="HCX" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间" IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="朴树线路所                     " ProVersion="10"  id="202 " telename="SHX" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间" IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继2                      " ProVersion="10"  id="203 " telename="CG2" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间" IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="丰城东站                       " ProVersion="10"  id="204 " telename="FCD" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间" IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="何家线路所远控室               " ProVersion="10"  id="205 " telename="HJK" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间" IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="朴树线路所远控室               " ProVersion="10"  id="206 " telename="SHK" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间" IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继3                      " ProVersion="10"  id="207 " telename="CG3" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间" IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继4                      " ProVersion="10"  id="208 " telename="CG4" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="樟树东高速场                   " ProVersion="10"  id="209 " telename="ZDG" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继5                      " ProVersion="10"  id="210 " telename="CG5" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继6                      " ProVersion="10"  id="211 " telename="CG6" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="新干东站                       " ProVersion="10"  id="212 " telename="XGD" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继7                      " ProVersion="10"  id="213 " telename="CG7" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="峡江高速场                     " ProVersion="10"  id="214 " telename="XAG" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继8                      " ProVersion="10"  id="215 " telename="CG8" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继9                      " ProVersion="10"  id="216 " telename="CG9" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继10                     " ProVersion="10"  id="217 " telename="C10" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="吉水西站                       " ProVersion="10"  id="218 " telename="JSX" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 "  IsAdminister="true"/>
+  <Sta name="昌赣中继11                     " ProVersion="10"  id="219 " telename="C11" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="吉安西站                       " ProVersion="10"  id="220 " telename="JAX" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="范家线路所远控室               " ProVersion="10"  id="221 " telename="GTK" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="范家线路所                     " ProVersion="10"  id="222 " telename="GTX" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继12                     " ProVersion="10"  id="223 " telename="C12" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="泰和高速场                     " ProVersion="10"  id="224 " telename="THG" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继13                     " ProVersion="10"  id="225 " telename="C13" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继14                     " ProVersion="10"  id="226 " telename="C14" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="万安县站                       " ProVersion="10"  id="227 " telename="WAZ" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继15                     " ProVersion="10"  id="228 " telename="C15" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继16                     " ProVersion="10"  id="229 " telename="C16" EleSection="南昌电务段        " Workshop="吉安西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继17                     " ProVersion="10"  id="230 " telename="C17" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继18                     " ProVersion="10"  id="231 " telename="C18" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="兴国西站                       " ProVersion="10"  id="232 " telename="XGX" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继19                     " ProVersion="10"  id="233 " telename="C19" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继20                     " ProVersion="10"  id="234 " telename="C20" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣县北站                       " ProVersion="10"  id="235 " telename="GBZ" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继21                     " ProVersion="10"  id="236 " telename="C21" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="昌赣中继22                     " ProVersion="10"  id="237 " telename="C22" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣厦线路所                     " ProVersion="10"  id="238 " telename="GXX" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣州西站                       " ProVersion="10"  id="239 " telename="GXZ" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣厦线路所远控室               " ProVersion="10"  id="240 " telename="GXK" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣州西动车所                   " ProVersion="10"  id="241 " telename="GXD" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣州西监测中心监测             " ProVersion="10"  id="242 " telename="GXJ" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="南昌西动车二所                 " ProVersion="10"  id="243 " telename="XES" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+  <Sta name="南昌西边跨机房监测             " ProVersion="10"  id="244 " telename="BKF" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+  <Sta name="东村线路所                     " ProVersion="10"  id="245 " telename="DCX" EleSection="南昌电务段        " Workshop="向塘信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="东村线路所远控室               " ProVersion="10"  id="246 " telename="DCK" EleSection="南昌电务段        " Workshop="向塘信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="南街线路所                     " ProVersion="10"  id="247 " telename="NJX" EleSection="南昌电务段        " Workshop="吉安信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣州西RBC机房                  " ProVersion="10"  id="248 " telename="GBC" EleSection="南昌电务段        " Workshop="南昌电子设备车间  " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣深中继站0                    " ProVersion="10"  id="250 " telename="GS0" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣深中继站1                    " ProVersion="10"  id="251 " telename="GS1" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣深中继站2                    " ProVersion="10"  id="252 " telename="GS2" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣深中继站3                    " ProVersion="10"  id="253 " telename="GS3" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="信丰西站                       " ProVersion="10"  id="254 " telename="XFX" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣深中继站4                    " ProVersion="10"  id="255 " telename="GS4" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="赣深中继站5                    " ProVersion="10"  id="256 " telename="GS5" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true" />
+  <Sta name="赣深中继站6                    " ProVersion="10"  id="257 " telename="GS6" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="龙南东站                       " ProVersion="10"  id="258 " telename="LND" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="赣深中继站7                    " ProVersion="10"  id="259 " telename="GS7" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="定南南站                       " ProVersion="10"  id="260 " telename="DNN" EleSection="南昌电务段        " Workshop="赣州西高铁车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+                                                                                                                                                                                   
+  <Sta name="安九中继15                     " ProVersion="10"  id="265 " telename="A15" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="黄梅南站                       " ProVersion="10"  id="266 " telename="HMN" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="安九中继16                     " ProVersion="10"  id="267 " telename="A16" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="安九中继17                     " ProVersion="10"  id="268 " telename="A17" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="武九中继3                      " ProVersion="10"  id="270 " telename="WJ3" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="瑞昌西                         " ProVersion="10"  id="271 " telename="RCX" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="武九中继4                      " ProVersion="10"  id="272 " telename="WJ4" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="柴桑站                         " ProVersion="10"  id="273 " telename="CSZ" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="庐山客专场                     " ProVersion="10"  id="274 " telename="LSZ" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="洪家山线路所                   " ProVersion="10"  id="275 " telename="HJS" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="洪家山线路所远控室             " ProVersion="10"  id="276 " telename="LSK" EleSection="南昌电务段        " Workshop="庐山城际车间      " IsHLHT="false" Company="通号 " IsAdminister="true"/>
+  <Sta name="楼子下线路所                   " ProVersion="20"  id="280 " telename="LZX" EleSection="南昌电务段        " Workshop="赣州信号车间      " IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+  <Sta name="旗口站                         " ProVersion="20"  id="281 " telename="QKZ" EleSection="南昌电务段        " Workshop="信丰信号车间      " IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+  <Sta name="新城站                         " ProVersion="20"  id="282 " telename="XCZ" EleSection="南昌电务段        " Workshop="信丰信号车间      " IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+  <Sta name="池江站                         " ProVersion="20"  id="283 " telename="CJZ" EleSection="南昌电务段        " Workshop="信丰信号车间      " IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+  <Sta name="大余站                         " ProVersion="20"  id="284 " telename="DYZ" EleSection="南昌电务段        " Workshop="信丰信号车间      " IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+  <Sta name="梅关站                         " ProVersion="20"  id="285 " telename="MGZ" EleSection="南昌电务段        " Workshop="信丰信号车间      " IsHLHT="true " Company="铁大 " IsAdminister="true"/>
+                                                                                                                                                                                   
+  <Sta name="樟岚所                         " ProVersion="10"  id="290 " telename="FNX" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="长乐站                         " ProVersion="10"  id="291 " telename="CLZ" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="长乐东站                       " ProVersion="10"  id="292 " telename="CLD" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="长乐南站                       " ProVersion="10"  id="293 " telename="SXZ" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福平中继1                      " ProVersion="10"  id="294 " telename="FP1" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="平潭站                         " ProVersion="10"  id="295 " telename="PTZ" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+                                                                       
+  <Sta name="温郊站                         " ProVersion="20"  id="301 " telename="WJZ" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="明溪站                         " ProVersion="20"  id="302 " telename="MXZ" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="三元西站                       " ProVersion="20"  id="303 " telename="SYX" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="西坑站                         " ProVersion="20"  id="304 " telename="XKS" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="永安南兴泉场                   " ProVersion="20"  id="305 " telename="YNX" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="葛州站                         " ProVersion="20"  id="306 " telename="GZX" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="广前站                         " ProVersion="20"  id="307 " telename="GQZ" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="小湖站                         " ProVersion="20"  id="308 " telename="XHZ" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="大田北站                       " ProVersion="20"  id="309 " telename="DTB" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="洋田站                         " ProVersion="20"  id="310 " telename="YTX" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="德化站                         " ProVersion="20"  id="311 " telename="DHZ" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="永春站                         " ProVersion="20"  id="312 " telename="YCZ" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="蓬华站                         " ProVersion="20"  id="313 " telename="PHX" EleSection="福州电务段        " Workshop="永安南普速信号车间" IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="蓬鲁站                         " ProVersion="20"  id="314 " telename="PLZ" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="安溪东站                       " ProVersion="20"  id="315 " telename="AXD" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="南安北站                       " ProVersion="20"  id="316 " telename="NAB" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="雪峰站                         " ProVersion="20"  id="317 " telename="XFZ" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="洪濑站                         " ProVersion="20"  id="318 " telename="HLZ" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="南安装卸站                     " ProVersion="20"  id="319 " telename="NAZ" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="黄塘站                         " ProVersion="20"  id="320 " telename="HTX" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+                                                             
+  <Sta name="隘楼岭站                       " ProVersion="10"  id="321 " telename="ALL" EleSection="福州电务段        " Workshop="宁化信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="宁化站                         " ProVersion="10"  id="322 " telename="NHZ" EleSection="福州电务段        " Workshop="宁化信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="清流站                         " ProVersion="10"  id="323 " telename="QLZ" EleSection="福州电务段        " Workshop="宁化信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="惠安南站                       " ProVersion="10"  id="324 " telename="HAN" EleSection="福州电务段        " Workshop="泉州信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+
+  <Sta name="鹰潭南站                       " ProVersion="20"  id="332 " telename="YTN" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="铁大 " IsAdminister="true"  />
+  <Sta name="余家站                         " ProVersion="10"  id="369 " telename="YJZ" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="肖家站                         " ProVersion="10"  id="349 " telename="XJS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="上清站                         " ProVersion="10"  id="338 " telename="SES" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="圳上站                         " ProVersion="10"  id="395 " telename="ZSS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="富庶岭站                       " ProVersion="10"  id="334 " telename="FSS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="饶桥站                         " ProVersion="10"  id="335 " telename="RQS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="高阜站                         " ProVersion="10"  id="336 " telename="GFS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="资溪站                         " ProVersion="10"  id="337 " telename="ZXS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="铁关村站                       " ProVersion="06"  id="339 " telename="TCS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="园岱站                         " ProVersion="06"  id="340 " telename="YDZ" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="大禾山站                       " ProVersion="10"  id="341 " telename="DSS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="华桥站                         " ProVersion="10"  id="342 " telename="HQS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="大源村站                       " ProVersion="06"  id="343 " telename="DYS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="西陇站                         " ProVersion="06"  id="344 " telename="XGS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="光泽站                         " ProVersion="10"  id="345 " telename="GZZ" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="和顺站                         " ProVersion="10"  id="346 " telename="HSZ" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="莫口站                         " ProVersion="10"  id="347 " telename="MKS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="药村站                         " ProVersion="10"  id="348 " telename="YCS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="邵武站                         " ProVersion="20"  id="331 " telename="SWZ" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+
+  <Sta name="下王塘站                       " ProVersion="10"  id="350 " telename="XWS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="晒口站                         " ProVersion="10"  id="351 " telename="SKS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="吴家塘站                       " ProVersion="10"  id="352 " telename="WTS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="官墩站                         " ProVersion="10"  id="353 " telename="GDS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="拿口站                         " ProVersion="10"  id="354 " telename="NKS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="卫闽站                         " ProVersion="10"  id="355 " telename="WMS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="陈坊站                         " ProVersion="10"  id="356 " telename="CFS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="富文站                         " ProVersion="20"  id="414 " telename="FWA" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+
+  <Sta name="浦上站                         " ProVersion="10"  id="358 " telename="PSS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="吉舟站                         " ProVersion="20"  id="359 " telename="JZS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="顺昌站                         " ProVersion="10"  id="360 " telename="SCS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="洋口站                         " ProVersion="10"  id="361 " telename="YOS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="建西站                         " ProVersion="10"  id="362 " telename="JIS" EleSection="福州电务段        " Workshop="邵武信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="峡阳站                         " ProVersion="10"  id="363 " telename="XAS" EleSection="福州电务段        " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="照口站                         " ProVersion="10"  id="364 " telename="ZOS" EleSection="福州电务段        " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="来舟到发场                     " ProVersion="10"  id="365 " telename="LDF" EleSection="福州电务段        " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="来舟Ⅲ场（编尾）               " ProVersion="10"  id="366 " telename="LZB" EleSection="福州电务段        " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true"/>
+  <Sta name="来舟到达场                     " ProVersion="10"  id="367 " telename="LDD" EleSection="福州电务段        " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="外洋站                         " ProVersion="10"  id="368 " telename="WYZ" EleSection="福州电务段        " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="青州站                         " ProVersion="20"  id="330 " telename="QZZ" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+
+  <Sta name="涌溪站                         " ProVersion="20"  id="370 " telename="YXA" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="龙江村站                       " ProVersion="10"  id="371 " telename="LJS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="高砂站                         " ProVersion="10"  id="372 " telename="GSZ" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="万能站                         " ProVersion="20"  id="373 " telename="WNB" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="铁大 " IsAdminister="true" />
+  <Sta name="三明北鹰厦场                   " ProVersion="10"  id="374 " telename="SM3" EleSection="福州电务段        " Workshop="三明北信号车间    " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+                                                             
+  <Sta name="大洲站                         " ProVersion="10"  id="375 " telename="DZZ" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="上游站                         " ProVersion="10"  id="376 " telename="SYS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="三明东站                       " ProVersion="10"  id="377 " telename="SMD" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="三元区站                       " ProVersion="10"  id="378 " telename="SMS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="荆西站                         " ProVersion="10"  id="379 " telename="JXS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="上房山站                       " ProVersion="10"  id="380 " telename="SFS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="贡川站                         " ProVersion="10"  id="381 " telename="GCZ" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="益口站                         " ProVersion="10"  id="382 " telename="YKZ" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="永安站                         " ProVersion="10"  id="383 " telename="YAS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="永浆站                         " ProVersion="10"  id="384 " telename="YFS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="桂口站                         " ProVersion="10"  id="385 " telename="GUS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="西洋站                         " ProVersion="10"  id="386 " telename="XYS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="打虎坑站                       " ProVersion="10"  id="387 " telename="DUS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="岭头站                         " ProVersion="10"  id="388 " telename="LOS" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="柯周坑站                       " ProVersion="10"  id="389 " telename="KZK" EleSection="福州电务段        " Workshop="永安信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="城口站                         " ProVersion="10"  id="390 " telename="CKS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="麦园站                         " ProVersion="10"  id="391 " telename="MYS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="城门站                         " ProVersion="10"  id="392 " telename="CMS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="钱坂站                         " ProVersion="10"  id="393 " telename="QBS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="卓宅站                         " ProVersion="10"  id="394 " telename="ZAS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="漳平站                         " ProVersion="20"  id="333 " telename="ZPS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+
+  <Sta name="芦芝站                         " ProVersion="10"  id="396 " telename="LZS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="易坑站                         " ProVersion="10"  id="397 " telename="YES" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="梅水坑站                       " ProVersion="10"  id="398 " telename="MSS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="西陂站                         " ProVersion="10"  id="399 " telename="XPS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="绵良站                         " ProVersion="10"  id="400 " telename="MLS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="华安站                         " ProVersion="20"  id="401 " telename="HAS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="溪南坂站                       " ProVersion="10"  id="404 " telename="XNS" EleSection="福州电务段        " Workshop="漳平信号车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="利水站                         " ProVersion="10"  id="405 " telename="LSS" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="磹口站                         " ProVersion="10"  id="406 " telename="TKS" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="长泰站                         " ProVersion="10"  id="407 " telename="CTS" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="漳州东站                       " ProVersion="10"  id="408 " telename="ZZD" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="龙海站                         " ProVersion="10"  id="409 " telename="LHZ" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="K651线路所                     " ProVersion="10"  id="410 " telename="YXS" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="东孚到发场及调车场             " ProVersion="10"  id="411 " telename="DFX" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="前场二场                       " ProVersion="10"  id="412 " telename="QCH" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+  <Sta name="东孚到达场                     " ProVersion="10"  id="413 " telename="DFI" EleSection="福州电务段        " Workshop="东孚驼峰车间      " IsHLHT="true " Company="辉煌 " IsAdminister="true" />
+
+                                                                                                                                                                       
+  <Sta name="福州南动车二所                 " ProVersion="20"  id="420 " telename="FNE" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福州南CCS监测                  " ProVersion="20"  id="421 " telename="FCC" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福州南甬广场                   " ProVersion="20"  id="422 " telename="FNY" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福州南RBC监测                  " ProVersion="20"  id="423 " telename="FRB" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福州南远程控制室               " ProVersion="20"  id="424 " telename="FNK" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继1                      " ProVersion="20"  id="425 " telename="FX1" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继2                      " ProVersion="20"  id="426 " telename="FX2" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福清西站                       " ProVersion="20"  id="427 " telename="FQX" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继3                      " ProVersion="20"  id="428 " telename="FX3" EleSection="福州电务段        " Workshop="福州南信号车间    " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继4                      " ProVersion="20"  id="429 " telename="FX4" EleSection="福州电务段        " Workshop="莆田信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继5                      " ProVersion="20"  id="430 " telename="FX5" EleSection="福州电务段        " Workshop="莆田信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="莆田甬广场                     " ProVersion="20"  id="431 " telename="PTY" EleSection="福州电务段        " Workshop="莆田信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继6                      " ProVersion="20"  id="432 " telename="FX6" EleSection="福州电务段        " Workshop="莆田信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继7                      " ProVersion="20"  id="433 " telename="FX7" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="泉港站                         " ProVersion="20"  id="434 " telename="QGZ" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继8                      " ProVersion="20"  id="435 " telename="FX8" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继9                      " ProVersion="20"  id="436 " telename="FX9" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="泉州东站                       " ProVersion="20"  id="437 " telename="QZD" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继10                     " ProVersion="20"  id="438 " telename="F10" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继11                     " ProVersion="20"  id="439 " telename="F11" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="泉州南站                       " ProVersion="20"  id="440 " telename="QZN" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继12                     " ProVersion="20"  id="441 " telename="F12" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继13                     " ProVersion="20"  id="442 " telename="F13" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继14                     " ProVersion="20"  id="443 " telename="F14" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继15                     " ProVersion="20"  id="444 " telename="F15" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="禾山所                         " ProVersion="20"  id="445 " telename="HSS" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="厦门北甬广场                   " ProVersion="20"  id="446 " telename="XBY" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="禾山所远程控制室               " ProVersion="20"  id="447 " telename="HSK" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="厦门北动车二所                 " ProVersion="20"  id="448 " telename="XBE" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继16                     " ProVersion="20"  id="449 " telename="F16" EleSection="福州电务段        " Workshop="厦门北高铁信号车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福漳中继17                     " ProVersion="20"  id="450 " telename="F17" EleSection="福州电务段        " Workshop="漳州信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="北溪头所                       " ProVersion="20"  id="451 " telename="BXS" EleSection="福州电务段        " Workshop="漳州信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="漳州杭深场                     " ProVersion="20"  id="452 " telename="ZZZ" EleSection="福州电务段        " Workshop="漳州信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="漳州存车场                     " ProVersion="20"  id="453 " telename="ZZC" EleSection="福州电务段        " Workshop="漳州信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="漳州远程控制室                 " ProVersion="20"  id="454 " telename="ZZK" EleSection="福州电务段        " Workshop="漳州信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+                                                                                                                                                                                   
+  <Sta name="杭长中继10                     " ProVersion="10"  id="460 " telename="H10" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继11                     " ProVersion="10"  id="461 " telename="H11" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="玉山南站                       " ProVersion="10"  id="462 " telename="YSN" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继12                     " ProVersion="10"  id="463 " telename="H12" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继12'                    " ProVersion="10"  id="464 " telename="12H" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="京福线路所                     " ProVersion="10"  id="465 " telename="JFX" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="上饶高速场                     " ProVersion="10"  id="466 " telename="SRG" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继13                     " ProVersion="10"  id="467 " telename="H13" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继14                     " ProVersion="10"  id="468 " telename="H14" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间  " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继15                     " ProVersion="10"  id="469 " telename="H15" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="弋阳高速场                     " ProVersion="10"  id="470 " telename="YYZ" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继16                     " ProVersion="10"  id="471 " telename="H16" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继17                     " ProVersion="10"  id="472 " telename="H17" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="鹰潭北站                       " ProVersion="10"  id="473 " telename="YTB" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继18                     " ProVersion="10"  id="474 " telename="H18" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继19                     " ProVersion="10"  id="475 " telename="H19" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="抚州东站                       " ProVersion="10"  id="476 " telename="FZD" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继20                     " ProVersion="10"  id="477 " telename="H20" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继21                     " ProVersion="10"  id="478 " telename="H21" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="进贤南站                       " ProVersion="10"  id="479 " telename="JXN" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继22                     " ProVersion="10"  id="480 " telename="H22" EleSection="南昌高铁基础设施段" Workshop="鹰潭北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="横岗线路所                     " ProVersion="10"  id="481 " telename="HGX" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继23                     " ProVersion="10"  id="482 " telename="H23" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="南昌西高速场                   " ProVersion="10"  id="483 " telename="NCX" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="南昌西综控室                   " ProVersion="10"  id="484 " telename="NXK" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="向莆线路所                     " ProVersion="10"  id="485 " telename="XPX" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继24                     " ProVersion="10"  id="486 " telename="H24" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继25                     " ProVersion="10"  id="487 " telename="H25" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="高安站                         " ProVersion="10"  id="488 " telename="GAZ" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继26                     " ProVersion="10"  id="489 " telename="H26" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继27                     " ProVersion="10"  id="490 " telename="H27" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继28                     " ProVersion="10"  id="491 " telename="H28" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继29                     " ProVersion="10"  id="492 " telename="H29" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="新余北站                       " ProVersion="10"  id="493 " telename="XYB" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继30                     " ProVersion="10"  id="494 " telename="H30" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继31                     " ProVersion="10"  id="495 " telename="H31" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继32                     " ProVersion="10"  id="496 " telename="H32" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="宜春高速场                     " ProVersion="10"  id="497 " telename="YCG" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继33                     " ProVersion="10"  id="498 " telename="H33" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继34                     " ProVersion="10"  id="499 " telename="H34" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继35                     " ProVersion="10"  id="500 " telename="H35" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="萍乡北站                       " ProVersion="10"  id="501 " telename="PXB" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="杭长中继36                     " ProVersion="10"  id="502 " telename="H36" EleSection="南昌高铁基础设施段" Workshop="新余北综合维修车间" IsHLHT="false" Company="通号 " IsAdminister="true"  />  
+                                                           
+  <Sta name="东乡站                         " ProVersion="20"  id="510 " telename="DXZ" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="余江站                         " ProVersion="20"  id="511 " telename="YJS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+   <Sta name="鹰潭站                        " ProVersion="10"  id="512 " telename="YTZ" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="贵溪站                         " ProVersion="10"  id="513 " telename="GXS" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="鹰潭三场                       " ProVersion="10"  id="514 " telename="YT3" EleSection="南昌电务段        " Workshop="鹰潭驼峰车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="鹰潭一场                       " ProVersion="10"  id="515 " telename="YTI" EleSection="南昌电务段        " Workshop="鹰潭驼峰车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="鹰潭编尾                       " ProVersion="10"  id="516 " telename="YTW" EleSection="南昌电务段        " Workshop="鹰潭驼峰车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="湖沿站                         " ProVersion="10"  id="517 " telename="HYZ" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="玉山站                         " ProVersion="10"  id="518 " telename="YSZ" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="广丰站                         " ProVersion="10"  id="519 " telename="GFF" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="上饶普速场                     " ProVersion="10"  id="520 " telename="SRP" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="385线路所                      " ProVersion="10"  id="521 " telename="K8X" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="枫岭头站                       " ProVersion="10"  id="522 " telename="FLT" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="坑口站                         " ProVersion="10"  id="523 " telename="KKZ" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="横峰站                         " ProVersion="10"  id="524 " telename="HFZ" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="弋阳普速场                     " ProVersion="10"  id="525 " telename="YYP" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true" />
+  <Sta name="河潭埠站                       " ProVersion="10"  id="526 " telename="HTB" EleSection="南昌电务段        " Workshop="上饶信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="分宜站                         " ProVersion="20"  id="527 " telename="FZY" EleSection="南昌电务段        " Workshop="新余信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="新余站                         " ProVersion="10"  id="528 " telename="XYZ" EleSection="南昌电务段        " Workshop="新余信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="罗坊站                         " ProVersion="10"  id="529 " telename="LFZ" EleSection="南昌电务段        " Workshop="新余信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="黄土岗站                       " ProVersion="10"  id="530 " telename="HTG" EleSection="南昌电务段        " Workshop="新余信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="临江镇站                       " ProVersion="10"  id="531 " telename="LJG" EleSection="南昌电务段        " Workshop="新余信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="灯芯桥站                       " ProVersion="20"  id="532 " telename="DQX" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"  />
+  <Sta name="姚家洲站                       " ProVersion="20"  id="533 " telename="YZA" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"  />
+  <Sta name="萍乡新场                       " ProVersion="20"  id="534 " telename="PXZ" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"  />
+  <Sta name="泉江站                         " ProVersion="10"  id="535 " telename="QJZ" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="白源站                         " ProVersion="10"  id="536 " telename="BYZ" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"  />
+  <Sta name="芦溪站                         " ProVersion="20"  id="537 " telename="LXA" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="西村站                         " ProVersion="10"  id="538 " telename="XCS" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"  />
+  <Sta name="宜春西站                       " ProVersion="10"  id="539 " telename="YCX" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="宜春普速场                     " ProVersion="10"  id="540 " telename="YCP" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="彬江站                         " ProVersion="10"  id="541 " telename="BJZ" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"  />
+  <Sta name="衙前站                         " ProVersion="20"  id="542 " telename="YQZ" EleSection="南昌电务段        " Workshop="向塘信号车间      " IsHLHT="true " Company="路通" IsAdminister="true" />
+  <Sta name="进贤站                         " ProVersion="20"  id="543 " telename="JXZ" EleSection="南昌电务段        " Workshop="向塘信号车间      " IsHLHT="true " Company="路通" IsAdminister="true" />
+  <Sta name="温家圳                         " ProVersion="20"  id="544 " telename="WJJ" EleSection="南昌电务段        " Workshop="向塘信号车间      " IsHLHT="true " Company="路通" IsAdminister="true" />
+  <Sta name="梁家渡站                       " ProVersion="20"  id="545 " telename="LJD" EleSection="南昌电务段        " Workshop="向塘信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="潭岗站                         " ProVersion="20"  id="546 " telename="TGZ" EleSection="南昌电务段        " Workshop="向塘信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="张家山站                       " ProVersion="10"  id="547 " telename="ZJS" EleSection="南昌电务段        " Workshop="樟树信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="樟树站                         " ProVersion="10"  id="548 " telename="ZSZ" EleSection="南昌电务段        " Workshop="樟树信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="拖船埠站                       " ProVersion="10"  id="549 " telename="TCB" EleSection="南昌电务段        " Workshop="樟树信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="丰城站                         " ProVersion="10"  id="550 " telename="FCZ" EleSection="南昌电务段        " Workshop="樟树信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />                                                      
+  <Sta name="童家站                         " ProVersion="10"  id="551 " telename="TJZ" EleSection="南昌电务段        " Workshop="鹰潭普速车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="河下站                         " ProVersion="10"  id="552 " telename="HXZ" EleSection="南昌电务段        " Workshop="新余信号车间      " IsHLHT="true " Company="路通" IsAdminister="true"   /> 
+  <Sta name="鹰潭II场驼峰                   " ProVersion="20"  id="553 " telename="YTE" EleSection="南昌电务段        " Workshop="鹰潭驼峰车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />                                                           
+  <Sta name="萍乡老场                       " ProVersion="10"  id="554 " telename="PXL" EleSection="南昌电务段        " Workshop="萍乡普速车间      " IsHLHT="true " Company="路通 " IsAdminister="true"  />                                                                                                                                                                
+  <Sta name="河下培训基地                   " ProVersion="10"  id="556 " telename="HPX" EleSection="南昌电务段        " Workshop="新余信号车间      " IsHLHT="true " Company="路通 " IsAdminister="true"  />                                                                                                                                                                
+
+  <Sta name="可门II场STP机房                " ProVersion="20"  id="559 " telename="KME" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />                                                            
+  <Sta name="温福中继2                      " ProVersion="10"  id="560 " telename="ZJ2" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福鼎站                         " ProVersion="10"  id="561 " telename="FDZ" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="太姥山站                       " ProVersion="10"  id="562 " telename="TMS" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="温福中继3                      " ProVersion="10"  id="563 " telename="ZJ3" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="霞浦站                         " ProVersion="10"  id="564 " telename="XPZ" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="温福中继4                      " ProVersion="10"  id="565 " telename="ZJ4" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福安站                         " ProVersion="10"  id="566 " telename="FAZ" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="温福中继5                      " ProVersion="10"  id="567 " telename="ZJ5" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="宁德站                         " ProVersion="10"  id="568 " telename="NDZ" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="温福中继6                      " ProVersion="10"  id="569 " telename="ZJ6" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="罗源站                         " ProVersion="10"  id="570 " telename="LYZ" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="透堡站                         " ProVersion="10"  id="571 " telename="TBZ" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="可门站                         " ProVersion="20"  id="572 " telename="KMZ" EleSection="福州电务段        " Workshop="宁德信号车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="连江站                         " ProVersion="10"  id="573 " telename="LJZ" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="温福中继7                      " ProVersion="10"  id="574 " telename="ZJ7" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="温福线路所                     " ProVersion="10"  id="575 " telename="WFX" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福厦线路所                     " ProVersion="10"  id="576 " telename="FXX" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="樟林线路所                     " ProVersion="10"  id="577 " telename="ZLX" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="樟林I场                        " ProVersion="10"  id="578 " telename="ZLY" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="樟林II场                       " ProVersion="10"  id="579 " telename="ZLE" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="樟林III场                      " ProVersion="10"  id="580 " telename="ZLS" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福州南杭深场                   " ProVersion="10"  id="581 " telename="FZN" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="福州南动车一所                 " ProVersion="10"  id="582 " telename="FND" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+  <Sta name="樟林三所远控                   " ProVersion="20"  id="583 " telename="ZLK" EleSection="福州电务段        " Workshop="樟林驼峰车间      " IsHLHT="false" Company="通号 " IsAdminister="true"  />
+
+  <Sta name="福州RBC监测                    " ProVersion="10" id="584 " telename="FRC" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="福厦中继1                      " ProVersion="10" id="586 " telename="Z1F" EleSection="福州电务段         " Workshop="福州南信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="福厦中继2                      " ProVersion="10" id="587 " telename="Z2F" EleSection="福州电务段         " Workshop="福州南信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="福清站                         " ProVersion="10" id="588 " telename="FQF" EleSection="福州电务段         " Workshop="福州南信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="渔溪站                         " ProVersion="10" id="589 " telename="YXF" EleSection="福州电务段         " Workshop="莆田信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="涵江站                         " ProVersion="10" id="590 " telename="HJF" EleSection="福州电务段         " Workshop="莆田信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="莆田杭深场                     " ProVersion="10" id="591 " telename="PTF" EleSection="福州电务段         " Workshop="莆田信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="福厦中继3                      " ProVersion="10" id="592 " telename="Z3F" EleSection="福州电务段         " Workshop="莆田信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="仙游站                         " ProVersion="10" id="593 " telename="XYF" EleSection="福州电务段         " Workshop="莆田信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="福厦中继4                      " ProVersion="10" id="594 " telename="Z4F" EleSection="福州电务段         " Workshop="莆田信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="惠安站                         " ProVersion="10" id="595 " telename="HAF" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="泉州站                         " ProVersion="10" id="596 " telename="QZF" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="福厦中继6                      " ProVersion="10" id="597 " telename="Z6F" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="晋江站                         " ProVersion="10" id="598 " telename="JJF" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="福厦中继7                      " ProVersion="10" id="599 " telename="Z7F" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="翔安站                         " ProVersion="10" id="600 " telename="XAF" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦门北杭深场                   " ProVersion="10" id="601 " telename="XXF" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦门北动车一所                 " ProVersion="10" id="602 " telename="XBD" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦门北客车技术整备所           " ProVersion="10" id="603 " telename="XBK" EleSection="福州电务段         " Workshop="厦门北信号车间    " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                          
+  <Sta name="杏林站                         " ProVersion="10" id="604 " telename="XLS" EleSection="福州电务段         " Workshop="厦门信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="高崎II场                       " ProVersion="10" id="605 " telename="X2S" EleSection="福州电务段         " Workshop="厦门信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="高崎I场                        " ProVersion="06" id="606 " telename="XMI" EleSection="福州电务段         " Workshop="厦门信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦门站                         " ProVersion="10" id="607 " telename="XMF" EleSection="福州电务段         " Workshop="厦门信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦门客车技术整备所             " ProVersion="06" id="608 " telename="XMK" EleSection="福州电务段         " Workshop="厦门信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="前场I场                        " ProVersion="10" id="609 " telename="QCZ" EleSection="福州电务段         " Workshop="厦门信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="角美站                         " ProVersion="10" id="610 " telename="JMZ" EleSection="福州电务段         " Workshop="厦门信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦深中继1                      " ProVersion="10" id="611 " telename="Z1Z" EleSection="福州电务段         " Workshop="漳州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦深中继2                      " ProVersion="10" id="612 " telename="Z2Z" EleSection="福州电务段         " Workshop="漳州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="漳浦站                         " ProVersion="10" id="613 " telename="ZPZ" EleSection="福州电务段         " Workshop="漳州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦深中继3                      " ProVersion="10" id="614 " telename="Z3Z" EleSection="福州电务段         " Workshop="漳州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="云霄站                         " ProVersion="10" id="615 " telename="YAZ" EleSection="福州电务段         " Workshop="漳州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="厦深中继4                      " ProVersion="10" id="616 " telename="Z4Z" EleSection="福州电务段         " Workshop="漳州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="诏安站                         " ProVersion="10" id="617 " telename="ZAZ" EleSection="福州电务段         " Workshop="漳州信号车间      " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+
+  <Sta name="庐山城际场                     " ProVersion="10" id="620 "  telename="LSC" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="K23线路所                      " ProVersion="10" id="621 "  telename="K23" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="昌九城际中继1                  " ProVersion="10" id="622 "  telename="CJ1" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="德安城际场                     " ProVersion="20" id="623 "  telename="DAC" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="共青城城际场                   " ProVersion="10" id="624 "  telename="GQC" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="昌九城际中继2                  " ProVersion="10" id="625 "  telename="CJ2" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="永修城际场                     " ProVersion="10" id="626 "  telename="YXC" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="昌九城际中继3                  " ProVersion="10" id="627 "  telename="CJ3" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="乐化城际场                     " ProVersion="10" id="628 "  telename="LHC" EleSection="南昌电务段        " Workshop="永修城际车间      " IsHLHT="true " Company="路通" IsAdminister="true"   /> 
+                                                                                                                    
+  <Sta name="八景站                         " ProVersion="10" id="631 " telename="BJA" EleSection="南昌电务段        " Workshop="樟树信号车间       " IsHLHT="true " Company="路通" IsAdminister="true"   />
+                                                                                                                    
+  <Sta name="永平站                         " ProVersion="10" id="640 " telename="YPZ" EleSection="南昌电务段        " Workshop="上饶信号车间       " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="铅山西站                       " ProVersion="10" id="641 " telename="XSX" EleSection="南昌电务段        " Workshop="上饶信号车间       " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="茶亭站                         " ProVersion="10" id="642 " telename="CTH" EleSection="南昌电务段        " Workshop="上饶信号车间       " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="K3线路所                       " ProVersion="10" id="643 " telename="K3X" EleSection="南昌电务段        " Workshop="上饶信号车间       " IsHLHT="true " Company="路通" IsAdminister="true"   />
+
+  <Sta name="陈家寨                         " ProVersion="06" id="644 " telename="CJH" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="五里峰                         " ProVersion="06" id="645 " telename="WLF" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="黄莲坑                         " ProVersion="06" id="646 " telename="HLK" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="洋庄站                         " ProVersion="06" id="647 " telename="YZZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="四渡站                         " ProVersion="06" id="648 " telename="SDZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="武夷山                         " ProVersion="06" id="649 " telename="WYS" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="仙店站                         " ProVersion="06" id="650 " telename="XDZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="将口站                         " ProVersion="06" id="651 " telename="JKZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="建阳站                         " ProVersion="06" id="652 " telename="JYZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="杨墩站                         " ProVersion="06" id="653 " telename="YDH" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="徐墩站                         " ProVersion="06" id="654 " telename="XDA" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="建瓯站                         " ProVersion="06" id="655 " telename="JOZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="南雅站                         " ProVersion="06" id="656 " telename="NYZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="陈墩站                         " ProVersion="06" id="657 " telename="CDZ" EleSection="福州电务段         " Workshop="武夷山信号车间    " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="延平东                         " ProVersion="06" id="658 " telename="YPD" EleSection="福州电务段         " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="安济站                         " ProVersion="06" id="659 " telename="AJZ" EleSection="福州电务段         " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="葫芦山站                       " ProVersion="06" id="660 " telename="HLS" EleSection="福州电务段         " Workshop="来舟信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="下过溪站                       " ProVersion="06" id="661 " telename="XGI" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="樟湖板站                       " ProVersion="06" id="662 " telename="ZHB" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="古田站                         " ProVersion="06" id="663 " telename="GTZ" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="水口站                         " ProVersion="06" id="664 " telename="SKA" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="浦后站                         " ProVersion="06" id="665 " telename="PHA" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="大箬站                         " ProVersion="06" id="666 " telename="DNZ" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="闽清站                         " ProVersion="06" id="667 " telename="MQZ" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="大目埕站                       " ProVersion="06" id="668 " telename="DMC" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="白沙镇站                       " ProVersion="06" id="669 " telename="BSZ" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="闽侯站                         " ProVersion="06" id="670 " telename="MHZ" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="江坂站                         " ProVersion="06" id="671 " telename="JBZ" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="福州客技站                     " ProVersion="06" id="672 " telename="FZK" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="福州站                         " ProVersion="10" id="673 " telename="FZZ" EleSection="福州电务段         " Workshop="福州信号车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+                                                 
+  <Sta name="昌福中继2                      " ProVersion="20" id="680 " telename="CF2" EleSection="南昌电务段        " Workshop="向塘信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="大岗站                         " ProVersion="20" id="681 " telename="DGZ" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继3                      " ProVersion="20" id="682 " telename="CF3" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="抚州站                         " ProVersion="20" id="683 " telename="FZH" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="抚州北站                       " ProVersion="20" id="684 " telename="FZB" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="临川站                         " ProVersion="20" id="685 " telename="LCZ" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="腾桥站                         " ProVersion="20" id="686 " telename="TQZ" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继4                      " ProVersion="20" id="687 " telename="CF4" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  />
+  <Sta name="南城站                         " ProVersion="20" id="688 " telename="NCH" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继5                      " ProVersion="20" id="689 " telename="CF5" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="南丰站                         " ProVersion="20" id="690 " telename="NFZ" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继6                      " ProVersion="20" id="691 " telename="CF6" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继7                      " ProVersion="20" id="692 " telename="CF7" EleSection="南昌电务段        " Workshop="抚州信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="三江镇站                       " ProVersion="10" id="694 " telename="SJZ" EleSection="南昌电务段        " Workshop="向塘信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  /> 
+  <Sta name="建宁县北站                     " ProVersion="10" id="695 " telename="JNB" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继8                      " ProVersion="10" id="696 " telename="XP8" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="泰宁站                         " ProVersion="10" id="697 " telename="TNZ" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继9                      " ProVersion="10" id="698 " telename="XP9" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继10                     " ProVersion="10" id="699 " telename="P10" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="将乐站                         " ProVersion="10" id="700 " telename="JLZ" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继11                     " ProVersion="10" id="701 " telename="P11" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="夏茂站                         " ProVersion="10" id="702 " telename="XMZ" EleSection="福州电务段        " Workshop="泰宁信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继12                     " ProVersion="10" id="703 " telename="P12" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="三明北昌福场                   " ProVersion="10" id="704 " telename="SMB" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继13                     " ProVersion="10" id="705 " telename="P13" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继14                     " ProVersion="10" id="706 " telename="P14" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="尤溪站                         " ProVersion="10" id="707 " telename="YXZ" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继15                     " ProVersion="10" id="708 " telename="P15" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="中仙站                         " ProVersion="10" id="709 " telename="ZXZ" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继16                     " ProVersion="10" id="710 " telename="P16" EleSection="福州电务段        " Workshop="三明北信号车间        " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="长庆站                         " ProVersion="10" id="711 " telename="CQZ" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继17                     " ProVersion="10" id="712 " telename="P17" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继18                     " ProVersion="10" id="713 " telename="P18" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="永泰站                         " ProVersion="10" id="714 " telename="YTH" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继19                     " ProVersion="10" id="715 " telename="P19" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继20                     " ProVersion="10" id="716 " telename="P20" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                             
+  <Sta name="涵江北站                       " ProVersion="10" id="717 " telename="HJB" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                             
+  <Sta name="昌福中继21                     " ProVersion="10" id="718 " telename="P21" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继22                     " ProVersion="10" id="719 " telename="P22" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="昌福中继23                     " ProVersion="10" id="720 " telename="P23" EleSection="福州电务段        " Workshop="永泰信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="杜坞站                         " ProVersion="10" id="721 " telename="DWZ" EleSection="福州电务段        " Workshop="福州信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                                                                                                                                                                                                                                                                               
+
+  <Sta name="南昌西动车一所                 " ProVersion="20" id="723 " telename="NCY" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间    " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="南昌西城际场                   " ProVersion="20" id="724 " telename="NXC" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间    " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="昌福中继1                      " ProVersion="20" id="725 " telename="CF1" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间    " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="农大线路所                     " ProVersion="20" id="726 " telename="NDS" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间    " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+  <Sta name="南昌西城际场综控室             " ProVersion="20" id="727 " telename="NXZ" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间    " IsHLHT="true " Company="铁大  " IsAdminister="true"  /> 
+                                                                      
+  <Sta name="文竹站                         " ProVersion="10" id="730 " telename="WZZ" EleSection="南昌电务段        " Workshop="萍乡普速车间          " IsHLHT="true " Company="路通 "  IsAdminister="true" />
+  <Sta name="莲花站                         " ProVersion="10" id="731 " telename="LHT" EleSection="南昌电务段        " Workshop="萍乡普速车间          " IsHLHT="true " Company="路通 "  IsAdminister="true" />
+                                                                      
+  <Sta name="茅店站                         " ProVersion="20" id="740 " telename="MDZ" EleSection="南昌电务段       " Workshop="赣州信号车间           " IsHLHT="true " Company="路通"   IsAdminister="true" />
+  <Sta name="罗坳站                         " ProVersion="10" id="741 " telename="LAZ" EleSection="南昌电务段       " Workshop="赣州信号车间           " IsHLHT="true " Company="路通"   IsAdminister="true" />
+  <Sta name="于都普速场                     " ProVersion="10" id="742 " telename="YDP" EleSection="南昌电务段       " Workshop="赣州信号车间           " IsHLHT="true " Company="路通"   IsAdminister="true" />
+  <Sta name="会昌北普速场                   " ProVersion="10" id="743 " telename="HCP" EleSection="南昌电务段       " Workshop="赣州信号车间           " IsHLHT="true " Company="路通"   IsAdminister="true" />
+  <Sta name="黄麟站                         " ProVersion="20" id="744 " telename="HLH" EleSection="南昌电务段       " Workshop="赣州信号车间           " IsHLHT="true " Company="路通"   IsAdminister="true" />
+  <Sta name="石门圩                         " ProVersion="10" id="745 " telename="SMX" EleSection="南昌电务段       " Workshop="赣州信号车间           " IsHLHT="true " Company="路通"   IsAdminister="true" />  
+ 
+  <Sta name="小池镇站                       " ProVersion="20" id="746 " telename="XCF" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"   IsAdminister="true" /> 
+  <Sta name="蛟洋站                         " ProVersion="06" id="747 " telename="JYA" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="苎园站                         " ProVersion="20" id="748 " telename="ZYS" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="新泉镇站                       " ProVersion="20" id="749 " telename="XQF" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="中复站                         " ProVersion="20" id="750 " telename="ZFS" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="河田站                         " ProVersion="06" id="751 " telename="HTZ" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="长汀站                         " ProVersion="20" id="752 " telename="CTF" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="金峰山站                       " ProVersion="20" id="753 " telename="GCS" EleSection="福州电务段       " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+                                                                                                                                                                                
+  <Sta name="平江远控终端                   " ProVersion="10" id="760 " telename="GPY" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="平江线路所                     " ProVersion="10" id="761 " telename="GPJ" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="赣龙中继1                      " ProVersion="10" id="762 " telename="GL1" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="于都快速场                     " ProVersion="10" id="763 " telename="GYD" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="于都远控终端                   " ProVersion="10" id="764 " telename="GYY" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="赣龙中继2                      " ProVersion="10" id="765 " telename="GL2" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  />
+  <Sta name="会昌北快速场                   " ProVersion="10" id="766 " telename="HCB" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  /> 
+  <Sta name="赣龙中继3                      " ProVersion="10" id="767 " telename="GL3" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  /> 
+  <Sta name="瑞金站                         " ProVersion="10" id="768 " telename="GRJ" EleSection="南昌电务段       " Workshop="瑞金信号车间           " IsHLHT="true " Company="辉煌"  IsAdminister="true"  /> 
+                                                                                                                                                                                                                                                                                                         
+                                                
+  <Sta name="赣龙中继4                      " ProVersion="10" id="769 " telename="GL4" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                              
+  <Sta name="长汀南快速场                   " ProVersion="10" id="770 " telename="GCT" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                  
+  <Sta name="赣龙中继5                      " ProVersion="10" id="771 " telename="GL5" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="冠豸山南站                     " ProVersion="10" id="772 " telename="GGZ" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                             
+  <Sta name="赣龙中继6                      " ProVersion="10" id="773 " telename="GL6" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                               
+  <Sta name="赣龙中继7                      " ProVersion="10" id="774 " telename="GL7" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="古田会址站                     " ProVersion="10" id="775 " telename="GSH" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="赣龙中继8                      " ProVersion="10" id="776 " telename="GL8" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="矮陂线路所                     " ProVersion="10" id="777 " telename="GAP" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="龙岩动车存车场                 " ProVersion="10" id="778 " telename="LYC" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                   
+  <Sta name="龙岩合署办公点                 " ProVersion="10" id="779 " telename="LYH" EleSection="福州电务段        " Workshop="龙岩高铁信号车间     " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                    
+                                                
+  <Sta name="睦村站                         " ProVersion="10" id="780 "  telename="MCZ" EleSection="南昌电务段       " Workshop="井冈山信号车间       " IsHLHT="true " Company="路通"   IsAdminister="true" />  
+  <Sta name="龙市站                         " ProVersion="10" id="781 "  telename="LSH" EleSection="南昌电务段       " Workshop="井冈山信号车间       " IsHLHT="true " Company="路通"   IsAdminister="true" />  
+  <Sta name="白石站                         " ProVersion="10" id="782 "  telename="BSH" EleSection="南昌电务段       " Workshop="井冈山信号车间       " IsHLHT="true " Company="路通"   IsAdminister="true" />  
+  <Sta name="井冈山站                       " ProVersion="10" id="783 "  telename="JGS" EleSection="南昌电务段       " Workshop="井冈山信号车间       " IsHLHT="true " Company="路通"   IsAdminister="true" />  
+  <Sta name="江边站                         " ProVersion="10" id="784 "  telename="JBH" EleSection="南昌电务段       " Workshop="井冈山信号车间       " IsHLHT="true " Company="路通"   IsAdminister="true" />  
+  <Sta name="石坑站                         " ProVersion="10" id="785 "  telename="SKB" EleSection="南昌电务段       " Workshop="井冈山信号车间       " IsHLHT="true " Company="路通"   IsAdminister="true" />  
+  <Sta name="永阳街站                       " ProVersion="10" id="786 "  telename="YYJ" EleSection="南昌电务段       " Workshop="井冈山信号车间       " IsHLHT="true " Company="路通"   IsAdminister="true" />
+                                                           
+                                                           
+  <Sta name="龙岩RBC监测                    " ProVersion="20" id="790 " telename="LYR" EleSection="福州电务段        " Workshop="龙岩高铁信号车间      " IsHLHT="true " Company="卡斯柯" IsAdminister="true"  />
+  <Sta name="龙龙中继1                      " ProVersion="20" id="791 " telename="LL1" EleSection="福州电务段        " Workshop="龙岩高铁信号车间      " IsHLHT="true " Company="卡斯柯" IsAdminister="true"  />
+  <Sta name="上杭站                         " ProVersion="20" id="792 " telename="SHZ" EleSection="福州电务段        " Workshop="龙岩高铁信号车间      " IsHLHT="true " Company="卡斯柯" IsAdminister="true"  />
+  <Sta name="龙龙中继2                      " ProVersion="20" id="793 " telename="LL2" EleSection="福州电务段        " Workshop="龙岩高铁信号车间      " IsHLHT="true " Company="卡斯柯" IsAdminister="true"  />
+  <Sta name="龙龙中继3                      " ProVersion="20" id="794 " telename="LL3" EleSection="福州电务段        " Workshop="龙岩高铁信号车间      " IsHLHT="true " Company="卡斯柯" IsAdminister="true"  />
+  <Sta name="武平站                         " ProVersion="20" id="795 " telename="WPZ" EleSection="福州电务段        " Workshop="龙岩高铁信号车间      " IsHLHT="true " Company="卡斯柯" IsAdminister="true"  />
+                                                           
+  <Sta name="南昌东动车所                   " ProVersion="20" id="800 " telename="NDD" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="南昌东动车所边跨               " ProVersion="20" id="801 " telename="NDB" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="京港中继站7                    " ProVersion="20" id="802 " telename="JG7" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+
+                                                                                                                                                                     
+  <Sta name="合福中继站17                   " ProVersion="10" id="810 " telename="J17" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站18                   " ProVersion="10" id="811 " telename="J18" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站19                   " ProVersion="10" id="812 " telename="J19" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站20                   " ProVersion="10" id="813 " telename="J20" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站21                   " ProVersion="10" id="814 " telename="J21" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="婺源合福场                     " ProVersion="10" id="815 " telename="WYH" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站22                   " ProVersion="10" id="816 " telename="J22" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站23                   " ProVersion="10" id="817 " telename="J23" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="德兴站                         " ProVersion="10" id="818 " telename="DXA" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站24                   " ProVersion="10" id="819 " telename="J24" EleSection="南昌高铁基础设施段" Workshop="婺源综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站25                   " ProVersion="10" id="820 " telename="J25" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站26                   " ProVersion="10" id="821 " telename="J26" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="上饶合福场                     " ProVersion="10" id="822 " telename="HSR" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="上饶线路所                     " ProVersion="10" id="823 " telename="SRX" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站27                   " ProVersion="10" id="824 " telename="J27" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="五府山站                       " ProVersion="10" id="825 " telename="WFZ" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站28                   " ProVersion="10" id="826 " telename="J28" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站29                   " ProVersion="10" id="827 " telename="J29" EleSection="南昌高铁基础设施段" Workshop="上饶综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站30                   " ProVersion="10" id="828 " telename="J30" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站31                   " ProVersion="10" id="829 " telename="J31" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="武夷山北站                     " ProVersion="10" id="830 " telename="WYB" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站32                   " ProVersion="10" id="831 " telename="J32" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站33                   " ProVersion="10" id="832 " telename="J33" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="南平市站                       " ProVersion="10" id="833 " telename="WYD" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站34                   " ProVersion="10" id="834 " telename="J34" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站35                   " ProVersion="10" id="835 " telename="J35" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站36                   " ProVersion="10" id="836 " telename="J36" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="建瓯西站                       " ProVersion="10" id="837 " telename="JOX" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站37                   " ProVersion="10" id="838 " telename="J37" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="合福中继站38                   " ProVersion="10" id="839 " telename="J38" EleSection="南昌高铁基础设施段" Workshop="南平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="红星线路所                     " ProVersion="10" id="840 " telename="HXX" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />                                                                                                                     
+  <Sta name="延平站                         " ProVersion="10" id="841 " telename="NPB" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="合福中继39                     " ProVersion="10" id="842 " telename="F39" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="合福中继40                     " ProVersion="10" id="843 " telename="F40" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="古田北站                       " ProVersion="10" id="844 " telename="GTB" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="合福中继41                     " ProVersion="10" id="845 " telename="F41" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="闽清北站                       " ProVersion="10" id="846 " telename="MQB" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="合福中继42                     " ProVersion="10" id="847 " telename="F42" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="合福中继43                     " ProVersion="10" id="848 " telename="F43" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="合福中继44                     " ProVersion="10" id="849 " telename="F44" EleSection="南昌高铁基础设施段" Workshop="延平综合维修车间      " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="浮梁东站                       " ProVersion="20" id="850 " telename="FLD" EleSection="南昌电务段        " Workshop="景德镇北信号车间      " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="杭昌中继19                     " ProVersion="20" id="851 " telename="A19" EleSection="南昌电务段        " Workshop="景德镇北信号车间      " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="杭昌中继20                     " ProVersion="20" id="852 " telename="A20" EleSection="南昌电务段        " Workshop="景德镇北信号车间      " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="乐平北站                       " ProVersion="20" id="853 " telename="LPB" EleSection="南昌电务段        " Workshop="景德镇北信号车间      " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="杭昌中继21                     " ProVersion="20" id="854 " telename="A21" EleSection="南昌电务段        " Workshop="景德镇北信号车间      " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="鄱阳站                         " ProVersion="20" id="855 " telename="PYZ" EleSection="南昌电务段        " Workshop="景德镇北信号车间      " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="杭昌中继22                     " ProVersion="20" id="856 " telename="A22" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="余干站                         " ProVersion="20" id="857 " telename="YGZ" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="杭昌中继23                     " ProVersion="20" id="858 " telename="A23" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="进贤北站                       " ProVersion="20" id="859 " telename="JXB" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="杭昌中继24                     " ProVersion="20" id="860 " telename="A24" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="杭昌中继25                     " ProVersion="20" id="861 " telename="A25" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="南昌东站                       " ProVersion="20" id="862 " telename="NCD" EleSection="南昌电务段        " Workshop="南昌东高铁信号车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="南昌东RBC机房                  " ProVersion="20" id="863 " telename="NDC" EleSection="南昌电务段        " Workshop="南昌电子设备车间      " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="唐村所                         " ProVersion="20" id="864 " telename="TCX" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+  <Sta name="唐村所远控                     " ProVersion="20" id="865 " telename="TCY" EleSection="南昌高铁基础设施段" Workshop="南昌西综合维修车间    " IsHLHT="true " Company="路通  " IsAdminister="true"  />
+
+  <Sta name="雁石站                         " ProVersion="20" id="869 " telename="YSS" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="坂尾站                         " ProVersion="20" id="870 " telename="BWZ" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="基太站                         " ProVersion="06" id="871 " telename="GTS" EleSection="福州电务段        " Workshop="漳平信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="铁山洋站                       " ProVersion="10" id="872 " telename="TSS" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="红炭山站                       " ProVersion="20" id="873 " telename="HHS" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="false" Company="通号  " IsAdminister="true"  />
+  <Sta name="富岭站                         " ProVersion="20" id="874 " telename="FIS" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="false" Company="通号  " IsAdminister="true"  /> 
+  <Sta name="仙师站                         " ProVersion="20" id="875 " telename="XSS" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  />                                                                                                                                                      
+  <Sta name="坎市站                         " ProVersion="20" id="876 " telename="KSZ" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  />
+  <Sta name="永定站                         " ProVersion="20" id="877 " telename="YDB" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="true " Company="铁大  " IsAdminister="true"  />
+  <Sta name="铁山洋驼峰                     " ProVersion="10" id="878 " telename="TSF" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="苏坂站                         " ProVersion="20" id="879 " telename="SBZ" EleSection="福州电务段        " Workshop="漳平信号车间          " IsHLHT="false" Company="通号  " IsAdminister="true"  /> 
+ 
+  <Sta name="湖头站                         " ProVersion="20" id="880 " telename="HTS" EleSection="福州电务段        " Workshop="泉州信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="施厝站                         " ProVersion="06" id="881 " telename="SCF" EleSection="福州电务段        " Workshop="泉州信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="苹林站                         " ProVersion="20" id="882 " telename="PLS" EleSection="福州电务段        " Workshop="龙岩信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="长基站                         " ProVersion="20" id="883 " telename="CJS" EleSection="福州电务段        " Workshop="泉州信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+  <Sta name="剑斗站                         " ProVersion="20" id="884 " telename="JDS" EleSection="福州电务段        " Workshop="泉州信号车间          " IsHLHT="true " Company="辉煌  " IsAdminister="true"  />
+
+                                                                                                                                                                         
+  <Sta name="兴国南所                       " ProVersion="10" id="890 " telename="XGN" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  <Sta name="埠头站                         " ProVersion="10" id="891 " telename="BTZ" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  <Sta name="于都北站                       " ProVersion="10" id="892 " telename="YDC" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  <Sta name="赖村站                         " ProVersion="10" id="893 " telename="LCA" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  <Sta name="宁都站                         " ProVersion="10" id="894 " telename="NDA" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  <Sta name="果子园站                       " ProVersion="10" id="895 " telename="GZY" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  <Sta name="荷树下站                       " ProVersion="10" id="896 " telename="HSX" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  <Sta name="石城东站                       " ProVersion="10" id="897 " telename="SCD" EleSection="南昌电务段        " Workshop="宁都信号车间          " IsHLHT="true " Company="路通  " IsAdminister="true"  /> 
+  	                                                                                                                                                   
+  <Sta name="向塘站                         " ProVersion="10" id="900 " telename="XTZ" EleSection="南昌电务段        " Workshop="向塘信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="杨家岭站                       " ProVersion="10" id="901 " telename="YJL" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="永修普速场                     " ProVersion="20" id="902 " telename="YXT" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="南昌南站                       " ProVersion="10" id="903 " telename="HGZ" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="莲塘站                         " ProVersion="10" id="904 " telename="LTA" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="青云谱站                       " ProVersion="10" id="905 " telename="NCN" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="南昌站                         " ProVersion="10" id="906 " telename="NCZ" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="南昌站东站房                   " ProVersion="10" id="907 " telename="DZF" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="南昌客整所站                   " ProVersion="20" id="908 " telename="KZS" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="铁大" IsAdminister="true"   />
+  <Sta name="南昌II场                       " ProVersion="10" id="909 " telename="N2C" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="南昌北站                       " ProVersion="10" id="910 " telename="NCB" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="昌北货场                       " ProVersion="10" id="911 " telename="CBH" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="乐化普速场                     " ProVersion="10" id="912 " telename="LHS" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="新祺周站                       " ProVersion="10" id="913 " telename="XQA" EleSection="南昌电务段        " Workshop="南昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向塘西上行场(IV/VIII场)     " ProVersion="10" id="914 " telename="X48" EleSection="南昌电务段           " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向塘西上行到达场(I场)          " ProVersion="10" id="915 " telename="X1C" EleSection="南昌电务段        " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向塘西下行出发直通场(VII场)    " ProVersion="10" id="916 " telename="X7C" EleSection="南昌电务段        " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向塘西下行调车场(VI场)         " ProVersion="10" id="917 " telename="X6C" EleSection="南昌电务段        " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向西编组站下行驼峰场           " ProVersion="10" id="918 " telename="XXT" EleSection="南昌电务段        " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向西SAM                        " ProVersion="10" id="919 " telename="ZDL" EleSection="南昌电务段        " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向塘西下行到达场(V场)          " ProVersion="10" id="920 " telename="X5C" EleSection="南昌电务段        " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="上行发北场及调车场(II/III场)   " ProVersion="10" id="921 " telename="X23" EleSection="南昌电务段        " Workshop="向西驼峰车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="德安普速场                     " ProVersion="10" id="922 " telename="DAZ" EleSection="南昌电务段        " Workshop="庐山信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="共青城普速场                   " ProVersion="10" id="923 " telename="GQA" EleSection="南昌电务段        " Workshop="庐山信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="军山中继站                     " ProVersion="10" id="924 " telename="JST" EleSection="南昌电务段        " Workshop="庐山信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="高塘中继站                     " ProVersion="10" id="925 " telename="GTT" EleSection="南昌电务段        " Workshop="庐山信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="马回岭站                       " ProVersion="10" id="926 " telename="NHL" EleSection="南昌电务段        " Workshop="庐山信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="庐山普速场                     " ProVersion="10" id="927 " telename="LSP" EleSection="南昌电务段        " Workshop="庐山信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="九江西上行场                   " ProVersion="10" id="928 " telename="JX2" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+                                                                                                                                                       
+  <Sta name="九西编尾                       " ProVersion="10" id="929 " telename="JBW" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   /> 	
+  <Sta name="九江站                         " ProVersion="10" id="930 " telename="JJA" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="九江西下行场                   " ProVersion="10" id="931 " telename="JX1" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="小池口站                       " ProVersion="10" id="932 " telename="XCK" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="孔垄站                         " ProVersion="10" id="933 " telename="KLZ" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="九江南站                       " ProVersion="10" id="934 " telename="JJN" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="樟树东普速场                   " ProVersion="10" id="935 " telename="ZSD" EleSection="南昌电务段        " Workshop="樟树信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="丰城南站                       " ProVersion="10" id="936 " telename="FCN" EleSection="南昌电务段        " Workshop="樟树信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="张巷站                         " ProVersion="10" id="937 " telename="ZXA" EleSection="南昌电务段        " Workshop="樟树信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="吉安站                         " ProVersion="10" id="938 " telename="JAA" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="吉安南站                       " ProVersion="20" id="939 " telename="JAN" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="吉水站                         " ProVersion="10" id="940 " telename="JSZ" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="醪桥站                         " ProVersion="10" id="941 " telename="LQZ" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="八都站                         " ProVersion="10" id="942 " telename="BDZ" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="峡江普速场                     " ProVersion="10" id="943 " telename="XJP" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="新干站                         " ProVersion="10" id="944 " telename="XAA" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="大洋洲站                       " ProVersion="10" id="945 " telename="DYA" EleSection="南昌电务段        " Workshop="吉安信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="南塘镇                         " ProVersion="10" id="946 " telename="NTZ" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="龙口站                         " ProVersion="10" id="947 " telename="LKA" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="高兴站                         " ProVersion="10" id="948 " telename="GXC" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="营盘上站                       " ProVersion="10" id="949 " telename="YPS" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="沙村站                         " ProVersion="10" id="950 " telename="SCA" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="冠朝站                         " ProVersion="10" id="951 " telename="GCA" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="泰和普速场                     " ProVersion="10" id="952 " telename="THZ" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="兴国站                         " ProVersion="10" id="953 " telename="XGZ" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="龙回站                         " ProVersion="10" id="954 " telename="LHA" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="赣州国际港                     " ProVersion="10" id="955 " telename="NKZ" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="南康口岸站                     " ProVersion="10" id="956 " telename="GZG" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="赣州南站                       " ProVersion="10" id="957 " telename="GZN" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="赣州站                         " ProVersion="10" id="958 " telename="GZA" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="赣州站客车整备所               " ProVersion="10" id="959 " telename="GZK" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="赣州东站                       " ProVersion="10" id="960 " telename="GZD" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  	                                                                                                                                                   
+  <Sta name="赣州东驼峰                     " ProVersion="10" id="961 " telename="GZT" EleSection="南昌电务段        " Workshop="赣州信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="定南站                         " ProVersion="10" id="962 " telename="DNA" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="关西镇                         " ProVersion="10" id="963 " telename="GXA" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="龙南站                         " ProVersion="10" id="964 " telename="LNZ" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="小江站                         " ProVersion="10" id="965 " telename="XJT" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="铁石口站                       " ProVersion="10" id="966 " telename="TSK" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="信丰电厂站                     " ProVersion="10" id="967 " telename="XFD" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="信丰站                         " ProVersion="10" id="968 " telename="XFA" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="大塘埠线路所                   " ProVersion="10" id="969 " telename="DTC" EleSection="南昌电务段        " Workshop="信丰信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="赣县站                         " ProVersion="10" id="970 " telename="GGX" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="辉煌" IsAdminister="true"   />
+                                                                                                       
+  <Sta name="七里湖站                       " ProVersion="10" id="971 " telename="QLH" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="七里湖二场                     " ProVersion="10" id="972 " telename="QLE" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="城西港站                       " ProVersion="10" id="973 " telename="CXG" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="保税区站                       " ProVersion="10" id="974 " telename="BSQ" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="华能瑞金电厂                   " ProVersion="10" id="975 " telename="RJD" EleSection="南昌电务段        " Workshop="兴国信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />  	                                            
+   	                                            
+  <Sta name="琵琶湖                         " ProVersion="10" id="980 "  telename="PPH" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="衢九中继1                      " ProVersion="10" id="981 "  telename="JZ1" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="湖口站                         " ProVersion="10" id="982 "  telename="HKZ" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="衢九中继2                      " ProVersion="10" id="983 "  telename="JZ2" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="都昌站                         " ProVersion="10" id="984 "  telename="DCZ" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="衢九中继3                      " ProVersion="10" id="985 "  telename="JZ3" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="油墩街                         " ProVersion="10" id="986 "  telename="YDJ" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="鄱阳北站                       " ProVersion="10" id="987 "  telename="PYB" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="衢九中继4                      " ProVersion="10" id="988 "  telename="JZ4" EleSection="南昌电务段        " Workshop="都昌信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="景德镇北                       " ProVersion="10" id="989 "  telename="JDB" EleSection="南昌电务段        " Workshop="景德镇北信号车间     " IsHLHT="true " Company="路通"  IsAdminister="true"  />  
+  <Sta name="衢九中继5                      " ProVersion="10" id="990 "  telename="JZ5" EleSection="南昌电务段        " Workshop="景德镇北信号车间     " IsHLHT="true " Company="路通"  IsAdminister="true"  />  
+  <Sta name="赋春站                         " ProVersion="10" id="991 "  telename="FCS" EleSection="南昌电务段        " Workshop="景德镇北信号车间     " IsHLHT="true " Company="路通"  IsAdminister="true"  />  
+  <Sta name="桥上村站                       " ProVersion="10" id="992 "  telename="QSC" EleSection="南昌电务段        " Workshop="景德镇北信号车间     " IsHLHT="true " Company="路通"  IsAdminister="true"  />   
+  <Sta name="婺源北线路所                   " ProVersion="10" id="993 "  telename="WYX" EleSection="南昌电务段        " Workshop="景德镇北信号车间     " IsHLHT="true " Company="路通"  IsAdminister="true"  />
+  <Sta name="婺源衢九场                     " ProVersion="10" id="994 "  telename="WQJ" EleSection="南昌电务段        " Workshop="景德镇北信号车间     " IsHLHT="true " Company="路通"  IsAdminister="true"  />
+  <Sta name="德兴东站                       " ProVersion="10" id="995 "  telename="DXD" EleSection="南昌电务段        " Workshop="景德镇北信号车间     " IsHLHT="true " Company="路通"  IsAdminister="true"  />
+                                                                                                           
+  <Sta name="马当站                         " ProVersion="10" id="996 "  telename="MDA" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="泉山站                         " ProVersion="10" id="997 "  telename="QSZ" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="彭泽站                         " ProVersion="10" id="998 "  telename="PZZ" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="流泗站                         " ProVersion="10" id="999 "  telename="LST" EleSection="南昌电务段        " Workshop="九江信号车间          " IsHLHT="true " Company="路通" IsAdminister="true"   />
+                                            
+  <Sta name="硬石岭站                       " ProVersion="10" id="2000"  telename="YSL" EleSection="南昌电务段        " Workshop="鹰潭普速车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="中村站                         " ProVersion="10" id="2001"  telename="ZCZ" EleSection="南昌电务段        " Workshop="鹰潭普速车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="贵溪北站                       " ProVersion="10" id="2002"  telename="GXB" EleSection="南昌电务段        " Workshop="鹰潭普速车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="营里站                         " ProVersion="10" id="2003"  telename="YLS" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="峙滩站                         " ProVersion="10" id="2004"  telename="ZTZ" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="福港站                         " ProVersion="10" id="2005"  telename="FGZ" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="韩坑站                         " ProVersion="10" id="2006"  telename="HKA" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="浮梁站                         " ProVersion="10" id="2007"  telename="FLC" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="浮梁南线路所                   " ProVersion="10" id="2008"  telename="FLN" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="景德镇站                       " ProVersion="10" id="2009"  telename="JDZ" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="景德镇南站                     " ProVersion="10" id="2010"  telename="JDN" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="鲇鱼山站                       " ProVersion="10" id="2011"  telename="NYS" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />  
+  <Sta name="慈义站                         " ProVersion="10" id="2012"  telename="CYA" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />   
+  <Sta name="塔前站                         " ProVersion="10" id="2013"  telename="TQA" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="乐平站                         " ProVersion="10" id="2014"  telename="LPZ" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="库前站                         " ProVersion="10" id="2015"  telename="QQZ" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="韩美岭站                       " ProVersion="10" id="2016"  telename="HML" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />   
+  <Sta name="万年站                         " ProVersion="10" id="2017"  telename="WNA" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="葛家店站                       " ProVersion="10" id="2018"  telename="GJD" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="画桥站                         " ProVersion="10" id="2019"  telename="HQA" EleSection="南昌电务段        " Workshop="景德镇信号车间         " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="九里垄站                       " ProVersion="10" id="2020"  telename="JLL" EleSection="南昌电务段        " Workshop="庐山信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="瑞昌站                         " ProVersion="10" id="2021"  telename="RCZ" EleSection="南昌电务段        " Workshop="庐山信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="白杨畈站                       " ProVersion="10" id="2022"  telename="BRF" EleSection="南昌电务段        " Workshop="庐山信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="夏畈站                         " ProVersion="10" id="2023"  telename="XFS" EleSection="南昌电务段        " Workshop="庐山信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+                                                                                                           
+  <Sta name="西环中继1                      " ProVersion="10" id="2030"  telename="XH1" EleSection="南昌电务段        " Workshop="南昌信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="生米站                         " ProVersion="10" id="2031"  telename="SMZ" EleSection="南昌电务段        " Workshop="南昌信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="西环中继2                      " ProVersion="10" id="2032"  telename="XH2" EleSection="南昌电务段        " Workshop="南昌信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+                                            
+  	                                        
+  <Sta name="向东线路所                     " ProVersion="10" id="2040" telename="XDX" EleSection="南昌电务段         " Workshop="向塘信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+  <Sta name="向塘物流基地                   " ProVersion="10" id="2041" telename="XTW" EleSection="南昌电务段         " Workshop="向塘信号车间           " IsHLHT="true " Company="路通" IsAdminister="true"   />
+
+  <Sta name="福州东站                       " ProVersion="10" id="2045" telename="FDS" EleSection="福州电务段         " Workshop="福州信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="龙岩东站                       " ProVersion="10" id="2050" telename="LYD" EleSection="福州电务段         " Workshop="龙岩信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+                                                                                                                                             
+  <Sta name="龙岩站                         " ProVersion="10" id="2055" telename="LYK" EleSection="福州电务段         " Workshop="龙岩高铁信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="东南线路所                     " ProVersion="10" id="2056" telename="DNX" EleSection="福州电务段         " Workshop="龙岩高铁信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="马坑站                         " ProVersion="10" id="2057" telename="MKA" EleSection="福州电务段         " Workshop="龙岩高铁信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="龙厦中继站1                    " ProVersion="10" id="2058" telename="LX1" EleSection="福州电务段         " Workshop="龙岩高铁信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="龙厦中继站2                    " ProVersion="10" id="2059" telename="LX2" EleSection="福州电务段         " Workshop="漳州信号车间               " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="龙山镇站                       " ProVersion="10" id="2060" telename="LSA" EleSection="福州电务段         " Workshop="漳州信号车间               " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="南靖站                         " ProVersion="10" id="2061" telename="NJZ" EleSection="福州电务段         " Workshop="漳州信号车间               " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="草坂站                         " ProVersion="10" id="2062" telename="CBZ" EleSection="福州电务段         " Workshop="漳州信号车间               " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+
+  <Sta name="辋川站                         " ProVersion="10" id="2065" telename="WCZ" EleSection="福州电务段         " Workshop="泉州信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="辋川石化站                     " ProVersion="10" id="2066" telename="SHS" EleSection="福州电务段         " Workshop="泉州信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="肖厝站                         " ProVersion="10" id="2067" telename="XCA" EleSection="福州电务段         " Workshop="泉州信号车间           " IsHLHT="true " Company="路通" IsAdminister="true" />                                                                            
+  <Sta name="斗尾站                         " ProVersion="10" id="2068" telename="DWA" EleSection="福州电务段         " Workshop="泉州信号车间           " IsHLHT="true " Company="路通" IsAdminister="true" />                                                                            
+  <Sta name="莆田东站                       " ProVersion="10" id="2069" telename="PTD" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+  <Sta name="月塘站                         " ProVersion="10" id="2070" telename="YTA" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+  <Sta name="罗屿东线路所                   " ProVersion="10" id="2071" telename="LDX" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+  <Sta name="东埔站                         " ProVersion="10" id="2072" telename="DPZ" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+  <Sta name="东吴站                         " ProVersion="10" id="2073" telename="DWB" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+  <Sta name="江阴港站                       " ProVersion="10" id="2074" telename="JYG" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+  <Sta name="罗屿站                         " ProVersion="10" id="2075" telename="LYA" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+  <Sta name="度下站                         " ProVersion="10" id="2076" telename="DXB" EleSection="福州电务段         " Workshop="莆田信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                            
+                                                                                                                                              
+  <Sta name="后岭线路所                     " ProVersion="10" id="2080" telename="HLX" EleSection="南昌高铁基础设施段 " Workshop="延平综合维修车间       " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="延平西南龙场                   " ProVersion="10" id="2081" telename="YPX" EleSection="南昌高铁基础设施段 " Workshop="延平综合维修车间       " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                  
+                                                                                                                                                        
+  <Sta name="南龙中继站1                    " ProVersion="10" id="2082" telename="NL1" EleSection="福州电务段         " Workshop="三明北信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="三明北南龙场                   " ProVersion="10" id="2083" telename="SML" EleSection="福州电务段         " Workshop="三明北信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                  
+  <Sta name="南龙中继站2                    " ProVersion="10" id="2084" telename="NL2" EleSection="福州电务段         " Workshop="三明北信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                 
+  <Sta name="三明站                         " ProVersion="10" id="2085" telename="SMN" EleSection="福州电务段         " Workshop="三明北信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="南龙中继站3                    " ProVersion="10" id="2086" telename="NL3" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                 
+  <Sta name="永安南南龙场                   " ProVersion="10" id="2087" telename="YAN" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                  
+  <Sta name="南龙中继站4                    " ProVersion="10" id="2088" telename="NL4" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                 
+  <Sta name="双洋站                         " ProVersion="10" id="2089" telename="SYA" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                            
+  <Sta name="南龙中继站5                    " ProVersion="10" id="2090" telename="NL5" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                 
+  <Sta name="漳平西站                       " ProVersion="10" id="2091" telename="ZPX" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                              
+  <Sta name="南龙中继站6                    " ProVersion="10" id="2092" telename="NL6" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                 
+  <Sta name="雁石南站                       " ProVersion="10" id="2093" telename="YSB" EleSection="福州电务段         " Workshop="永安南信号车间         " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                              
+  <Sta name="南石线路所                     " ProVersion="10" id="2094" telename="NSX" EleSection="福州电务段         " Workshop="龙岩高铁信号车间       " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="龙岩远程控制终端               " ProVersion="10" id="2095" telename="LYY" EleSection="福州电务段         " Workshop="龙岩高铁信号车间       " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                      
+  <Sta name="湖一线路所                     " ProVersion="10" id="2096" telename="HYX" EleSection="福州电务段         " Workshop="龙岩高铁信号车间       " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+                                            
+  <Sta name="松溪站                         " ProVersion="10" id="2100" telename="SXA" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="茶平站                         " ProVersion="10" id="2101" telename="CPZ" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="政和站                         " ProVersion="10" id="2102" telename="ZHS" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="小绍站                         " ProVersion="10" id="2103" telename="QXS" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="建瓯东站                       " ProVersion="10" id="2104" telename="JOD" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="地州站                         " ProVersion="10" id="2105" telename="QDZ" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="大碑站                         " ProVersion="10" id="2106" telename="DBZ" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="龟潭站                         " ProVersion="10" id="2107" telename="QGT" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="屏南站                         " ProVersion="10" id="2108" telename="PNZ" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="礼门站                         " ProVersion="10" id="2109" telename="LMZ" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="周宁站                         " ProVersion="10" id="2110" telename="ZNZ" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="支提山站                       " ProVersion="10" id="2111" telename="ZTS" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="漳湾三屿站                     " ProVersion="10" id="2112" telename="QSY" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="漳湾站                         " ProVersion="10" id="2113" telename="ZWZ" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="宁德北站                       " ProVersion="10" id="2114" telename="NDE" EleSection="福州电务段         " Workshop="屏南信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+
+  <Sta name="绿水站                         " ProVersion="06" id="2120" telename="LSJ" EleSection="福州电务段         " Workshop="来舟信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="延平西外南场                   " ProVersion="10" id="2121" telename="NXW" EleSection="福州电务段         " Workshop="来舟信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="西芹站                         " ProVersion="06" id="2122" telename="XQB" EleSection="福州电务段         " Workshop="来舟信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+  <Sta name="水南站                         " ProVersion="06" id="2123" telename="NPZ" EleSection="福州电务段         " Workshop="来舟信号车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+                                                                                                                                                         
+  <Sta name="漳州北站                       " ProVersion="10" id="2130" telename="ZZB" EleSection="福州电务段         " Workshop="东孚驼峰车间           " IsHLHT="true " Company="辉煌" IsAdminister="true" />                                                                                
+                                                                                                                                                         
+  <Sta name="陈坡所                         " ProVersion="10" id="2135" telename="CPS" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="文亨站                         " ProVersion="10" id="2136" telename="WHZ" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="冠豸山站                       " ProVersion="10" id="2137" telename="GZS" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="杨源站                         " ProVersion="10" id="2138" telename="YYA" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="邓家站                         " ProVersion="10" id="2139" telename="DJZ" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="田源站                         " ProVersion="10" id="2140" telename="TYZ" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="严坊站                         " ProVersion="10" id="2141" telename="YFZ" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="何屋站                         " ProVersion="10" id="2142" telename="HWZ" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="水茜站                         " ProVersion="10" id="2143" telename="SQA" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="黄沙潭站                       " ProVersion="10" id="2144" telename="HST" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="均口站                         " ProVersion="10" id="2145" telename="JKA" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="黄岭站                         " ProVersion="10" id="2146" telename="HLB" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="建宁南站                       " ProVersion="10" id="2147" telename="JNN" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="斗埕所                         " ProVersion="10" id="2148" telename="DCS" EleSection="福州电务段         " Workshop="宁化信号车间           " IsHLHT="true " Company="铁大" IsAdminister="true" />                                                                                
+  <Sta name="漳浦杭深场                     " ProVersion="20" id="2150" telename="ZPH" EleSection="福州电务段         " Workshop="漳州信号车间           " IsHLHT="false" Company="通号" IsAdminister="true" />                                                                            
+
+  <Sta name="甬广TSRS中心接口               " ProVersion="20" id="3002" telename="FRS" EleSection="福州电务段         " Workshop="福州电子设备车间       " IsHLHT="false " Company="通号" IsAdminister="true" />            
+  <Sta name="南昌DMS中心接口                " ProVersion="20" id="3003" telename="NMS" EleSection="南昌电务段         " Workshop="南昌电子设备车间       " IsHLHT="false " Company="通号" IsAdminister="true" />                  
+  <Sta name="杭昌RBC中心接口                " ProVersion="20" id="3008" telename="HBC" EleSection="南昌电务段         " Workshop="南昌电子设备车间       " IsHLHT="false " Company="通号" IsAdminister="true" />            
+  <Sta name="杭昌TSRS中心接口               " ProVersion="20" id="3009" telename="HRS" EleSection="南昌电务段         " Workshop="南昌电子设备车间       " IsHLHT="false " Company="通号" IsAdminister="true" />          
+  <Sta name="CTC综合运维平台                " ProVersion="20" id="3011" telename="HYW" EleSection="南昌电务段         " Workshop="南昌电子设备车间       " IsHLHT="false " Company="通号" IsAdminister="true" />                   
+  <Sta name="南昌段门禁中心接口             " ProVersion="20" id="3012" telename="NMJ" EleSection="南昌电务段         " Workshop="南昌电子设备车间       " IsHLHT="false " Company="通号" IsAdminister="true" />  
+  <Sta name="南昌LMD中心接口                " ProVersion="20" id="3013" telename="LMD" EleSection="南昌电务段         " Workshop="南昌电子设备车间       " IsHLHT="false " Company="通号" IsAdminister="true" />                   
+
+  <Sta name="分宜站(10)                     " ProVersion="10"  id="3020 " telename="FYZ" EleSection="南昌电务段       " Workshop="新余信号车间           " IsHLHT="true  " Company="路通" IsAdminister="true" />
+  <Sta name="灯芯桥站(10)                   " ProVersion="10"  id="3021 " telename="DXQ" EleSection="南昌电务段       " Workshop="萍乡普速车间           " IsHLHT="true  " Company="路通" IsAdminister="true" />
+  <Sta name="姚家洲站(10)                   " ProVersion="10"  id="3022 " telename="YZJ" EleSection="南昌电务段       " Workshop="萍乡普速车间           " IsHLHT="true  " Company="路通" IsAdminister="true" />
+  <Sta name="萍乡站(10)                     " ProVersion="10"  id="3023 " telename="PXX" EleSection="南昌电务段       " Workshop="萍乡普速车间           " IsHLHT="true  " Company="路通" IsAdminister="true" />
+  <Sta name="芦溪站(10)                     " ProVersion="10"  id="3024 " telename="LXZ" EleSection="南昌电务段       " Workshop="萍乡普速车间           " IsHLHT="true  " Company="路通" IsAdminister="true" />
+
+</Stations>                                                       
+                                                                 
+                                                                   
+                                                                   
+                                                                   
+                                                                   

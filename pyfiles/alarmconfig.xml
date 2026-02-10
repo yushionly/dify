@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<!-- 报警总配置文件,用于配置该站载入哪些报警, 此文件包括整个目录结构可以移到某个站下, 在某个站下的目录不存在时才会读通用配置 -->
+
+<Alarms version="0.1.0.0">
+		<!--Alarm表示报警类型 ,其基本属性包括：--> 
+	
+	
+		<!--一级-->	
+<Alarm name="安全监督" 	type ="0xCF" subtype="65535"  alarmtype="0" Level="1">
+				
+				<SubAlarm filename="67_1总分表不一致报警_通过总判断分.xml" subtype="1"/>
+				
+				<SubAlarm filename="67_2_1区段占用与后方信号机显示不一致_全部进路(20).xml" subtype="2"/>	
+				
+				<SubAlarm filename="67_3_1_1区段占用与后方区段发码不一致_同闭塞区段前方占用后方不为检查码.xml" subtype="3"/> 
+				<SubAlarm filename="67_3_1_2区段占用与后方区段发码不一致_同闭塞区段前方占用后方不为检查码_反向.xml" subtype="4"/> 
+				<SubAlarm filename="67_3_2_1区段占用与后方区段发码不一致_邻接闭塞区段前方占用后方不为HU.xml" subtype="5"/> 
+				<SubAlarm filename="67_3_2_2区段占用与后方区段发码不一致_邻接闭塞区段前方占用后方不为HU_反向.xml" subtype="6"/> 
+				<SubAlarm filename="67_3_2_3区段占用与后方区段发码不一致_邻接闭塞区段前方占用后方不为HU_反向合并.xml" subtype="7"/> 
+				
+				<SubAlarm filename="67_4_2_1区段发码与前方信号机显示不一致_站内(出站红).xml" subtype="9"/> 
+				<SubAlarm filename="67_4_2_2区段发码与前方信号机显示不一致_站内(出站红白).xml" subtype="10"/>
+				<SubAlarm filename="67_4_3区段发码与前方信号机显示不一致_进站.xml" subtype="11"/>
+				
+				<SubAlarm filename="67_5_1_1区段与相邻区段码序逻辑不一致.xml" subtype="12"/>
+				<SubAlarm filename="67_5_1_2区段与相邻区段码序逻辑不一致_反向.xml" subtype="13"/>	
+				<SubAlarm filename="67_5_1_3区段与相邻区段码序逻辑不一致_反向合并发码.xml" subtype="14"/>	
+				<SubAlarm filename="67_5_2_1区段与相邻区段码序逻辑不一致_同闭塞区段前方未占用后方低频码相同.xml" subtype="15"/>	
+				<SubAlarm filename="67_5_2_2区段与相邻区段码序逻辑不一致_同闭塞区段前方未占用后方低频码相同_反向.xml" subtype="16"/>	
+				<SubAlarm filename="67_5_2_3区段与相邻区段码序逻辑不一致_同闭塞区段前方未占用后方低频码相同_反向合并发码.xml" subtype="17"/>	
+				<SubAlarm filename="67_5_3站内区段与相邻区段码序逻辑不一致.xml" subtype="18"/>	
+			
+				<SubAlarm filename="67_7_1信号机显示与进路状态不一致_TCC进路信息和联锁进路信息一致性比对.xml" subtype="19"/>		
+				<SubAlarm filename="67_7_3信号机显示与进路状态不一致_TCC线路方向和联锁进路信息不一致.xml" subtype="20"/>		
+				<SubAlarm filename="67_7_4信号机显示与进路状态不一致_联锁信号开放状态和进路信息不一致(20).xml" subtype="21"/>
+				
+				
+			</Alarm>
+	<Alarm name="挤岔报警" 	type ="0x82"	subtype="0"  alarmtype="0" Level="1">
+					<SubAlarm filename="A-1-1_挤岔报警.xml"/>
+		</Alarm>	
+	
+	<Alarm name="信号机非正常关闭报警"  type ="0x8D"	subtype="0" alarmtype="0" Level="1" >
+		      <SubAlarm filename="B-1-1-列车信号非正常关闭报警道岔无表示.xml"/>		
+					<SubAlarm filename="B-1-2-列车信号非正常关闭报警轨道红光带.xml"/>		
+		</Alarm>
+
+  <!--Alarm name="防灾异物侵限报警"           type ="0x39"	 subtype="65535"   alarmtype="0" Level="1" filename="D-1-1_防灾异物侵限报警.xml" />
+  <Alarm name="防灾异物侵限报警"           type ="0x39"	 subtype="65535"   alarmtype="0" Level="1" filename="D-1-2_地震报警.xml" /-->
+  <Alarm name="故障通知报警"               type ="0xA3"	 subtype="65535"   alarmtype="0" Level="1" filename="F-1-1_故障通知按钮报警-联锁.xml"/>   
+  <Alarm name="电源屏输入双路断电报警"     type ="0xD2"  subtype="65535"   alarmtype="0" Level="1" filename="G-1-1_电源屏输入双路断电报警-配电1.xml"/>    
+  <Alarm name="电源屏输入双路断电报警"     type ="0xD2"  subtype="65535"   alarmtype="0" Level="1" filename="G-1-1_电源屏输入双路断电报警-配电2.xml"/>
+  <Alarm name="UPS放电报警"                type ="0xED"  subtype="65535"   alarmtype="0" Level="1" filename="G-1-2_电源屏系统一级报警.xml"/>
+  
+  <Alarm name="双路断电报警"                       type ="0x43" subtype="65535"  alarmtype="0" Level="1">
+		      <SubAlarm filename="C-1-1_外电网双路断电报警.xml" subtype="1"/>
+		      <SubAlarm filename="C-1-2_外电网双路断电报警(电流).xml" subtype="2"/>
+	</Alarm>     
+ <!--二级-->	
+  <Alarm name="道岔无表示报警"             type ="0x96"  subtype="65535"  alarmtype="0" Level="2"  >
+          <SubAlarm filename="A-2-1_道岔1DQJ动作无表示报警.xml"    subtype="2" />
+	        <SubAlarm filename="A-2-2_道岔1DQJ不动作无表示报警.xml"  subtype="3" />
+  </Alarm>
+        
+  
+	<Alarm name="计算机联锁系统报警"         type ="0xC8"  subtype="65535"  alarmtype="0" Level="2">
+		      <SubAlarm filename="F-3-1_计算机联锁系统报警.xml" subtype="1"/>
+		      <SubAlarm filename="F-3-2_计算机联锁系统报警取反.xml" subtype="2"/>
+	</Alarm>
+	<Alarm name="CTC系统报警"         type ="0xD1"  subtype="65535"  alarmtype="0" Level="2">
+		      <SubAlarm filename="E-1-1_CTC系统报警.xml" subtype="1"/>
+   </Alarm>
+	<Alarm name="ZPW2000系统报警"                    type ="0x32"  subtype="65535"  alarmtype="0" Level="2"/>
+	<Alarm name="列控系统报警"                       type ="0xC9"  subtype="65535"  alarmtype="0" Level="2"/>
+  <Alarm name="智能电源屏报警"                     type ="0xD2"  subtype="65535"  alarmtype="0" Level="2"/>
+  <Alarm name="列车信号机主灯丝断丝报警"           type ="0x87"	 subtype="65535"  alarmtype="0" Level="2"/>
+  <Alarm name="室外监测报警"                       type ="0xDB"  subtype="65535"  alarmtype="0" Level="2"/> 
+  <Alarm name="室外监测报警"                       type ="0xDB"  subtype="65535"  alarmtype="1" Level="2"/> 
+  <Alarm name="熔丝断丝报警"                       type ="0x88"	 subtype="65535"  alarmtype="0" Level="2" filename="D-2-1_熔丝断丝报警.xml"/>
+  <Alarm name="破封按钮报警"                       type ="0x84"  subtype="65535"  alarmtype="0" Level="3" filename="F-2-1_破封按钮报警.xml"/>
+  <Alarm name="外电网三相电源错序报警"             type ="0x8C"	 subtype="65535"  alarmtype="0" Level="2" filename="外电网三相电源错序报警.xml"/>
+	<Alarm name="外电网输入电源瞬间断电报警"         type ="0x85"	 subtype="65535"  alarmtype="0" Level="2"/> 
+	<Alarm name="外电网断电报警"                     type ="0x8B"	subtype="65535"   alarmtype="0" Level="2">
+			    <SubAlarm filename="C-2-1_外电网I路A相断电报警.xml" subtype="1"/>
+				  <SubAlarm filename="C-2-2_外电网I路B相断电报警.xml" subtype="2"/>
+				  <SubAlarm filename="C-2-3_外电网I路C相断电报警.xml" subtype="3"/>
+				  <SubAlarm filename="C-2-4_外电网II路A相断电报警.xml"  subtype="4"/>
+				  <SubAlarm filename="C-2-5_外电网II路B相断电报警.xml"  subtype="5"/>
+				  <SubAlarm filename="C-2-6_外电网II路C相断电报警.xml"  subtype="6"/>
+				  <SubAlarm filename="C-2-7_外电网I路断电报警.xml"  subtype="7"/>
+				  <SubAlarm filename="C-2-8_外电网II路断电报警.xml"  subtype="8"/>
+  </Alarm>
+<Alarm name="轨道电路故障红光带"                 type ="0x91"	subtype="0"  alarmtype="0" Level="2"> 	
+	  <!--SubAlarm filename="G-2-1_轨道电路红光带报警.xml"/-->	
+	  <SubAlarm filename="G-2-1_轨道电路红光带报警(移频).xml"/>	
+  </Alarm>	
+  <Alarm name="信号机灭灯报警"                 type ="0xE3"	subtype="65535"  alarmtype="0" Level="2"> 	
+	  <SubAlarm filename="G-2-2_信号机灭灯报警.xml"/>	
+  </Alarm>
+  
+	<!--三级-->	
+  <Alarm name="采集机通信故障报警"                 type ="0x7C"  subtype="65535"   alarmtype="0" Level="3"/>
+	<Alarm name="轨道长期占用"                       type ="0x37"  subtype="65535"       alarmtype="0" Level="3" filename="D-3-1_轨道长期占用报警.xml"    />
+	<!--Alarm name="轨道长期不占用报警"                 type ="0x37"  subtype="0"       alarmtype="0" Level="3" filename="D-3-2_轨道长期不占用报警.xml"    /-->
+    
+    <Alarm name="电气特性超限报警"     type ="0x71"  subtype="65535"   alarmtype="0" Level="3">
+          <SubAlarm filename="H-1-3_无状态模拟量超上限报警.xml" subtype="3"/>
+					<SubAlarm filename="H-1-4_无状态模拟量超下限报警.xml" subtype="4"/>
+					<SubAlarm filename="H-2-1_小轨出模拟量调整超上限报警.xml" subtype="5"/>
+					<SubAlarm filename="H-2-2_小轨出模拟量调整超下限报警.xml" subtype="6"/>
+					<SubAlarm filename="H-3-1_小轨入模拟量调整超上限报警.xml" subtype="7"/>
+					<SubAlarm filename="H-3-2_小轨入模拟量调整超下限报警.xml" subtype="8"/>
+					<SubAlarm filename="H-4-1_移频接收电缆侧电压模拟量分路超上限报警.xml" subtype="9"/>
+					<SubAlarm filename="H-4-2_移频接收电缆侧电压模拟量调整超上限报警.xml" subtype="10"/>
+					<SubAlarm filename="H-4-3_移频接收电缆侧电压模拟量调整超下限报警.xml" subtype="11"/>
+					<SubAlarm filename="H-5-4_主轨出电压模拟量分路超上限报警.xml" subtype="14"/>
+					<SubAlarm filename="H-5-5_主轨出电压模拟量调整超上限报警.xml" subtype="15"/>
+					<SubAlarm filename="H-5-6_主轨出电压模拟量调整超下限报警.xml" subtype="16"/>
+					<SubAlarm filename="H-6-1_主轨入模拟量调整超上限报警.xml" subtype="17"/>
+					<SubAlarm filename="H-6-2_主轨入模拟量调整超下限报警.xml" subtype="18"/>
+					<SubAlarm filename="H-8-3_功出电流模拟量调整超下限报警.xml" subtype="19"/>
+					<SubAlarm filename="H-8-4_功出电流模拟量调整超上限报警.xml" subtype="20"/>
+					<SubAlarm filename="H-10-1_信号机自采模拟量超上限报警.xml" subtype="25"/>
+					<SubAlarm filename="H-10-2_信号机自采模拟量超下限报警.xml" subtype="26"/>
+					<SubAlarm filename="H-11-1_道岔交流表示电压模拟量超上限报警-直流道岔或10版.xml" subtype="27"/>
+					<SubAlarm filename="H-11-2_道岔交流表示电压模拟量超下限报警-直流道岔或10版.xml" subtype="28"/>
+					<SubAlarm filename="H-11-3_道岔直流表示电压模拟量超上限报警-直流道岔或10版.xml" subtype="29"/>	
+					<SubAlarm filename="H-11-4_道岔直流表示电压模拟量超下限报警-直流道岔或10版.xml" subtype="30"/>
+					<SubAlarm filename="H-12-1_外电网模拟量超下限警.xml" subtype="31"/>
+					<SubAlarm filename="H-13-1_电源屏模拟量超下限警.xml" subtype="32"/>
+					<SubAlarm filename="H-15-1_高压不对称调整模拟量超上限报警.xml" subtype="34"/>
+					<SubAlarm filename="H-15-2_高压不对称调整模拟量超下限报警.xml" subtype="35"/>
+					<SubAlarm filename="H-15-3_高压不对称分路模拟量超上限报警.xml" subtype="36"/>
+					<SubAlarm filename="H-16-1_室外监测模拟量超上限报警.xml" subtype="37"/>
+					<SubAlarm filename="H-16-2_室外监测模拟量超下限报警.xml" subtype="38"/>
+			</Alarm>
+    
+	  
+    <Alarm name="智能接口通信故障报警"         type ="0x7D"  subtype="65535"   alarmtype="0" Level="3">
+ 	        <SubAlarm filename="I-1-1_CTC接口断开报警.xml"       subtype="1"/>
+ 	        <SubAlarm filename="I-1-3_ZPW接口断开报警.xml"       subtype="3"/>	
+ 	        <SubAlarm filename="I-1-4_电源屏接口断开报警.xml"    subtype="4"/>
+					<SubAlarm filename="I-1-5_联锁接口断开报警.xml"      subtype="5"/>					
+					<SubAlarm filename="I-1-6_列控接口断开报警.xml"      subtype="6"/>
+					<SubAlarm filename="I-1-7_外电网接口断开报警.xml"    subtype="7"/>
+		</Alarm>
+			 
+  
+  <Alarm name="电气特性智能分析"     type ="0x36"  subtype="65535"   alarmtype="1" Level="1">
+  		    <SubAlarm filename="9_状态量突变10%预警.xml" />
+  		    <SubAlarm filename="9_1状态量突变10%预警.xml" />
+					<!--SubAlarm filename="10_状态量趋势超过10%预警.xml" />
+          <SubAlarm filename="17_状态量突变15%预警.xml" /-->
+					<!--SubAlarm filename="18_状态量趋势超过15%预警.xml" />
+					<SubAlarm filename="25_小轨入突变10%预警.xml" />
+					<SubAlarm filename="25_小轨出突变10%预警.xml" /-->					
+					<SubAlarm filename="27_无状态量突变10%预警.xml" />
+					<!--SubAlarm filename="28_无状态量趋势超过10%预警.xml" />
+					<SubAlarm filename="31_无状态量突变20%预警.xml" />
+					<SubAlarm filename="32_无状态量趋势超过20%预警.xml" />
+					<SubAlarm filename="51_1灯丝继电器电流突变预警-出站.xml" />
+					<SubAlarm filename="51_1灯丝继电器电流突变预警-进站.xml" />		
+					<SubAlarm filename="51_1灯丝继电器电流突变预警.xml" /-->				
+					<SubAlarm filename="53_电缆绝缘超下限预警.xml" />
+					<SubAlarm filename="54_电缆对地绝缘不良上月小于20M这个月又下降了一半.xml" />
+					<!--SubAlarm filename="55_UPS输出电压波动预警.xml" /-->
+					<SubAlarm filename="57_提速道岔多日未操纵预警.xml" />
+					<!--SubAlarm filename="道岔运用次数超限预警.xml" /-->					
+  </Alarm>
+  <Alarm name="道岔动作智能分析"     type ="0x90"  subtype="65535"   alarmtype="1" Level="1">
+  		    <SubAlarm filename="1_提速道岔转动预报警.xml" />	
+  		    <SubAlarm filename="2_提速道岔转动预报警.xml" />	
+  		    <!--SubAlarm filename="3_普通道岔转动报警.xml" /-->
+					<SubAlarm filename="4_提速道岔转动预报警.xml" />	
+					<!--SubAlarm filename="7_普通道岔转动报警.xml" /-->	
+  </Alarm>
+</Alarms>

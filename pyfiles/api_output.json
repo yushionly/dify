@@ -1,0 +1,177 @@
+{
+    "period": "2024-09-09 至 2024-09-16",
+    "overview": {
+        "total": 208850
+    },
+    "table1_station_stats": [
+        {
+            "name": "南昌电务段",
+            "station_count": 0,
+            "turnout_count": 0,
+            "total": 96482,
+            "level1": 13506,
+            "level2": 33183,
+            "level3": 49778,
+            "total_no_ext": 95747
+        },
+        {
+            "name": "福州电务段",
+            "station_count": 0,
+            "turnout_count": 0,
+            "total": 86210,
+            "level1": 26308,
+            "level2": 38699,
+            "level3": 21203,
+            "total_no_ext": 85631
+        },
+        {
+            "name": "南昌高铁基础设施段",
+            "station_count": 0,
+            "turnout_count": 0,
+            "total": 24496,
+            "level1": 9319,
+            "level2": 10857,
+            "level3": 4320,
+            "total_no_ext": 23487
+        }
+    ],
+    "table2_self_diagnosis": [
+        {
+            "name": "南昌电务段",
+            "count": 4236,
+            "breakdown": {
+                "total": 4236,
+                "other": 2198,
+                "elec_char": 734,
+                "self_alarm": 1304
+            }
+        },
+        {
+            "name": "福州电务段",
+            "count": 1288,
+            "breakdown": {
+                "total": 1288,
+                "self_alarm": 461,
+                "other": 509,
+                "elec_char": 318
+            }
+        },
+        {
+            "name": "南昌高铁基础设施段",
+            "count": 1016,
+            "breakdown": {
+                "total": 1016,
+                "elec_char": 871,
+                "other": 52,
+                "self_alarm": 93
+            }
+        }
+    ],
+    "table3_external_interface": [
+        {
+            "name": "南昌电务段",
+            "count": 92246,
+            "breakdown": {
+                "total": 92246,
+                "other": 4410,
+                "atp": 1923,
+                "zpw2000": 83976,
+                "interlock": 1340,
+                "power": 597
+            }
+        },
+        {
+            "name": "福州电务段",
+            "count": 84922,
+            "breakdown": {
+                "total": 84922,
+                "zpw2000": 64168,
+                "atp": 1984,
+                "other": 15292,
+                "power": 2384,
+                "interlock": 1062,
+                "gap": 32
+            }
+        },
+        {
+            "name": "南昌高铁基础设施段",
+            "count": 23480,
+            "breakdown": {
+                "total": 23480,
+                "zpw2000": 13856,
+                "interlock": 996,
+                "atp": 1079,
+                "power": 217,
+                "other": 7332
+            }
+        }
+    ],
+    "table4_workshop_rank": [
+        {
+            "name": "南昌电务段 - 兴国信号车间",
+            "count": 13371
+        },
+        {
+            "name": "南昌高铁基础设施段 - 南昌西综合维修车间",
+            "count": 10164
+        },
+        {
+            "name": "福州电务段 - 龙岩高铁信号车间",
+            "count": 9354
+        },
+        {
+            "name": "福州电务段 - 漳州信号车间",
+            "count": 9152
+        },
+        {
+            "name": "福州电务段 - 三明北信号车间",
+            "count": 7282
+        }
+    ],
+    "top_issues": [
+        {
+            "issue": null,
+            "count": 13696
+        },
+        {
+            "issue": "[天窗修][天窗修]",
+            "count": 11824
+        },
+        {
+            "issue": "0.00mA,空闲超下限报警[天窗修][天窗修]",
+            "count": 3163
+        },
+        {
+            "issue": "道岔电流定反位对比时间超标0.15秒，达到0.16秒",
+            "count": 2878
+        },
+        {
+            "issue": "[天窗修]",
+            "count": 2753
+        },
+        {
+            "issue": "4047-L灯丝断丝",
+            "count": 2707
+        },
+        {
+            "issue": "0.00,超下限报警",
+            "count": 2144
+        },
+        {
+            "issue": "道岔电流定反位对比时间超标0.15秒，达到0.2秒",
+            "count": 1698
+        },
+        {
+            "issue": "设备工作状态异常(检修状态:天窗修)",
+            "count": 1606
+        },
+        {
+            "issue": " 41.00 ℃ 超上限",
+            "count": 1377
+        }
+    ],
+    "trend": {
+        "status": "未知",
+        "growth": "0%"
+    }
+}

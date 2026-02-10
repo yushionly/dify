@@ -1,0 +1,4017 @@
+{
+  "HCX": {
+    "name": "何家村线路所",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SHX": {
+    "name": "朴树线路所",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG2": {
+    "name": "昌赣中继2",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FCD": {
+    "name": "丰城东站",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HJK": {
+    "name": "何家线路所远控室",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SHK": {
+    "name": "朴树线路所远控室",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG3": {
+    "name": "昌赣中继3",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG4": {
+    "name": "昌赣中继4",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZDG": {
+    "name": "樟树东高速场",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG5": {
+    "name": "昌赣中继5",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG6": {
+    "name": "昌赣中继6",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "XGD": {
+    "name": "新干东站",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG7": {
+    "name": "昌赣中继7",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "XAG": {
+    "name": "峡江高速场",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG8": {
+    "name": "昌赣中继8",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "CG9": {
+    "name": "昌赣中继9",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C10": {
+    "name": "昌赣中继10",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "JSX": {
+    "name": "吉水西站",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C11": {
+    "name": "昌赣中继11",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "JAX": {
+    "name": "吉安西站",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GTK": {
+    "name": "范家线路所远控室",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GTX": {
+    "name": "范家线路所",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C12": {
+    "name": "昌赣中继12",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "THG": {
+    "name": "泰和高速场",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C13": {
+    "name": "昌赣中继13",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C14": {
+    "name": "昌赣中继14",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "WAZ": {
+    "name": "万安县站",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C15": {
+    "name": "昌赣中继15",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C16": {
+    "name": "昌赣中继16",
+    "workshop": "吉安西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C17": {
+    "name": "昌赣中继17",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C18": {
+    "name": "昌赣中继18",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "XGX": {
+    "name": "兴国西站",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C19": {
+    "name": "昌赣中继19",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C20": {
+    "name": "昌赣中继20",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GBZ": {
+    "name": "赣县北站",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C21": {
+    "name": "昌赣中继21",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "C22": {
+    "name": "昌赣中继22",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXX": {
+    "name": "赣厦线路所",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXZ": {
+    "name": "赣州西站",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXK": {
+    "name": "赣厦线路所远控室",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXD": {
+    "name": "赣州西动车所",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXJ": {
+    "name": "赣州西监测中心监测",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "XES": {
+    "name": "南昌西动车二所",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "BKF": {
+    "name": "南昌西边跨机房监测",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "DCX": {
+    "name": "东村线路所",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DCK": {
+    "name": "东村线路所远控室",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NJX": {
+    "name": "南街线路所",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GBC": {
+    "name": "赣州西RBC机房",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS0": {
+    "name": "赣深中继站0",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS1": {
+    "name": "赣深中继站1",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS2": {
+    "name": "赣深中继站2",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS3": {
+    "name": "赣深中继站3",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "XFX": {
+    "name": "信丰西站",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS4": {
+    "name": "赣深中继站4",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS5": {
+    "name": "赣深中继站5",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS6": {
+    "name": "赣深中继站6",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "LND": {
+    "name": "龙南东站",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "GS7": {
+    "name": "赣深中继站7",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "DNN": {
+    "name": "定南南站",
+    "workshop": "赣州西高铁车间",
+    "ele_section": "南昌电务段"
+  },
+  "A15": {
+    "name": "安九中继15",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "HMN": {
+    "name": "黄梅南站",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "A16": {
+    "name": "安九中继16",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "A17": {
+    "name": "安九中继17",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "WJ3": {
+    "name": "武九中继3",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "RCX": {
+    "name": "瑞昌西",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "WJ4": {
+    "name": "武九中继4",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "CSZ": {
+    "name": "柴桑站",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "LSZ": {
+    "name": "庐山客专场",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "HJS": {
+    "name": "洪家山线路所",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "LSK": {
+    "name": "洪家山线路所远控室",
+    "workshop": "庐山城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "LZX": {
+    "name": "楼子下线路所",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "QKZ": {
+    "name": "旗口站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XCZ": {
+    "name": "新城站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CJZ": {
+    "name": "池江站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DYZ": {
+    "name": "大余站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "MGZ": {
+    "name": "梅关站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FNX": {
+    "name": "樟岚所",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CLZ": {
+    "name": "长乐站",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CLD": {
+    "name": "长乐东站",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SXZ": {
+    "name": "长乐南站",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FP1": {
+    "name": "福平中继1",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PTZ": {
+    "name": "平潭站",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WJZ": {
+    "name": "温郊站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MXZ": {
+    "name": "明溪站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SYX": {
+    "name": "三元西站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XKS": {
+    "name": "西坑站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YNX": {
+    "name": "永安南兴泉场",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GZX": {
+    "name": "葛州站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GQZ": {
+    "name": "广前站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XHZ": {
+    "name": "小湖站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DTB": {
+    "name": "大田北站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YTX": {
+    "name": "洋田站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DHZ": {
+    "name": "德化站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YCZ": {
+    "name": "永春站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PHX": {
+    "name": "蓬华站",
+    "workshop": "永安南普速信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PLZ": {
+    "name": "蓬鲁站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "AXD": {
+    "name": "安溪东站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NAB": {
+    "name": "南安北站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XFZ": {
+    "name": "雪峰站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HLZ": {
+    "name": "洪濑站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NAZ": {
+    "name": "南安装卸站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HTX": {
+    "name": "黄塘站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ALL": {
+    "name": "隘楼岭站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NHZ": {
+    "name": "宁化站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QLZ": {
+    "name": "清流站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HAN": {
+    "name": "惠安南站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YTN": {
+    "name": "鹰潭南站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YJZ": {
+    "name": "余家站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "XJS": {
+    "name": "肖家站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "SES": {
+    "name": "上清站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZSS": {
+    "name": "圳上站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "FSS": {
+    "name": "富庶岭站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "RQS": {
+    "name": "饶桥站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "GFS": {
+    "name": "高阜站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZXS": {
+    "name": "资溪站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "TCS": {
+    "name": "铁关村站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YDZ": {
+    "name": "园岱站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DSS": {
+    "name": "大禾山站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HQS": {
+    "name": "华桥站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DYS": {
+    "name": "大源村站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XGS": {
+    "name": "西陇站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GZZ": {
+    "name": "光泽站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HSZ": {
+    "name": "和顺站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MKS": {
+    "name": "莫口站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YCS": {
+    "name": "药村站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SWZ": {
+    "name": "邵武站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XWS": {
+    "name": "下王塘站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SKS": {
+    "name": "晒口站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WTS": {
+    "name": "吴家塘站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GDS": {
+    "name": "官墩站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NKS": {
+    "name": "拿口站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WMS": {
+    "name": "卫闽站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CFS": {
+    "name": "陈坊站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FWA": {
+    "name": "富文站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PSS": {
+    "name": "浦上站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JZS": {
+    "name": "吉舟站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SCS": {
+    "name": "顺昌站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YOS": {
+    "name": "洋口站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JIS": {
+    "name": "建西站",
+    "workshop": "邵武信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XAS": {
+    "name": "峡阳站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZOS": {
+    "name": "照口站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LDF": {
+    "name": "来舟到发场",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LZB": {
+    "name": "来舟Ⅲ场（编尾）",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LDD": {
+    "name": "来舟到达场",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WYZ": {
+    "name": "外洋站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QZZ": {
+    "name": "青州站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YXA": {
+    "name": "涌溪站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LJS": {
+    "name": "龙江村站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GSZ": {
+    "name": "高砂站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WNB": {
+    "name": "万能站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SM3": {
+    "name": "三明北鹰厦场",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DZZ": {
+    "name": "大洲站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SYS": {
+    "name": "上游站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SMD": {
+    "name": "三明东站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SMS": {
+    "name": "三元区站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JXS": {
+    "name": "荆西站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SFS": {
+    "name": "上房山站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GCZ": {
+    "name": "贡川站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YKZ": {
+    "name": "益口站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YAS": {
+    "name": "永安站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YFS": {
+    "name": "永浆站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GUS": {
+    "name": "桂口站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XYS": {
+    "name": "西洋站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DUS": {
+    "name": "打虎坑站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LOS": {
+    "name": "岭头站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "KZK": {
+    "name": "柯周坑站",
+    "workshop": "永安信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CKS": {
+    "name": "城口站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MYS": {
+    "name": "麦园站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CMS": {
+    "name": "城门站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QBS": {
+    "name": "钱坂站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZAS": {
+    "name": "卓宅站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZPS": {
+    "name": "漳平站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LZS": {
+    "name": "芦芝站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YES": {
+    "name": "易坑站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MSS": {
+    "name": "梅水坑站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XPS": {
+    "name": "西陂站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MLS": {
+    "name": "绵良站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HAS": {
+    "name": "华安站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XNS": {
+    "name": "溪南坂站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LSS": {
+    "name": "利水站",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "TKS": {
+    "name": "磹口站",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "CTS": {
+    "name": "长泰站",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "ZZD": {
+    "name": "漳州东站",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "LHZ": {
+    "name": "龙海站",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "YXS": {
+    "name": "K651线路所",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "DFX": {
+    "name": "东孚到发场及调车场",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "QCH": {
+    "name": "前场二场",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "DFI": {
+    "name": "东孚到达场",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "FNE": {
+    "name": "福州南动车二所",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FCC": {
+    "name": "福州南CCS监测",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FNY": {
+    "name": "福州南甬广场",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FRB": {
+    "name": "福州南RBC监测",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FNK": {
+    "name": "福州南远程控制室",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX1": {
+    "name": "福漳中继1",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX2": {
+    "name": "福漳中继2",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FQX": {
+    "name": "福清西站",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX3": {
+    "name": "福漳中继3",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX4": {
+    "name": "福漳中继4",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX5": {
+    "name": "福漳中继5",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PTY": {
+    "name": "莆田甬广场",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX6": {
+    "name": "福漳中继6",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX7": {
+    "name": "福漳中继7",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QGZ": {
+    "name": "泉港站",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX8": {
+    "name": "福漳中继8",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FX9": {
+    "name": "福漳中继9",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QZD": {
+    "name": "泉州东站",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F10": {
+    "name": "福漳中继10",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F11": {
+    "name": "福漳中继11",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QZN": {
+    "name": "泉州南站",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F12": {
+    "name": "福漳中继12",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F13": {
+    "name": "福漳中继13",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F14": {
+    "name": "福漳中继14",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F15": {
+    "name": "福漳中继15",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HSS": {
+    "name": "禾山所",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XBY": {
+    "name": "厦门北甬广场",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HSK": {
+    "name": "禾山所远程控制室",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XBE": {
+    "name": "厦门北动车二所",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F16": {
+    "name": "福漳中继16",
+    "workshop": "厦门北高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "F17": {
+    "name": "福漳中继17",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "BXS": {
+    "name": "北溪头所",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZZZ": {
+    "name": "漳州杭深场",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZZC": {
+    "name": "漳州存车场",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZZK": {
+    "name": "漳州远程控制室",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "H10": {
+    "name": "杭长中继10",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H11": {
+    "name": "杭长中继11",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "YSN": {
+    "name": "玉山南站",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H12": {
+    "name": "杭长中继12",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "12H": {
+    "name": "杭长中继12'",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "JFX": {
+    "name": "京福线路所",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "SRG": {
+    "name": "上饶高速场",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H13": {
+    "name": "杭长中继13",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H14": {
+    "name": "杭长中继14",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H15": {
+    "name": "杭长中继15",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "YYZ": {
+    "name": "弋阳高速场",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H16": {
+    "name": "杭长中继16",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H17": {
+    "name": "杭长中继17",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "YTB": {
+    "name": "鹰潭北站",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H18": {
+    "name": "杭长中继18",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H19": {
+    "name": "杭长中继19",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "FZD": {
+    "name": "抚州东站",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H20": {
+    "name": "杭长中继20",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H21": {
+    "name": "杭长中继21",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "JXN": {
+    "name": "进贤南站",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H22": {
+    "name": "杭长中继22",
+    "workshop": "鹰潭北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "HGX": {
+    "name": "横岗线路所",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H23": {
+    "name": "杭长中继23",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "NCX": {
+    "name": "南昌西高速场",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "NXK": {
+    "name": "南昌西综控室",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "XPX": {
+    "name": "向莆线路所",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H24": {
+    "name": "杭长中继24",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H25": {
+    "name": "杭长中继25",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "GAZ": {
+    "name": "高安站",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H26": {
+    "name": "杭长中继26",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H27": {
+    "name": "杭长中继27",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H28": {
+    "name": "杭长中继28",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H29": {
+    "name": "杭长中继29",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "XYB": {
+    "name": "新余北站",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H30": {
+    "name": "杭长中继30",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H31": {
+    "name": "杭长中继31",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H32": {
+    "name": "杭长中继32",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "YCG": {
+    "name": "宜春高速场",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H33": {
+    "name": "杭长中继33",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H34": {
+    "name": "杭长中继34",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H35": {
+    "name": "杭长中继35",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "PXB": {
+    "name": "萍乡北站",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "H36": {
+    "name": "杭长中继36",
+    "workshop": "新余北综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "DXZ": {
+    "name": "东乡站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YJS": {
+    "name": "余江站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YTZ": {
+    "name": "鹰潭站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXS": {
+    "name": "贵溪站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YT3": {
+    "name": "鹰潭三场",
+    "workshop": "鹰潭驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "YTI": {
+    "name": "鹰潭一场",
+    "workshop": "鹰潭驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "YTW": {
+    "name": "鹰潭编尾",
+    "workshop": "鹰潭驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "HYZ": {
+    "name": "湖沿站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YSZ": {
+    "name": "玉山站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GFF": {
+    "name": "广丰站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SRP": {
+    "name": "上饶普速场",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "K8X": {
+    "name": "385线路所",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FLT": {
+    "name": "枫岭头站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "KKZ": {
+    "name": "坑口站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HFZ": {
+    "name": "横峰站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YYP": {
+    "name": "弋阳普速场",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HTB": {
+    "name": "河潭埠站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FZY": {
+    "name": "分宜站",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XYZ": {
+    "name": "新余站",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LFZ": {
+    "name": "罗坊站",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HTG": {
+    "name": "黄土岗站",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LJG": {
+    "name": "临江镇站",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DQX": {
+    "name": "灯芯桥站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YZA": {
+    "name": "姚家洲站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "PXZ": {
+    "name": "萍乡新场",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "QJZ": {
+    "name": "泉江站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "BYZ": {
+    "name": "白源站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "LXA": {
+    "name": "芦溪站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "XCS": {
+    "name": "西村站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YCX": {
+    "name": "宜春西站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YCP": {
+    "name": "宜春普速场",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "BJZ": {
+    "name": "彬江站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YQZ": {
+    "name": "衙前站",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JXZ": {
+    "name": "进贤站",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "WJJ": {
+    "name": "温家圳",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LJD": {
+    "name": "梁家渡站",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "TGZ": {
+    "name": "潭岗站",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZJS": {
+    "name": "张家山站",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZSZ": {
+    "name": "樟树站",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "TCB": {
+    "name": "拖船埠站",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FCZ": {
+    "name": "丰城站",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "TJZ": {
+    "name": "童家站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "HXZ": {
+    "name": "河下站",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YTE": {
+    "name": "鹰潭II场驼峰",
+    "workshop": "鹰潭驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "PXL": {
+    "name": "萍乡老场",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "HPX": {
+    "name": "河下培训基地",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "KME": {
+    "name": "可门II场STP机房",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZJ2": {
+    "name": "温福中继2",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FDZ": {
+    "name": "福鼎站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "TMS": {
+    "name": "太姥山站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZJ3": {
+    "name": "温福中继3",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XPZ": {
+    "name": "霞浦站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZJ4": {
+    "name": "温福中继4",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FAZ": {
+    "name": "福安站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZJ5": {
+    "name": "温福中继5",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NDZ": {
+    "name": "宁德站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZJ6": {
+    "name": "温福中继6",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LYZ": {
+    "name": "罗源站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "TBZ": {
+    "name": "透堡站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "KMZ": {
+    "name": "可门站",
+    "workshop": "宁德信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LJZ": {
+    "name": "连江站",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "ZJ7": {
+    "name": "温福中继7",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "WFX": {
+    "name": "温福线路所",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "FXX": {
+    "name": "福厦线路所",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "ZLX": {
+    "name": "樟林线路所",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "ZLY": {
+    "name": "樟林I场",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "ZLE": {
+    "name": "樟林II场",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "ZLS": {
+    "name": "樟林III场",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "FZN": {
+    "name": "福州南杭深场",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "FND": {
+    "name": "福州南动车一所",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "ZLK": {
+    "name": "樟林三所远控",
+    "workshop": "樟林驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "FRC": {
+    "name": "福州RBC监测",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z1F": {
+    "name": "福厦中继1",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z2F": {
+    "name": "福厦中继2",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FQF": {
+    "name": "福清站",
+    "workshop": "福州南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YXF": {
+    "name": "渔溪站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HJF": {
+    "name": "涵江站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PTF": {
+    "name": "莆田杭深场",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z3F": {
+    "name": "福厦中继3",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XYF": {
+    "name": "仙游站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z4F": {
+    "name": "福厦中继4",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HAF": {
+    "name": "惠安站",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QZF": {
+    "name": "泉州站",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z6F": {
+    "name": "福厦中继6",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JJF": {
+    "name": "晋江站",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z7F": {
+    "name": "福厦中继7",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XAF": {
+    "name": "翔安站",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XXF": {
+    "name": "厦门北杭深场",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XBD": {
+    "name": "厦门北动车一所",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XBK": {
+    "name": "厦门北客车技术整备所",
+    "workshop": "厦门北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XLS": {
+    "name": "杏林站",
+    "workshop": "厦门信号车间",
+    "ele_section": "福州电务段"
+  },
+  "X2S": {
+    "name": "高崎II场",
+    "workshop": "厦门信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XMI": {
+    "name": "高崎I场",
+    "workshop": "厦门信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XMF": {
+    "name": "厦门站",
+    "workshop": "厦门信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XMK": {
+    "name": "厦门客车技术整备所",
+    "workshop": "厦门信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QCZ": {
+    "name": "前场I场",
+    "workshop": "厦门信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JMZ": {
+    "name": "角美站",
+    "workshop": "厦门信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z1Z": {
+    "name": "厦深中继1",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z2Z": {
+    "name": "厦深中继2",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZPZ": {
+    "name": "漳浦站",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z3Z": {
+    "name": "厦深中继3",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YAZ": {
+    "name": "云霄站",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "Z4Z": {
+    "name": "厦深中继4",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZAZ": {
+    "name": "诏安站",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LSC": {
+    "name": "庐山城际场",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "K23": {
+    "name": "K23线路所",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "CJ1": {
+    "name": "昌九城际中继1",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "DAC": {
+    "name": "德安城际场",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "GQC": {
+    "name": "共青城城际场",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "CJ2": {
+    "name": "昌九城际中继2",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "YXC": {
+    "name": "永修城际场",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "CJ3": {
+    "name": "昌九城际中继3",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "LHC": {
+    "name": "乐化城际场",
+    "workshop": "永修城际车间",
+    "ele_section": "南昌电务段"
+  },
+  "BJA": {
+    "name": "八景站",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YPZ": {
+    "name": "永平站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XSX": {
+    "name": "铅山西站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CTH": {
+    "name": "茶亭站",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "K3X": {
+    "name": "K3线路所",
+    "workshop": "上饶信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CJH": {
+    "name": "陈家寨",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WLF": {
+    "name": "五里峰",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HLK": {
+    "name": "黄莲坑",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YZZ": {
+    "name": "洋庄站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SDZ": {
+    "name": "四渡站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WYS": {
+    "name": "武夷山",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XDZ": {
+    "name": "仙店站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JKZ": {
+    "name": "将口站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JYZ": {
+    "name": "建阳站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YDH": {
+    "name": "杨墩站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XDA": {
+    "name": "徐墩站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JOZ": {
+    "name": "建瓯站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NYZ": {
+    "name": "南雅站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CDZ": {
+    "name": "陈墩站",
+    "workshop": "武夷山信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YPD": {
+    "name": "延平东",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "AJZ": {
+    "name": "安济站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HLS": {
+    "name": "葫芦山站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XGI": {
+    "name": "下过溪站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZHB": {
+    "name": "樟湖板站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GTZ": {
+    "name": "古田站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SKA": {
+    "name": "水口站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PHA": {
+    "name": "浦后站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DNZ": {
+    "name": "大箬站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MQZ": {
+    "name": "闽清站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DMC": {
+    "name": "大目埕站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "BSZ": {
+    "name": "白沙镇站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MHZ": {
+    "name": "闽侯站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JBZ": {
+    "name": "江坂站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FZK": {
+    "name": "福州客技站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FZZ": {
+    "name": "福州站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CF2": {
+    "name": "昌福中继2",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DGZ": {
+    "name": "大岗站",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CF3": {
+    "name": "昌福中继3",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FZH": {
+    "name": "抚州站",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FZB": {
+    "name": "抚州北站",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LCZ": {
+    "name": "临川站",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "TQZ": {
+    "name": "腾桥站",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CF4": {
+    "name": "昌福中继4",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NCH": {
+    "name": "南城站",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CF5": {
+    "name": "昌福中继5",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NFZ": {
+    "name": "南丰站",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CF6": {
+    "name": "昌福中继6",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CF7": {
+    "name": "昌福中继7",
+    "workshop": "抚州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SJZ": {
+    "name": "三江镇站",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JNB": {
+    "name": "建宁县北站",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XP8": {
+    "name": "昌福中继8",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "TNZ": {
+    "name": "泰宁站",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XP9": {
+    "name": "昌福中继9",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P10": {
+    "name": "昌福中继10",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JLZ": {
+    "name": "将乐站",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P11": {
+    "name": "昌福中继11",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XMZ": {
+    "name": "夏茂站",
+    "workshop": "泰宁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P12": {
+    "name": "昌福中继12",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SMB": {
+    "name": "三明北昌福场",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P13": {
+    "name": "昌福中继13",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P14": {
+    "name": "昌福中继14",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YXZ": {
+    "name": "尤溪站",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P15": {
+    "name": "昌福中继15",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZXZ": {
+    "name": "中仙站",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P16": {
+    "name": "昌福中继16",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CQZ": {
+    "name": "长庆站",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P17": {
+    "name": "昌福中继17",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P18": {
+    "name": "昌福中继18",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YTH": {
+    "name": "永泰站",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P19": {
+    "name": "昌福中继19",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P20": {
+    "name": "昌福中继20",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HJB": {
+    "name": "涵江北站",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P21": {
+    "name": "昌福中继21",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P22": {
+    "name": "昌福中继22",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "P23": {
+    "name": "昌福中继23",
+    "workshop": "永泰信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DWZ": {
+    "name": "杜坞站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NCY": {
+    "name": "南昌西动车一所",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "NXC": {
+    "name": "南昌西城际场",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "CF1": {
+    "name": "昌福中继1",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "NDS": {
+    "name": "农大线路所",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "NXZ": {
+    "name": "南昌西城际场综控室",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "WZZ": {
+    "name": "文竹站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "LHT": {
+    "name": "莲花站",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "MDZ": {
+    "name": "茅店站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LAZ": {
+    "name": "罗坳站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YDP": {
+    "name": "于都普速场",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HCP": {
+    "name": "会昌北普速场",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HLH": {
+    "name": "黄麟站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SMX": {
+    "name": "石门圩",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XCF": {
+    "name": "小池镇站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JYA": {
+    "name": "蛟洋站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZYS": {
+    "name": "苎园站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XQF": {
+    "name": "新泉镇站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZFS": {
+    "name": "中复站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HTZ": {
+    "name": "河田站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CTF": {
+    "name": "长汀站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GCS": {
+    "name": "金峰山站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GPY": {
+    "name": "平江远控终端",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GPJ": {
+    "name": "平江线路所",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GL1": {
+    "name": "赣龙中继1",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GYD": {
+    "name": "于都快速场",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GYY": {
+    "name": "于都远控终端",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GL2": {
+    "name": "赣龙中继2",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HCB": {
+    "name": "会昌北快速场",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GL3": {
+    "name": "赣龙中继3",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GRJ": {
+    "name": "瑞金站",
+    "workshop": "瑞金信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GL4": {
+    "name": "赣龙中继4",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GCT": {
+    "name": "长汀南快速场",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GL5": {
+    "name": "赣龙中继5",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GGZ": {
+    "name": "冠豸山南站",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GL6": {
+    "name": "赣龙中继6",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GL7": {
+    "name": "赣龙中继7",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GSH": {
+    "name": "古田会址站",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GL8": {
+    "name": "赣龙中继8",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GAP": {
+    "name": "矮陂线路所",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LYC": {
+    "name": "龙岩动车存车场",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LYH": {
+    "name": "龙岩合署办公点",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MCZ": {
+    "name": "睦村站",
+    "workshop": "井冈山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LSH": {
+    "name": "龙市站",
+    "workshop": "井冈山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "BSH": {
+    "name": "白石站",
+    "workshop": "井冈山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JGS": {
+    "name": "井冈山站",
+    "workshop": "井冈山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JBH": {
+    "name": "江边站",
+    "workshop": "井冈山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SKB": {
+    "name": "石坑站",
+    "workshop": "井冈山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YYJ": {
+    "name": "永阳街站",
+    "workshop": "井冈山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LYR": {
+    "name": "龙岩RBC监测",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LL1": {
+    "name": "龙龙中继1",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SHZ": {
+    "name": "上杭站",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LL2": {
+    "name": "龙龙中继2",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LL3": {
+    "name": "龙龙中继3",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WPZ": {
+    "name": "武平站",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NDD": {
+    "name": "南昌东动车所",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NDB": {
+    "name": "南昌东动车所边跨",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JG7": {
+    "name": "京港中继站7",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "J17": {
+    "name": "合福中继站17",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J18": {
+    "name": "合福中继站18",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J19": {
+    "name": "合福中继站19",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J20": {
+    "name": "合福中继站20",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J21": {
+    "name": "合福中继站21",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "WYH": {
+    "name": "婺源合福场",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J22": {
+    "name": "合福中继站22",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J23": {
+    "name": "合福中继站23",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "DXA": {
+    "name": "德兴站",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J24": {
+    "name": "合福中继站24",
+    "workshop": "婺源综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J25": {
+    "name": "合福中继站25",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J26": {
+    "name": "合福中继站26",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "HSR": {
+    "name": "上饶合福场",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "SRX": {
+    "name": "上饶线路所",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J27": {
+    "name": "合福中继站27",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "WFZ": {
+    "name": "五府山站",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J28": {
+    "name": "合福中继站28",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J29": {
+    "name": "合福中继站29",
+    "workshop": "上饶综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J30": {
+    "name": "合福中继站30",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J31": {
+    "name": "合福中继站31",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "WYB": {
+    "name": "武夷山北站",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J32": {
+    "name": "合福中继站32",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J33": {
+    "name": "合福中继站33",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "WYD": {
+    "name": "南平市站",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J34": {
+    "name": "合福中继站34",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J35": {
+    "name": "合福中继站35",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J36": {
+    "name": "合福中继站36",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "JOX": {
+    "name": "建瓯西站",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J37": {
+    "name": "合福中继站37",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "J38": {
+    "name": "合福中继站38",
+    "workshop": "南平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "HXX": {
+    "name": "红星线路所",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "NPB": {
+    "name": "延平站",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "F39": {
+    "name": "合福中继39",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "F40": {
+    "name": "合福中继40",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "GTB": {
+    "name": "古田北站",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "F41": {
+    "name": "合福中继41",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "MQB": {
+    "name": "闽清北站",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "F42": {
+    "name": "合福中继42",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "F43": {
+    "name": "合福中继43",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "F44": {
+    "name": "合福中继44",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "FLD": {
+    "name": "浮梁东站",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "A19": {
+    "name": "杭昌中继19",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "A20": {
+    "name": "杭昌中继20",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LPB": {
+    "name": "乐平北站",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "A21": {
+    "name": "杭昌中继21",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "PYZ": {
+    "name": "鄱阳站",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "A22": {
+    "name": "杭昌中继22",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YGZ": {
+    "name": "余干站",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "A23": {
+    "name": "杭昌中继23",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JXB": {
+    "name": "进贤北站",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "A24": {
+    "name": "杭昌中继24",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "A25": {
+    "name": "杭昌中继25",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NCD": {
+    "name": "南昌东站",
+    "workshop": "南昌东高铁信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NDC": {
+    "name": "南昌东RBC机房",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "TCX": {
+    "name": "唐村所",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "TCY": {
+    "name": "唐村所远控",
+    "workshop": "南昌西综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "YSS": {
+    "name": "雁石站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "BWZ": {
+    "name": "坂尾站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GTS": {
+    "name": "基太站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "TSS": {
+    "name": "铁山洋站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HHS": {
+    "name": "红炭山站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FIS": {
+    "name": "富岭站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XSS": {
+    "name": "仙师站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "KSZ": {
+    "name": "坎市站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YDB": {
+    "name": "永定站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "TSF": {
+    "name": "铁山洋驼峰",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SBZ": {
+    "name": "苏坂站",
+    "workshop": "漳平信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HTS": {
+    "name": "湖头站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SCF": {
+    "name": "施厝站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PLS": {
+    "name": "苹林站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CJS": {
+    "name": "长基站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JDS": {
+    "name": "剑斗站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XGN": {
+    "name": "兴国南所",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "BTZ": {
+    "name": "埠头站",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YDC": {
+    "name": "于都北站",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LCA": {
+    "name": "赖村站",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NDA": {
+    "name": "宁都站",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GZY": {
+    "name": "果子园站",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HSX": {
+    "name": "荷树下站",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SCD": {
+    "name": "石城东站",
+    "workshop": "宁都信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XTZ": {
+    "name": "向塘站",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YJL": {
+    "name": "杨家岭站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YXT": {
+    "name": "永修普速场",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HGZ": {
+    "name": "南昌南站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LTA": {
+    "name": "莲塘站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NCN": {
+    "name": "青云谱站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NCZ": {
+    "name": "南昌站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DZF": {
+    "name": "南昌站东站房",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "KZS": {
+    "name": "南昌客整所站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "N2C": {
+    "name": "南昌II场",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NCB": {
+    "name": "南昌北站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CBH": {
+    "name": "昌北货场",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LHS": {
+    "name": "乐化普速场",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XQA": {
+    "name": "新祺周站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "X48": {
+    "name": "向塘西上行场(IV/VIII场)",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "X1C": {
+    "name": "向塘西上行到达场(I场)",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "X7C": {
+    "name": "向塘西下行出发直通场(VII场)",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "X6C": {
+    "name": "向塘西下行调车场(VI场)",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "XXT": {
+    "name": "向西编组站下行驼峰场",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZDL": {
+    "name": "向西SAM",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "X5C": {
+    "name": "向塘西下行到达场(V场)",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "X23": {
+    "name": "上行发北场及调车场(II/III场)",
+    "workshop": "向西驼峰车间",
+    "ele_section": "南昌电务段"
+  },
+  "DAZ": {
+    "name": "德安普速场",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GQA": {
+    "name": "共青城普速场",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JST": {
+    "name": "军山中继站",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GTT": {
+    "name": "高塘中继站",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NHL": {
+    "name": "马回岭站",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LSP": {
+    "name": "庐山普速场",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JX2": {
+    "name": "九江西上行场",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JBW": {
+    "name": "九西编尾",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JJA": {
+    "name": "九江站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JX1": {
+    "name": "九江西下行场",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XCK": {
+    "name": "小池口站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "KLZ": {
+    "name": "孔垄站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JJN": {
+    "name": "九江南站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZSD": {
+    "name": "樟树东普速场",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FCN": {
+    "name": "丰城南站",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZXA": {
+    "name": "张巷站",
+    "workshop": "樟树信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JAA": {
+    "name": "吉安站",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JAN": {
+    "name": "吉安南站",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JSZ": {
+    "name": "吉水站",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LQZ": {
+    "name": "醪桥站",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "BDZ": {
+    "name": "八都站",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XJP": {
+    "name": "峡江普速场",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XAA": {
+    "name": "新干站",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DYA": {
+    "name": "大洋洲站",
+    "workshop": "吉安信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NTZ": {
+    "name": "南塘镇",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LKA": {
+    "name": "龙口站",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXC": {
+    "name": "高兴站",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YPS": {
+    "name": "营盘上站",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SCA": {
+    "name": "沙村站",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GCA": {
+    "name": "冠朝站",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "THZ": {
+    "name": "泰和普速场",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XGZ": {
+    "name": "兴国站",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LHA": {
+    "name": "龙回站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NKZ": {
+    "name": "赣州国际港",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GZG": {
+    "name": "南康口岸站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GZN": {
+    "name": "赣州南站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GZA": {
+    "name": "赣州站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GZK": {
+    "name": "赣州站客车整备所",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GZD": {
+    "name": "赣州东站",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GZT": {
+    "name": "赣州东驼峰",
+    "workshop": "赣州信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DNA": {
+    "name": "定南站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXA": {
+    "name": "关西镇",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LNZ": {
+    "name": "龙南站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XJT": {
+    "name": "小江站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "TSK": {
+    "name": "铁石口站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XFD": {
+    "name": "信丰电厂站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XFA": {
+    "name": "信丰站",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DTC": {
+    "name": "大塘埠线路所",
+    "workshop": "信丰信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GGX": {
+    "name": "赣县站",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "QLH": {
+    "name": "七里湖站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "QLE": {
+    "name": "七里湖二场",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CXG": {
+    "name": "城西港站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "BSQ": {
+    "name": "保税区站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "RJD": {
+    "name": "华能瑞金电厂",
+    "workshop": "兴国信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "PPH": {
+    "name": "琵琶湖",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JZ1": {
+    "name": "衢九中继1",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HKZ": {
+    "name": "湖口站",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JZ2": {
+    "name": "衢九中继2",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DCZ": {
+    "name": "都昌站",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JZ3": {
+    "name": "衢九中继3",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YDJ": {
+    "name": "油墩街",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "PYB": {
+    "name": "鄱阳北站",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JZ4": {
+    "name": "衢九中继4",
+    "workshop": "都昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JDB": {
+    "name": "景德镇北",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JZ5": {
+    "name": "衢九中继5",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FCS": {
+    "name": "赋春站",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "QSC": {
+    "name": "桥上村站",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "WYX": {
+    "name": "婺源北线路所",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "WQJ": {
+    "name": "婺源衢九场",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DXD": {
+    "name": "德兴东站",
+    "workshop": "景德镇北信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "MDA": {
+    "name": "马当站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "QSZ": {
+    "name": "泉山站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "PZZ": {
+    "name": "彭泽站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LST": {
+    "name": "流泗站",
+    "workshop": "九江信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "YSL": {
+    "name": "硬石岭站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZCZ": {
+    "name": "中村站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "GXB": {
+    "name": "贵溪北站",
+    "workshop": "鹰潭普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YLS": {
+    "name": "营里站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "ZTZ": {
+    "name": "峙滩站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FGZ": {
+    "name": "福港站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HKA": {
+    "name": "韩坑站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FLC": {
+    "name": "浮梁站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FLN": {
+    "name": "浮梁南线路所",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JDZ": {
+    "name": "景德镇站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JDN": {
+    "name": "景德镇南站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "NYS": {
+    "name": "鲇鱼山站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "CYA": {
+    "name": "慈义站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "TQA": {
+    "name": "塔前站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "LPZ": {
+    "name": "乐平站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "QQZ": {
+    "name": "库前站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HML": {
+    "name": "韩美岭站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "WNA": {
+    "name": "万年站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "GJD": {
+    "name": "葛家店站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "HQA": {
+    "name": "画桥站",
+    "workshop": "景德镇信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "JLL": {
+    "name": "九里垄站",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "RCZ": {
+    "name": "瑞昌站",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "BRF": {
+    "name": "白杨畈站",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XFS": {
+    "name": "夏畈站",
+    "workshop": "庐山信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XH1": {
+    "name": "西环中继1",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "SMZ": {
+    "name": "生米站",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XH2": {
+    "name": "西环中继2",
+    "workshop": "南昌信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XDX": {
+    "name": "向东线路所",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "XTW": {
+    "name": "向塘物流基地",
+    "workshop": "向塘信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "FDS": {
+    "name": "福州东站",
+    "workshop": "福州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LYD": {
+    "name": "龙岩东站",
+    "workshop": "龙岩信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LYK": {
+    "name": "龙岩站",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DNX": {
+    "name": "东南线路所",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "MKA": {
+    "name": "马坑站",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LX1": {
+    "name": "龙厦中继站1",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LX2": {
+    "name": "龙厦中继站2",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LSA": {
+    "name": "龙山镇站",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NJZ": {
+    "name": "南靖站",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CBZ": {
+    "name": "草坂站",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WCZ": {
+    "name": "辋川站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SHS": {
+    "name": "辋川石化站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XCA": {
+    "name": "肖厝站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DWA": {
+    "name": "斗尾站",
+    "workshop": "泉州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PTD": {
+    "name": "莆田东站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YTA": {
+    "name": "月塘站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LDX": {
+    "name": "罗屿东线路所",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DPZ": {
+    "name": "东埔站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DWB": {
+    "name": "东吴站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JYG": {
+    "name": "江阴港站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LYA": {
+    "name": "罗屿站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DXB": {
+    "name": "度下站",
+    "workshop": "莆田信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HLX": {
+    "name": "后岭线路所",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "YPX": {
+    "name": "延平西南龙场",
+    "workshop": "延平综合维修车间",
+    "ele_section": "南昌高铁基础设施段"
+  },
+  "NL1": {
+    "name": "南龙中继站1",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SML": {
+    "name": "三明北南龙场",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NL2": {
+    "name": "南龙中继站2",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SMN": {
+    "name": "三明站",
+    "workshop": "三明北信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NL3": {
+    "name": "南龙中继站3",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YAN": {
+    "name": "永安南南龙场",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NL4": {
+    "name": "南龙中继站4",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SYA": {
+    "name": "双洋站",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NL5": {
+    "name": "南龙中继站5",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZPX": {
+    "name": "漳平西站",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NL6": {
+    "name": "南龙中继站6",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YSB": {
+    "name": "雁石南站",
+    "workshop": "永安南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NSX": {
+    "name": "南石线路所",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LYY": {
+    "name": "龙岩远程控制终端",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HYX": {
+    "name": "湖一线路所",
+    "workshop": "龙岩高铁信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SXA": {
+    "name": "松溪站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "CPZ": {
+    "name": "茶平站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZHS": {
+    "name": "政和站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QXS": {
+    "name": "小绍站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JOD": {
+    "name": "建瓯东站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QDZ": {
+    "name": "地州站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DBZ": {
+    "name": "大碑站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QGT": {
+    "name": "龟潭站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "PNZ": {
+    "name": "屏南站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LMZ": {
+    "name": "礼门站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZNZ": {
+    "name": "周宁站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZTS": {
+    "name": "支提山站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "QSY": {
+    "name": "漳湾三屿站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZWZ": {
+    "name": "漳湾站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NDE": {
+    "name": "宁德北站",
+    "workshop": "屏南信号车间",
+    "ele_section": "福州电务段"
+  },
+  "LSJ": {
+    "name": "绿水站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NXW": {
+    "name": "延平西外南场",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "XQB": {
+    "name": "西芹站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "NPZ": {
+    "name": "水南站",
+    "workshop": "来舟信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZZB": {
+    "name": "漳州北站",
+    "workshop": "东孚驼峰车间",
+    "ele_section": "福州电务段"
+  },
+  "CPS": {
+    "name": "陈坡所",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "WHZ": {
+    "name": "文亨站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "GZS": {
+    "name": "冠豸山站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YYA": {
+    "name": "杨源站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DJZ": {
+    "name": "邓家站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "TYZ": {
+    "name": "田源站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "YFZ": {
+    "name": "严坊站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HWZ": {
+    "name": "何屋站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "SQA": {
+    "name": "水茜站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HST": {
+    "name": "黄沙潭站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JKA": {
+    "name": "均口站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "HLB": {
+    "name": "黄岭站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "JNN": {
+    "name": "建宁南站",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "DCS": {
+    "name": "斗埕所",
+    "workshop": "宁化信号车间",
+    "ele_section": "福州电务段"
+  },
+  "ZPH": {
+    "name": "漳浦杭深场",
+    "workshop": "漳州信号车间",
+    "ele_section": "福州电务段"
+  },
+  "FRS": {
+    "name": "甬广TSRS中心接口",
+    "workshop": "福州电子设备车间",
+    "ele_section": "福州电务段"
+  },
+  "NMS": {
+    "name": "南昌DMS中心接口",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "HBC": {
+    "name": "杭昌RBC中心接口",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "HRS": {
+    "name": "杭昌TSRS中心接口",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "HYW": {
+    "name": "CTC综合运维平台",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "NMJ": {
+    "name": "南昌段门禁中心接口",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "LMD": {
+    "name": "南昌LMD中心接口",
+    "workshop": "南昌电子设备车间",
+    "ele_section": "南昌电务段"
+  },
+  "FYZ": {
+    "name": "分宜站(10)",
+    "workshop": "新余信号车间",
+    "ele_section": "南昌电务段"
+  },
+  "DXQ": {
+    "name": "灯芯桥站(10)",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "YZJ": {
+    "name": "姚家洲站(10)",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "PXX": {
+    "name": "萍乡站(10)",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  },
+  "LXZ": {
+    "name": "芦溪站(10)",
+    "workshop": "萍乡普速车间",
+    "ele_section": "南昌电务段"
+  }
+}
