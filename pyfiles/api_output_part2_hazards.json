@@ -36,11 +36,11 @@
             "top_faulty_stations": [
                 {
                     "name": "ZPS",
-                    "count": 904
+                    "count": 1039
                 },
                 {
                     "name": "NCX",
-                    "count": 659
+                    "count": 660
                 },
                 {
                     "name": "ZLY",
@@ -52,7 +52,7 @@
                 },
                 {
                     "name": "RCX",
-                    "count": 136
+                    "count": 137
                 },
                 {
                     "name": "MQB",
@@ -60,69 +60,65 @@
                 }
             ]
         },
-        "track": {
+        "signal": {
             "top_alarm_types": [
                 {
-                    "name": "Unknown",
-                    "count": 13673
+                    "name": "破封按钮报警",
+                    "count": 42
                 },
                 {
-                    "name": "道岔电流定反位对比时间超标0.15秒，达到0.16秒",
-                    "count": 2878
+                    "name": "信号机1DJ模拟量超上限（188.88）",
+                    "count": 1
                 },
                 {
-                    "name": "4047-L灯丝断丝",
-                    "count": 2707
+                    "name": "信号机XXX非正常关闭报警",
+                    "count": 1
                 },
                 {
-                    "name": "0.00,超下限报警",
-                    "count": 2144
+                    "name": "信号机1DJ模拟量超下限（88.02）",
+                    "count": 1
                 },
                 {
-                    "name": "道岔电流定反位对比时间超标0.15秒，达到0.2秒",
-                    "count": 1698
+                    "name": "信号机1DJ模拟量超下限（96.48）",
+                    "count": 1
                 },
                 {
-                    "name": "41.00 ℃ 超上限",
-                    "count": 1377
+                    "name": "信号机1DJ模拟量超下限（83.49）",
+                    "count": 1
                 }
             ],
             "top_faulty_stations": [
                 {
-                    "name": "P15",
-                    "count": 2757
+                    "name": "ZLE",
+                    "count": 14
                 },
                 {
-                    "name": "YZJ",
-                    "count": 2400
+                    "name": "FDZ",
+                    "count": 10
                 },
                 {
-                    "name": "YJS",
-                    "count": 2000
+                    "name": "KMZ",
+                    "count": 8
                 },
                 {
-                    "name": "NXC",
-                    "count": 1881
+                    "name": "NPB",
+                    "count": 7
                 },
                 {
-                    "name": "ZAZ",
-                    "count": 1827
+                    "name": "MQB",
+                    "count": 7
                 },
                 {
-                    "name": "XAA",
-                    "count": 1621
+                    "name": "LJZ",
+                    "count": 6
                 }
             ]
         },
-        "control": {
+        "track": {
             "top_alarm_types": [
                 {
                     "name": "移频轨道电路主轨入电压模拟量突变预警",
                     "count": 718
-                },
-                {
-                    "name": "电源屏电压模拟量超下限（13.06）",
-                    "count": 418
                 },
                 {
                     "name": "接收主机主轨出电压调整超下限",
@@ -133,19 +129,19 @@
                     "count": 192
                 },
                 {
-                    "name": "电源屏电压模拟量超下限（0.00）",
-                    "count": 146
-                },
-                {
                     "name": "移频轨道电路主轨出电压模拟量突变预警",
                     "count": 138
+                },
+                {
+                    "name": "主轨出电压分路超上限",
+                    "count": 133
+                },
+                {
+                    "name": "室外发送端分机异常",
+                    "count": 64
                 }
             ],
             "top_faulty_stations": [
-                {
-                    "name": "C16",
-                    "count": 379
-                },
                 {
                     "name": "RCX",
                     "count": 246
@@ -164,61 +160,119 @@
                 },
                 {
                     "name": "PTZ",
-                    "count": 201
+                    "count": 193
+                },
+                {
+                    "name": "C16",
+                    "count": 184
+                }
+            ]
+        },
+        "control": {
+            "top_alarm_types": [
+                {
+                    "name": "区段逻辑状态故障占用",
+                    "count": 639
+                },
+                {
+                    "name": "故障占用",
+                    "count": 362
+                },
+                {
+                    "name": "破封按钮报警",
+                    "count": 157
+                },
+                {
+                    "name": "区段逻辑状态失去分路",
+                    "count": 140
+                },
+                {
+                    "name": "失去分路",
+                    "count": 75
+                },
+                {
+                    "name": "Unknown",
+                    "count": 23
+                }
+            ],
+            "top_faulty_stations": [
+                {
+                    "name": "FP1",
+                    "count": 73
+                },
+                {
+                    "name": "PTZ",
+                    "count": 65
+                },
+                {
+                    "name": "A16",
+                    "count": 62
+                },
+                {
+                    "name": "C11",
+                    "count": 57
+                },
+                {
+                    "name": "XPZ",
+                    "count": 56
+                },
+                {
+                    "name": "F16",
+                    "count": 48
                 }
             ]
         },
         "power": {
             "top_alarm_types": [
                 {
-                    "name": "破封按钮报警",
-                    "count": 157
+                    "name": "外电网电压模拟量超下限（0.00）",
+                    "count": 555
                 },
                 {
-                    "name": "Unknown",
-                    "count": 23
+                    "name": "电源屏电压模拟量超下限（13.06）",
+                    "count": 418
                 },
                 {
-                    "name": "联锁信号故障关闭报警",
-                    "count": 12
+                    "name": "外电网A相电压模拟量超下限（0.00）",
+                    "count": 259
                 },
                 {
-                    "name": "联锁接口断开报警",
-                    "count": 4
+                    "name": "电源屏电压模拟量超下限（0.00）",
+                    "count": 146
                 },
                 {
-                    "name": "工作状态故障",
-                    "count": 4
+                    "name": "外电网频率模拟量超下限（0.00）",
+                    "count": 142
                 },
                 {
-                    "name": "34挤岔报警",
-                    "count": 2
+                    "name": "电源屏电压模拟量超下限（13.00）",
+                    "count": 98
                 }
             ],
             "top_faulty_stations": [
                 {
-                    "name": "FND",
-                    "count": 26
+                    "name": "C16",
+                    "count": 209
                 },
                 {
-                    "name": "NCX",
-                    "count": 22
+                    "name": "C15",
+                    "count": 169
                 },
                 {
-                    "name": "LSZ",
-                    "count": 17
+                    "name": "C17",
+                    "count": 128
                 },
                 {
-                    "name": "ZPS",
-                    "count": 15
+                    "name": "FX4",
+                    "count": 93
                 },
                 {
-                    "name": "PTZ",
-                    "count": 15
+                    "name": "H33",
+                    "count": 93
                 },
                 {
-                    "name": "NDZ",
-                    "count": 13
+                    "name": "H34",
+                    "count": 92
                 }
             ]
         }

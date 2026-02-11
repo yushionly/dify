@@ -35,10 +35,94 @@ DB_CONFIG = {
 
 # 设备类型映射 (基于 gen_report.py 的补充)
 DEVICE_TYPE_MAP = {
-    50: "ZPW-2000", 23: "道岔", 25: "轨道电路", 26: "信号机", 
-    16: "列控", 6: "联锁", 24: "电源", 65: "TSRS", 
-    52: "RBC", 15: "列控中心", 5: "微机监测", 33: "防灾",
-    44: "GSM-R", 27: "电源屏", 1: "计算机联锁", 90: "道岔"
+    1: "道岔",
+    2: "股道",
+    3: "灯或按钮",
+    4: "信号机",
+    5: "外电网",
+    6: "电源屏",
+    7: "绝缘节",
+    8: "文本",
+    9: "计轴设备",
+    10: "空调设备",
+    11: "烟感设备",
+    12: "门禁设备",
+    13: "电缆绝缘设备",
+    14: "电源漏流设备",
+    15: "25Hz轨道电路",
+    16: "移频轨道电路",
+    17: "环境监控设备",
+    18: "UPS设备",
+    19: "站联设备",
+    20: "防灾设备",
+    21: "半自动闭塞设备",
+    22: "轨道送端电流设备",
+    23: "转辙机",
+    24: "联锁",
+    25: "列控",
+    26: "ZPW2000",
+    27: "TDCS/CTC",
+    28: "断路器",
+    29: "祥元接口分机",
+    30: "CAN分机",
+    31: "室内设备",
+    32: "RBC设备",
+    33: "TSRS设备",
+    34: "ATP设备",
+    35: "RBCPri设备",
+    36: "有源应答器",
+    37: "进路",
+    38: "临时限速",
+    39: "CAN板卡设备",
+    40: "灯丝设备",
+    41: "外电网通讯设备",
+    42: "异物继电器通讯设备",
+    43: "电源屏状态图设备",
+    44: "高压不对称轨道电路",
+    45: "RBC外电网",
+    46: "RBC电源屏",
+    47: "RBC外电网通讯",
+    48: "RBC电源屏状态图",
+    49: "空调状态图设备",
+    50: "互联互通",
+    51: "道岔缺口",
+    52: "站内电码化",
+    53: "驼峰设备",
+    54: "ATS设备",
+    55: "故障诊断专家系统",
+    56: "减速器",
+    57: "铁科ECC联锁设备",
+    58: "CXG-SY设备",
+    59: "CIPS设备",
+    60: "短信报警设备",
+    61: "ZC设备",
+    62: "郑州三方设备",
+    63: "防雷",
+    64: "全电子联锁",
+    65: "室外监测",
+    66: "蓄电池组在线均衡系统",
+    67: "检修屏蔽",
+    68: "联锁8K",
+    69: "CCS",
+    70: "应答器",
+    71: "STP",
+    72: "区间监督",
+    73: "NMS设备",
+    74: "恒毅兴防雷分线柜",
+    75: "脱轨器",
+    76: "DMS",
+    77: "LMD",
+    78: "机车信号远程监测",
+    79: "电缆成端",
+    80: "安全监督",
+    81: "AZD",
+    82: "主机PC",
+    83: "TIS",
+    84: "其它设备",
+    85: "信号旗",
+    86: "绝缘漏流",
+    87: "电缆监测",
+    0xfe: "车站设备"
 }
 
 # 报警分类映射表 (Type based)
@@ -195,12 +279,17 @@ def get_stats(req: ReportRequest):
             else:
                 t3_row = table3_stats[section]
                 t3_row["total"] += cnt
-                # 细分逻辑
-                if dtype in [24, 27]: t3_row["power"] += cnt
-                elif dtype in [50]: t3_row["zpw2000"] += cnt
-                elif dtype in [15, 16, 52, 51]: t3_row["atp"] += cnt # 列控
-                elif dtype in [1, 6]: t3_row["interlock"] += cnt
-                elif "缺口" in str(des): t3_row["gap"] += cnt
+                # 细分逻辑 (Updated with new constants)
+                # Power: 6(Panel), 5(External), 18(UPS), 28(Breaker)
+                if dtype in [6, 5, 18, 28, 43]: t3_row["power"] += cnt
+                # ZPW2000: 26(ZPW), 16(YP), 65(Outdoor)
+                elif dtype in [26, 16, 65]: t3_row["zpw2000"] += cnt
+                # ATP (Train Control): 25(TCC), 32(RBC), 33(TSRS), 34(ATP), 71(STP), 54(ATS)
+                elif dtype in [25, 32, 33, 34, 71, 54]: t3_row["atp"] += cnt 
+                # Interlock: 24(IL), 61(ZC), 64(CBIQDZ), 68(CBI8K)
+                elif dtype in [24, 61, 64, 68]: t3_row["interlock"] += cnt
+                # Gap: 51(DCQK)
+                elif dtype == 51 or "缺口" in str(des): t3_row["gap"] += cnt
                 else: t3_row["other"] += cnt
 
             # --- 填充表4 (车间统计) ---
@@ -389,12 +478,18 @@ def report_part2_hazards(req: ReportRequest):
         rows = cursor.fetchall()
         
         # Categorization Logic
-        # Switch: 23, 90; Track: 25, 50; Control: 16, 6, 15, 65, 52, 1; Power: 24, 27
+        # Updated based on user provided constants
+        # Switch: 1(Switch), 23(SwitchMachine), 51(Gap)
+        # Signal: 4(Signal), 40(Filament), 3(Lamp)
+        # Track: 15(25Hz), 16(YP), 26(ZPW), 9(Axle), 44(HvAsym), 65(ZPW_Outdoor), 7(Insulator), 22(SendEnd)
+        # Control: 24(Interlock), 25(TCC), 27(CTC), 32(RBC), 33(TSRS), 34(ATP), 54(ATS), 61(ZC), 64(CBI_QDZ), 68(CBI_8K), 21(SemiAuto), 19(StationLink)
+        # Power: 6(Panel), 5(Grid), 18(UPS), 14(Leak), 28(Breaker), 66(Battery)
         categories = {
-            "switch": {"ids": [23, 90], "data": []},
-            "track": {"ids": [25, 50], "data": []},
-            "control": {"ids": [16, 6, 15, 65, 52, 1], "data": []}, # Added 1 (Interlock), 15 (TCC)
-            "power": {"ids": [24, 27], "data": []}
+            "switch": {"ids": [1, 23, 51], "data": []},
+            "signal": {"ids": [4, 40, 3], "data": []},
+            "track": {"ids": [15, 16, 26, 9, 44, 65, 7, 22], "data": []},
+            "control": {"ids": [24, 25, 27, 32, 33, 34, 54, 61, 64, 68, 21, 19, 57, 58, 59, 71], "data": []}, 
+            "power": {"ids": [5, 6, 14, 18, 28, 66, 43], "data": []}
         }
         
         # Helper to hold stats
@@ -637,26 +732,40 @@ def report_part3_trends(req: ReportRequest):
 
         # 5. Processing Section 3: Device Trends
         def aggregate_devices(device_rows):
-            # Cats: switch(23,90), track(25,50), control(1,6,15,16,51,52,65), power(24,27)
-            cats = {"switch": 0, "track": 0, "control": 0, "power": 0, "other": 0}
-            mapping = {
-                23: "switch", 90: "switch",
-                25: "track", 50: "track",
-                1: "control", 6: "control", 15: "control", 16: "control", 51: "control", 52: "control", 65: "control",
-                24: "power", 27: "power"
+             # Cats: switch, signal, track, control, power
+            cats = {"switch": 0, "signal": 0, "track": 0, "control": 0, "power": 0, "other": 0}
+            
+            # Helper set for fast lookup
+            # Using the same Mapping as Part 2 roughly
+            mapping_sets = {
+                "switch": {1, 23, 51},
+                "signal": {4, 40, 3},
+                "track": {15, 16, 26, 9, 44, 65, 7, 22},
+                "control": {24, 25, 27, 32, 33, 34, 54, 61, 64, 68, 21, 19, 57, 58, 59, 71}, 
+                "power": {5, 6, 14, 18, 28, 66, 43}
             }
+
             for row in device_rows:
                 dtype = row[0]
                 cnt = row[1]
-                cat = mapping.get(dtype, "other")
-                cats[cat] += cnt
+                
+                found = False
+                for cat_name, id_set in mapping_sets.items():
+                    if dtype in id_set:
+                        cats[cat_name] += cnt
+                        found = True
+                        break
+                
+                if not found:
+                    cats["other"] += cnt
+                    
             return cats
 
         curr_dev = aggregate_devices(curr_data["devices"])
         prev_dev = aggregate_devices(prev_data["devices"])
         
         device_trends = []
-        for cat in ["switch", "track", "control", "power"]:
+        for cat in ["switch", "signal", "track", "control", "power"]:
             c_cnt = curr_dev[cat]
             p_cnt = prev_dev[cat]
             

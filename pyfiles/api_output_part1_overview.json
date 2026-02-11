@@ -76,11 +76,12 @@
             "count": 21022,
             "breakdown": {
                 "total": 21022,
-                "zpw2000": 20386,
-                "other": 126,
-                "power": 424,
-                "atp": 33,
-                "interlock": 53
+                "other": 20236,
+                "gap": 334,
+                "zpw2000": 41,
+                "interlock": 380,
+                "power": 13,
+                "atp": 18
             }
         },
         {
@@ -88,12 +89,12 @@
             "count": 34012,
             "breakdown": {
                 "total": 34012,
-                "zpw2000": 27396,
-                "power": 2264,
-                "atp": 851,
-                "other": 3309,
-                "gap": 32,
-                "interlock": 160
+                "other": 30004,
+                "gap": 1624,
+                "zpw2000": 99,
+                "interlock": 2248,
+                "atp": 33,
+                "power": 4
             }
         },
         {
@@ -101,10 +102,10 @@
             "count": 6197,
             "breakdown": {
                 "total": 6197,
-                "zpw2000": 6058,
-                "power": 97,
-                "other": 29,
-                "interlock": 13
+                "other": 6080,
+                "interlock": 89,
+                "zpw2000": 24,
+                "atp": 4
             }
         }
     ],
