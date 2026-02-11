@@ -716,58 +716,110 @@ def report_part4_skylight(req: ReportRequest):
         start_ts = int(start_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
         end_ts = int(end_dt.replace(tzinfo=datetime.timezone.utc).timestamp())
 
-        # Query Alarms with maintanceflag = 1
-        # Also group by device type and description to see what happens during skylight
-        sql = """
-            SELECT alarmdes, devicetype, count(*) as cnt
-            FROM ALARM
-            WHERE createtime >= :1 AND createtime < :2 AND maintanceflag = 1
-            GROUP BY alarmdes, devicetype
-            ORDER BY cnt DESC
-        """
-        # Limit 15
-        sql_lim = f"SELECT * FROM ({sql}) WHERE ROWNUM <= 15"
+        # 1. Statistics Calculation
+        total_period_alarms = 0
+        total_skylight_alarms = 0
+        processed_skylight_alarms = 0
         
         try:
-            cursor.execute(sql_lim, [start_ts, end_ts])
-            rows = cursor.fetchall()
-            
-            details = []
-            for r in rows:
-                device_name = DEVICE_TYPE_MAP.get(r[1], f"Unknown({r[1]})")
-                details.append({
-                    "alarm_description": r[0],
-                    "device_type": device_name,
-                    "count": r[1]
-                })
-            
-            # Total Skylight Count
-            try:
-                cursor.execute("SELECT count(*) FROM ALARM WHERE createtime >= :1 AND createtime < :2 AND maintanceflag = 1", [start_ts, end_ts])
-                total_skylight = cursor.fetchone()[0]
-            except:
-                total_skylight = sum(d['count'] for d in details) # specific approximation
-                
-            result = {
-                "period": f"{req.start_date} to {req.end_date}",
-                "total_skylight_alarms": total_skylight,
-                "top_skylight_issues": details
-            }
-            save_debug_json(result, "part4_skylight")
-            return result
+            # A. Total Alarms in Period (for Ratio)
+            cursor.execute("SELECT count(*) FROM ALARM WHERE createtime >= :1 AND createtime < :2", [start_ts, end_ts])
+            total_period_alarms = cursor.fetchone()[0]
 
-        except Exception as db_err:
-            # Fallback if maintanceflag doesn't exist
-            result = {
-                "error": "Could not filter by maintenance flag (skylight).",
-                "detail": str(db_err)
-            }
-            save_debug_json(result, "part4_skylight_error")
-            return result
+            # B. Skylight Stats (maintanceflag != 0)
+            # Count Total & Processed (processstatus != 0)
+            sql_skylight = """
+                SELECT 
+                    count(*) as total,
+                    sum(case when processstatus != 0 then 1 else 0 end) as processed
+                FROM ALARM
+                WHERE createtime >= :1 AND createtime < :2 AND maintanceflag != 0
+            """
+            cursor.execute(sql_skylight, [start_ts, end_ts])
+            row = cursor.fetchone()
+            if row:
+                total_skylight_alarms = row[0]
+                processed_skylight_alarms = row[1] or 0
+        except Exception as e:
+            print(f"Part 4 Stats Query Error: {e}")
+
+        # Ratios
+        skylight_ratio = 0.0
+        if total_period_alarms > 0:
+            skylight_ratio = round((total_skylight_alarms / total_period_alarms) * 100, 2)
+            
+        process_rate = 0.0
+        if total_skylight_alarms > 0:
+            process_rate = round((processed_skylight_alarms / total_skylight_alarms) * 100, 2)
+
+        # 2. Top Involved Devices (Top 3)
+        top_devices_list = []
+        try:
+            sql_dev = """
+                SELECT devicetype, count(*) as cnt
+                FROM ALARM
+                WHERE createtime >= :1 AND createtime < :2 AND maintanceflag != 0
+                GROUP BY devicetype
+                ORDER BY cnt DESC
+            """
+            # Limit 3
+            sql_dev_lim = f"SELECT * FROM ({sql_dev}) WHERE ROWNUM <= 3"
+            cursor.execute(sql_dev_lim, [start_ts, end_ts])
+            
+            for r in cursor.fetchall():
+                d_name = DEVICE_TYPE_MAP.get(r[0], f"Unknown({r[0]})")
+                top_devices_list.append(d_name)
+        except Exception:
+            pass
+
+        # 3. Deep Analysis Data (Top Issues with Station info)
+        # Grouping by (alarmdes, telename) helps identify issues like "Zhaoan Station 2X2 Switch"
+        detailed_issues = []
+        try:
+            sql_deep = """
+                SELECT alarmdes, telename, devicetype, count(*) as cnt
+                FROM ALARM
+                WHERE createtime >= :1 AND createtime < :2 AND maintanceflag != 0
+                GROUP BY alarmdes, telename, devicetype
+                ORDER BY cnt DESC
+            """
+            # Fetch Top 15 for analysis context
+            sql_deep_lim = f"SELECT * FROM ({sql_deep}) WHERE ROWNUM <= 15"
+            cursor.execute(sql_deep_lim, [start_ts, end_ts])
+            
+            for r in cursor.fetchall():
+                d_name = DEVICE_TYPE_MAP.get(r[2], "Unknown")
+                detailed_issues.append({
+                    "description": r[0],
+                    "station": r[1],
+                    "device": d_name,
+                    "count": r[3]
+                })
+        except Exception:
+            pass
+
+        result = {
+            "period": f"{req.start_date} to {req.end_date}",
+            "stats": {
+                "total_period_alarms": total_period_alarms,
+                "total_skylight_alarms": total_skylight_alarms,
+                "skylight_ratio_percent": f"{skylight_ratio}%",
+                "processed_skylight_alarms": processed_skylight_alarms,
+                "process_rate_percent": f"{process_rate}%"
+            },
+            "main_involved_devices": top_devices_list,
+            "detailed_issues_for_analysis": detailed_issues
+        }
+        
+        save_debug_json(result, "part4_skylight")
+        return result
 
     except Exception as e:
         import traceback
         traceback.print_exc()
+        # Fallback 
+        err_res = {"error": str(e)}
+        save_debug_json(err_res, "part4_skylight_error")
         raise HTTPException(status_code=500, detail=str(e))
     finally:
         if conn: conn.close()

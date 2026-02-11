@@ -1,5 +1,107 @@
 {
     "period": "2024-09-09 to 2024-09-16",
-    "total_skylight_alarms": 0,
-    "top_skylight_issues": []
+    "stats": {
+        "total_period_alarms": 208850,
+        "total_skylight_alarms": 101390,
+        "skylight_ratio_percent": "48.55%",
+        "processed_skylight_alarms": 70832,
+        "process_rate_percent": "69.86%"
+    },
+    "main_involved_devices": [
+        "ZPW-2000",
+        "道岔",
+        "信号机"
+    ],
+    "detailed_issues_for_analysis": [
+        {
+            "description": "0.00mA,空闲超下限报警[天窗修][天窗修]",
+            "station": "GCA ",
+            "device": "ZPW-2000",
+            "count": 3156
+        },
+        {
+            "description": "设备工作状态异常(检修状态:天窗修)",
+            "station": "NCX ",
+            "device": "信号机",
+            "count": 885
+        },
+        {
+            "description": "[天窗修]",
+            "station": "GCA ",
+            "device": "ZPW-2000",
+            "count": 647
+        },
+        {
+            "description": "与CAND总线通信异常(检修状态:天窗修)",
+            "station": "NCX ",
+            "device": "信号机",
+            "count": 550
+        },
+        {
+            "description": "与CANE总线通信异常(检修状态:天窗修)",
+            "station": "NCX ",
+            "device": "信号机",
+            "count": 535
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "JDB ",
+            "device": "ZPW-2000",
+            "count": 420
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "HKZ ",
+            "device": "ZPW-2000",
+            "count": 402
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "XGZ ",
+            "device": "ZPW-2000",
+            "count": 365
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "YT3 ",
+            "device": "ZPW-2000",
+            "count": 362
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "YDJ ",
+            "device": "ZPW-2000",
+            "count": 333
+        },
+        {
+            "description": "(1DQJ吸起)道岔转动异常(检修状态:天窗修)",
+            "station": "FZB ",
+            "device": "ZPW-2000",
+            "count": 298
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "XTZ ",
+            "device": "ZPW-2000",
+            "count": 271
+        },
+        {
+            "description": "[天窗修]",
+            "station": "LHC ",
+            "device": "ZPW-2000",
+            "count": 270
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "YCX ",
+            "device": "ZPW-2000",
+            "count": 270
+        },
+        {
+            "description": "[天窗内报警,天窗时间2024-09-11 23:37:00——2024-09-12 03:37:00](检修状态:天窗内报警)",
+            "station": "DNX ",
+            "device": "ZPW-2000",
+            "count": 256
+        }
+    ]
 }
