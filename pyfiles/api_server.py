@@ -515,14 +515,20 @@ def report_part2_hazards(req: ReportRequest):
                 stats_map[target_cat].stations[station] += cnt
         
         # Format Output
-        def get_top_n(counter_dict, n=5):
-            return [{"name": k, "count": v} for k, v in sorted(counter_dict.items(), key=lambda x: x[1], reverse=True)[:n]]
+        def get_top_n(counter_dict, n=5, translate_station=False):
+            res = []
+            for k, v in sorted(counter_dict.items(), key=lambda x: x[1], reverse=True)[:n]:
+                name = k
+                if translate_station:
+                    name = STATION_MAP.get(k, {}).get("name", k)
+                res.append({"name": name, "count": v})
+            return res
 
         category_analysis = {}
         for cat_key, stat_obj in stats_map.items():
             category_analysis[cat_key] = {
                 "top_alarm_types": get_top_n(stat_obj.alarms, 6),
-                "top_faulty_stations": get_top_n(stat_obj.stations, 6)
+                "top_faulty_stations": get_top_n(stat_obj.stations, 6, translate_station=True)
             }
 
         result = {
@@ -898,9 +904,11 @@ def report_part4_skylight(req: ReportRequest):
             
             for r in cursor.fetchall():
                 d_name = DEVICE_TYPE_MAP.get(r[2], "Unknown")
+                st_code = r[1].strip() if r[1] else ""
+                st_name = STATION_MAP.get(st_code, {}).get("name", st_code)
                 detailed_issues.append({
                     "description": r[0],
-                    "station": r[1],
+                    "station": st_name,
                     "device": d_name,
                     "count": r[3]
                 })

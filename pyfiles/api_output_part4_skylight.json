@@ -15,91 +15,91 @@
     "detailed_issues_for_analysis": [
         {
             "description": "0.00mA,空闲超下限报警[天窗修][天窗修]",
-            "station": "GCA ",
+            "station": "冠朝站",
             "device": "互联互通",
             "count": 3156
         },
         {
             "description": "设备工作状态异常(检修状态:天窗修)",
-            "station": "NCX ",
+            "station": "南昌西高速场",
             "device": "ZPW2000",
             "count": 885
         },
         {
             "description": "[天窗修]",
-            "station": "GCA ",
+            "station": "冠朝站",
             "device": "互联互通",
             "count": 647
         },
         {
             "description": "与CAND总线通信异常(检修状态:天窗修)",
-            "station": "NCX ",
+            "station": "南昌西高速场",
             "device": "ZPW2000",
             "count": 550
         },
         {
             "description": "与CANE总线通信异常(检修状态:天窗修)",
-            "station": "NCX ",
+            "station": "南昌西高速场",
             "device": "ZPW2000",
             "count": 535
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "JDB ",
+            "station": "景德镇北",
             "device": "互联互通",
             "count": 420
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "HKZ ",
+            "station": "湖口站",
             "device": "互联互通",
             "count": 402
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "XGZ ",
+            "station": "兴国站",
             "device": "互联互通",
             "count": 365
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "YT3 ",
+            "station": "鹰潭三场",
             "device": "互联互通",
             "count": 362
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "YDJ ",
+            "station": "油墩街",
             "device": "互联互通",
             "count": 333
         },
         {
             "description": "(1DQJ吸起)道岔转动异常(检修状态:天窗修)",
-            "station": "FZB ",
+            "station": "抚州北站",
             "device": "互联互通",
             "count": 298
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "XTZ ",
+            "station": "向塘站",
             "device": "互联互通",
             "count": 271
         },
         {
             "description": "[天窗修]",
-            "station": "LHC ",
+            "station": "乐化城际场",
             "device": "互联互通",
             "count": 270
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "YCX ",
+            "station": "宜春西站",
             "device": "互联互通",
             "count": 270
         },
         {
             "description": "[天窗内报警,天窗时间2024-09-11 23:37:00——2024-09-12 03:37:00](检修状态:天窗内报警)",
-            "station": "DNX ",
+            "station": "东南线路所",
             "device": "互联互通",
             "count": 256
         }

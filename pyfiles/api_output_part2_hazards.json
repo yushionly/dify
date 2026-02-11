@@ -35,27 +35,27 @@
             ],
             "top_faulty_stations": [
                 {
-                    "name": "ZPS",
+                    "name": "漳平站",
                     "count": 1039
                 },
                 {
-                    "name": "NCX",
+                    "name": "南昌西高速场",
                     "count": 660
                 },
                 {
-                    "name": "ZLY",
+                    "name": "樟林I场",
                     "count": 186
                 },
                 {
-                    "name": "YTB",
+                    "name": "鹰潭北站",
                     "count": 147
                 },
                 {
-                    "name": "RCX",
+                    "name": "瑞昌西",
                     "count": 137
                 },
                 {
-                    "name": "MQB",
+                    "name": "闽清北站",
                     "count": 109
                 }
             ]
@@ -89,27 +89,27 @@
             ],
             "top_faulty_stations": [
                 {
-                    "name": "ZLE",
+                    "name": "樟林II场",
                     "count": 14
                 },
                 {
-                    "name": "FDZ",
+                    "name": "福鼎站",
                     "count": 10
                 },
                 {
-                    "name": "KMZ",
+                    "name": "可门站",
                     "count": 8
                 },
                 {
-                    "name": "NPB",
+                    "name": "延平站",
                     "count": 7
                 },
                 {
-                    "name": "MQB",
+                    "name": "闽清北站",
                     "count": 7
                 },
                 {
-                    "name": "LJZ",
+                    "name": "连江站",
                     "count": 6
                 }
             ]
@@ -143,27 +143,27 @@
             ],
             "top_faulty_stations": [
                 {
-                    "name": "RCX",
+                    "name": "瑞昌西",
                     "count": 246
                 },
                 {
-                    "name": "CSZ",
+                    "name": "柴桑站",
                     "count": 241
                 },
                 {
-                    "name": "FNE",
+                    "name": "福州南动车二所",
                     "count": 240
                 },
                 {
-                    "name": "WJ4",
+                    "name": "武九中继4",
                     "count": 233
                 },
                 {
-                    "name": "PTZ",
+                    "name": "平潭站",
                     "count": 193
                 },
                 {
-                    "name": "C16",
+                    "name": "昌赣中继16",
                     "count": 184
                 }
             ]
@@ -197,27 +197,27 @@
             ],
             "top_faulty_stations": [
                 {
-                    "name": "FP1",
+                    "name": "福平中继1",
                     "count": 73
                 },
                 {
-                    "name": "PTZ",
+                    "name": "平潭站",
                     "count": 65
                 },
                 {
-                    "name": "A16",
+                    "name": "安九中继16",
                     "count": 62
                 },
                 {
-                    "name": "C11",
+                    "name": "昌赣中继11",
                     "count": 57
                 },
                 {
-                    "name": "XPZ",
+                    "name": "霞浦站",
                     "count": 56
                 },
                 {
-                    "name": "F16",
+                    "name": "福漳中继16",
                     "count": 48
                 }
             ]
@@ -251,27 +251,27 @@
             ],
             "top_faulty_stations": [
                 {
-                    "name": "C16",
+                    "name": "昌赣中继16",
                     "count": 209
                 },
                 {
-                    "name": "C15",
+                    "name": "昌赣中继15",
                     "count": 169
                 },
                 {
-                    "name": "C17",
+                    "name": "昌赣中继17",
                     "count": 128
                 },
                 {
-                    "name": "FX4",
+                    "name": "福漳中继4",
                     "count": 93
                 },
                 {
-                    "name": "H33",
+                    "name": "杭长中继33",
                     "count": 93
                 },
                 {
-                    "name": "H34",
+                    "name": "杭长中继34",
                     "count": 92
                 }
             ]
