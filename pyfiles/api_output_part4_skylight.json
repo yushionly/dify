@@ -1,107 +1,107 @@
 {
-    "period": "2024-09-09 to 2024-09-16",
+    "period": "2024-09-23 to 2024-09-29",
     "stats": {
-        "total_period_alarms": 208850,
-        "total_skylight_alarms": 101390,
-        "skylight_ratio_percent": "48.55%",
-        "processed_skylight_alarms": 70832,
-        "process_rate_percent": "69.86%"
+        "total_period_alarms": 205293,
+        "total_skylight_alarms": 96527,
+        "skylight_ratio_percent": "47.02%",
+        "processed_skylight_alarms": 71311,
+        "process_rate_percent": "73.88%"
     },
     "main_involved_devices": [
         "互联互通",
         "转辙机",
-        "ZPW2000"
+        "联锁"
     ],
     "detailed_issues_for_analysis": [
         {
-            "description": "0.00mA,空闲超下限报警[天窗修][天窗修]",
-            "station": "冠朝站",
+            "description": "(1DQJ吸起)道岔转动异常(检修状态:天窗修)",
+            "station": "抚州北站",
             "device": "互联互通",
-            "count": 3156
-        },
-        {
-            "description": "设备工作状态异常(检修状态:天窗修)",
-            "station": "南昌西高速场",
-            "device": "ZPW2000",
-            "count": 885
-        },
-        {
-            "description": "[天窗修]",
-            "station": "冠朝站",
-            "device": "互联互通",
-            "count": 647
-        },
-        {
-            "description": "与CAND总线通信异常(检修状态:天窗修)",
-            "station": "南昌西高速场",
-            "device": "ZPW2000",
-            "count": 550
-        },
-        {
-            "description": "与CANE总线通信异常(检修状态:天窗修)",
-            "station": "南昌西高速场",
-            "device": "ZPW2000",
-            "count": 535
+            "count": 504
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "景德镇北",
+            "station": "九江西下行场",
             "device": "互联互通",
-            "count": 420
+            "count": 498
         },
         {
-            "description": "[天窗修][天窗修]",
-            "station": "湖口站",
+            "description": "ZPW-2000系统报警(检修状态:天窗修)",
+            "station": "昌福中继8",
             "device": "互联互通",
-            "count": 402
-        },
-        {
-            "description": "[天窗修][天窗修]",
-            "station": "兴国站",
-            "device": "互联互通",
-            "count": 365
+            "count": 452
         },
         {
             "description": "[天窗修][天窗修]",
             "station": "鹰潭三场",
             "device": "互联互通",
-            "count": 362
+            "count": 433
+        },
+        {
+            "description": "电缆全程测试工作不达标(检修状态:天窗修)",
+            "station": "南城站",
+            "device": "互联互通",
+            "count": 427
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "油墩街",
+            "station": "小江站",
             "device": "互联互通",
-            "count": 333
+            "count": 409
         },
         {
-            "description": "(1DQJ吸起)道岔转动异常(检修状态:天窗修)",
+            "description": "[天窗修][天窗修]",
+            "station": "南昌站",
+            "device": "互联互通",
+            "count": 404
+        },
+        {
+            "description": "电缆全程测试工作不达标(检修状态:天窗修)",
+            "station": "南丰站",
+            "device": "互联互通",
+            "count": 399
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "赣州国际港",
+            "device": "互联互通",
+            "count": 387
+        },
+        {
+            "description": "0.00Hz,超下限报警[天窗修][天窗修]",
+            "station": "军山中继站",
+            "device": "互联互通",
+            "count": 309
+        },
+        {
+            "description": "[天窗修][天窗修]",
+            "station": "景德镇北",
+            "device": "互联互通",
+            "count": 295
+        },
+        {
+            "description": "(1DQJ落下)道岔转动异常(检修状态:天窗修)",
             "station": "抚州北站",
             "device": "互联互通",
-            "count": 298
+            "count": 289
         },
         {
             "description": "[天窗修][天窗修]",
             "station": "向塘站",
             "device": "互联互通",
-            "count": 271
+            "count": 282
         },
         {
-            "description": "[天窗修]",
-            "station": "乐化城际场",
-            "device": "互联互通",
-            "count": 270
+            "description": "挤岔报警(检修状态:天窗修)",
+            "station": "赣州西站",
+            "device": "联锁",
+            "count": 250
         },
         {
             "description": "[天窗修][天窗修]",
-            "station": "宜春西站",
+            "station": "萍乡站(10)",
             "device": "互联互通",
-            "count": 270
-        },
-        {
-            "description": "[天窗内报警,天窗时间2024-09-11 23:37:00——2024-09-12 03:37:00](检修状态:天窗内报警)",
-            "station": "东南线路所",
-            "device": "互联互通",
-            "count": 256
+            "count": 249
         }
     ]
 }

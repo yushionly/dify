@@ -7,6 +7,8 @@ from typing import List, Dict, Any
 from datetime import timedelta
 import collections
 import os
+import xml.etree.ElementTree as ET
+import re
 
 # Attempt to initialize Oracle Instant Client (Thick mode)
 # This is required for connecting to older Oracle databases (e.g. 11g) that Thin mode doesn't support.
@@ -25,6 +27,74 @@ except Exception as e:
     print("If you encounter 'DPY-3010', please install Oracle Instant Client and add it to PATH.")
 
 app = FastAPI()
+
+# Alarm Description Map: (type, subtype) -> description
+ALARM_DESC_MAP = {}
+
+def load_alarm_config():
+    global ALARM_DESC_MAP
+    try:
+        # Try multiple paths
+        paths = [
+            r"d:\chengxu\dify\docker\pyfiles\alarmconfig.xml",
+            "alarmconfig.xml"
+        ]
+        
+        config_path = None
+        for p in paths:
+            if os.path.exists(p):
+                config_path = p
+                break
+        
+        if not config_path:
+            print("Warning: alarmconfig.xml not found.")
+            return
+
+        with open(config_path, 'r', encoding='utf-8', errors='replace') as f:
+            content = f.read()
+
+        # Simple cleaning of encoding attr
+        content = content.replace('encoding="gb2312"', '')
+        
+        root = ET.fromstring(content)
+        
+        for alarm in root.findall("Alarm"):
+            type_hex = alarm.get("type")
+            if not type_hex: continue
+            try:
+                alarm_type = int(type_hex, 16)
+            except:
+                continue
+            
+            # Map subalarms
+            for sub in alarm.findall("SubAlarm"):
+                subtype_str = sub.get("subtype")
+                filename = sub.get("filename", "")
+                
+                if subtype_str and filename:
+                    try:
+                        subtype = int(subtype_str)
+                        # Clean filename: remove extension
+                        desc = os.path.splitext(filename)[0]
+                        ALARM_DESC_MAP[(alarm_type, subtype)] = desc
+                    except:
+                        pass
+            
+            # Map main alarm type default
+            main_subtype_str = alarm.get("subtype")
+            if main_subtype_str:
+                 try:
+                    main_subtype = int(main_subtype_str)
+                    main_name = alarm.get("name")
+                    if main_name:
+                         ALARM_DESC_MAP[(alarm_type, main_subtype)] = main_name
+                 except:
+                     pass
+
+    except Exception as e:
+        print(f"Error loading alarm config: {e}")
+
+load_alarm_config()
 
 # 数据库配置
 DB_CONFIG = {
@@ -140,9 +210,25 @@ ALARM_TYPE_MAP = {
 }
 
 # 监测系统自诊断报警 (无子报警)
-# 包含: 163(故障通知), 132(破封), 133(瞬间断电), 135(灯丝), 136(熔丝), 201(列控), 140(错序), 237(放电), 210(电源屏), 50(ZPW), 55(长期占用), 219(室外监测), 124(采集机)
+# 包含: 163(故障通知), 132(破封), 135(灯丝), 136(熔丝), 124(采集机)
+# 外电网相关(67, 139, 140, 133) 因属于自身逻辑判断(含SubAlarm), 归为表2
 SELF_DIAG_ALARM_TYPES = {
-    163, 132, 133, 135, 136, 201, 140, 237, 210, 50, 55, 219, 124
+    163, 132, 135, 136, 124, 67, 139, 140, 133
+}
+
+# 表3 外部接口报警类型映射
+TABLE3_ALARM_MAP = {
+    # Power: 210(电源屏), 237(UPS) -- 移除了 67, 139, 140, 133 (外电网)
+    "power": {210, 237},
+    # ZPW2000: 50(ZPW)
+    "zpw2000": {50},
+    # ATP: 201(列控), 209(CTC)
+    "atp": {201, 209},
+    # Interlock: 200(联锁)
+    "interlock": {200},
+    "dcqk": {138}, # 138(道岔缺口)
+    # Track Monitor: 219(室外监测)
+    "track_monitor": {219}
 }
 
 # 加载基础数据映射
@@ -170,6 +256,13 @@ def get_table2_category(alarmtype):
     if alarmtype in SELF_DIAG_ALARM_TYPES:
         return "other"
         
+    return None
+
+def get_table3_category(alarmtype):
+    """根据 alarmtype 判断是否属于表3 (外部接口) 及其分类"""
+    for cat, types in TABLE3_ALARM_MAP.items():
+        if alarmtype in types:
+            return cat
     return None
 
 def save_debug_json(data: Dict[str, Any], filename_part: str):
@@ -268,43 +361,56 @@ def get_stats(req: ReportRequest):
                 elif t2_cat == "safety": t2_row["safety"] += cnt
                 else: t2_row["other"] += cnt
             
-            # --- 填充表3 (外部接口) ---
-            # 兜底监测相关报警也归为表2 other (可选，根据需求)
-            elif dtype == 5 or "监测" in des_str:
-                 t2_row = table2_stats[section]
-                 t2_row["total"] += cnt
-                 t2_row["other"] += cnt
-
-            # --- 余下为表3 ---
+            # --- 余下逻辑 (表3 或 监测兜底) ---
             else:
-                t3_row = table3_stats[section]
-                t3_row["total"] += cnt
-                # 细分逻辑 (Updated with new constants)
-                # Power: 6(Panel), 5(External), 18(UPS), 28(Breaker)
-                if dtype in [6, 5, 18, 28, 43]: t3_row["power"] += cnt
-                # ZPW2000: 26(ZPW), 16(YP), 65(Outdoor)
-                elif dtype in [26, 16, 65]: t3_row["zpw2000"] += cnt
-                # ATP (Train Control): 25(TCC), 32(RBC), 33(TSRS), 34(ATP), 71(STP), 54(ATS)
-                elif dtype in [25, 32, 33, 34, 71, 54]: t3_row["atp"] += cnt 
-                # Interlock: 24(IL), 61(ZC), 64(CBIQDZ), 68(CBI8K)
-                elif dtype in [24, 61, 64, 68]: t3_row["interlock"] += cnt
-                # Gap: 51(DCQK)
-                elif dtype == 51 or "缺口" in str(des): t3_row["gap"] += cnt
-                else: t3_row["other"] += cnt
+                t3_cat = get_table3_category(atype)
+                
+                # Gap / Track Monitor special check
+                if not t3_cat:
+                    if dtype == 51 or "缺口" in str(des):
+                        t3_cat = "gap"
+                    elif dtype == 65:
+                        t3_cat = "track_monitor"
+
+                if t3_cat:
+                    t3_row = table3_stats[section]
+                    t3_row["total"] += cnt
+                    t3_row[t3_cat] += cnt
+                
+                # 监测相关报警归为表2 other (兜底)
+                elif "监测" in des_str:
+                     t2_row = table2_stats[section]
+                     t2_row["total"] += cnt
+                     t2_row["other"] += cnt
+                     
+                # 其余归为表3 other
+                else:
+                    t3_row = table3_stats[section]
+                    t3_row["total"] += cnt
+                    t3_row["other"] += cnt
 
             # --- 填充表4 (车间统计) ---
             workshop_stats[section][workshop] += cnt
 
         # ================= 格式化输出 =================
         
+        # 站段基础数据配置 (车站数, 道岔换算组数)
+        SECTION_BASE_INFO = {
+            "南昌电务段": {"stations": 327, "turnouts": 114047},
+            "福州电务段": {"stations": 363, "turnouts": 127723},
+            "南昌高铁基础设施段": {"stations": 89, "turnouts": 28964}
+        }
+
         # 格式化表1
         table1_output = []
         for section, data in table1_stats.items():
+            # 获取该段的基础配置，没有则默认为 0
+            base_info = SECTION_BASE_INFO.get(section, {"stations": 0, "turnouts": 0})
+            
             table1_output.append({
                 "name": section,
-                # station_count / turnout_count 暂时置 0，因为 station_map.json 结构里可能没有统计这些
-                "station_count": 0, 
-                "turnout_count": 0, 
+                "station_count": base_info["stations"], 
+                "turnout_count": base_info["turnouts"], 
                 **data
             })
 
@@ -467,42 +573,34 @@ def report_part2_hazards(req: ReportRequest):
 
         # 2. Detailed Analysis by Category
         # We fetch aggregated data and categorize in Python to ensure flexibility
+        # Updated SQL to include alarmtype, alarmsubtype and devicename for better grouping
         sql_details = f"""
-            SELECT devicetype, alarmdes, telename, count(*) as cnt
+            SELECT devicetype, alarmdes, telename, alarmtype, alarmsubtype, devicename, count(*) as cnt
             FROM ALARM
             WHERE createtime >= :1 AND createtime < :2
             {valid_condition}
-            GROUP BY devicetype, alarmdes, telename
+            GROUP BY devicetype, alarmdes, telename, alarmtype, alarmsubtype, devicename
         """
         cursor.execute(sql_details, [start_ts, end_ts])
         rows = cursor.fetchall()
         
         # Categorization Logic
         # Updated based on user provided constants
-        # Switch: 1(Switch), 23(SwitchMachine), 51(Gap)
-        # Signal: 4(Signal), 40(Filament), 3(Lamp)
-        # Track: 15(25Hz), 16(YP), 26(ZPW), 9(Axle), 44(HvAsym), 65(ZPW_Outdoor), 7(Insulator), 22(SendEnd)
-        # Control: 24(Interlock), 25(TCC), 27(CTC), 32(RBC), 33(TSRS), 34(ATP), 54(ATS), 61(ZC), 64(CBI_QDZ), 68(CBI_8K), 21(SemiAuto), 19(StationLink)
-        # Power: 6(Panel), 5(Grid), 18(UPS), 14(Leak), 28(Breaker), 66(Battery)
         categories = {
-            "switch": {"ids": [1, 23, 51], "data": []},
-            "signal": {"ids": [4, 40, 3], "data": []},
-            "track": {"ids": [15, 16, 26, 9, 44, 65, 7, 22], "data": []},
-            "control": {"ids": [24, 25, 27, 32, 33, 34, 54, 61, 64, 68, 21, 19, 57, 58, 59, 71], "data": []}, 
-            "power": {"ids": [5, 6, 14, 18, 28, 66, 43], "data": []}
+            "switch": {"ids": [1, 23, 51]},
+            "signal": {"ids": [4, 40, 3]},
+            "track": {"ids": [15, 16, 26, 9, 44, 65, 7, 22]},
+            "control": {"ids": [24, 25, 27, 32, 33, 34, 54, 61, 64, 68, 21, 19, 57, 58, 59, 71]}, 
+            "power": {"ids": [5, 6, 14, 18, 28, 66, 43]}
         }
         
-        # Helper to hold stats
-        class CatStats:
-            def __init__(self):
-                self.alarms = collections.defaultdict(int)
-                self.stations = collections.defaultdict(int)
+        # Structure: category -> { "alarms": { generic_name: { count: int, specifics: { des: int } } }, "stations": { name: int } }
+        category_data = {k: {"alarms": {}, "stations": collections.defaultdict(int)} for k in categories}
 
-        stats_map = {k: CatStats() for k in categories}
-
-        for dtype, des, station, cnt in rows:
+        for dtype, des, station, atype, asubtype, devname, cnt in rows:
             station = station.strip() if station else "Unknown"
             des = des.strip() if des else "Unknown"
+            devname = devname.strip() if devname else ""
             
             target_cat = "other"
             for cat_key, cat_cfg in categories.items():
@@ -511,24 +609,86 @@ def report_part2_hazards(req: ReportRequest):
                     break
             
             if target_cat != "other":
-                stats_map[target_cat].alarms[des] += cnt
-                stats_map[target_cat].stations[station] += cnt
+                # Track Station
+                category_data[target_cat]["stations"][station] += cnt
+                
+                # Determine Generic Alarm Name
+                # Type safe conversion
+                try: at = int(atype) if atype is not None else 0
+                except: at = 0
+                try: ast = int(asubtype) if asubtype is not None else 0
+                except: ast = 0
+                
+                gen_name = None
+                # Try exact match (type, subtype)
+                if (at, ast) in ALARM_DESC_MAP:
+                     gen_name = ALARM_DESC_MAP[(at, ast)]
+                
+                if not gen_name:
+                    # If we can't map it, force using a cleaned version of des or just des
+                    # Attempt to strip device prefix "Device#Msg"
+                    if "#" in des:
+                        try:
+                            gen_name = des.split("#", 1)[1]
+                        except:
+                            gen_name = des
+                    else:
+                        gen_name = des
+                
+                # Update stats
+                c_alarms = category_data[target_cat]["alarms"]
+                if gen_name not in c_alarms:
+                    c_alarms[gen_name] = {"count": 0, "specifics": collections.defaultdict(int)}
+                
+                c_alarms[gen_name]["count"] += cnt
+                
+                # Create a specific identifier: Station DeviceName (AlarmDescription)
+                st_name = STATION_MAP.get(station, {}).get("name", station)
+                
+                # Construct unique device identifier string
+                # If devname is present, use it. Otherwise rely on des.
+                identifier_parts = [st_name]
+                if devname:
+                    identifier_parts.append(devname)
+                
+                # Only add description if it's not redundant or if devname is missing 
+                # (sometimes des contains the device name, sometimes not)
+                # To be safe, include des details.
+                identifier_parts.append(f"({des})")
+                
+                specific_key = " ".join(identifier_parts)
+                
+                c_alarms[gen_name]["specifics"][specific_key] += cnt
         
         # Format Output
-        def get_top_n(counter_dict, n=5, translate_station=False):
-            res = []
-            for k, v in sorted(counter_dict.items(), key=lambda x: x[1], reverse=True)[:n]:
-                name = k
-                if translate_station:
-                    name = STATION_MAP.get(k, {}).get("name", k)
-                res.append({"name": name, "count": v})
-            return res
-
         category_analysis = {}
-        for cat_key, stat_obj in stats_map.items():
+        for cat_key, stat_obj in category_data.items():
+            
+            # Top Stations
+            top_st = []
+            for k, v in sorted(stat_obj["stations"].items(), key=lambda x: x[1], reverse=True)[:6]:
+                 # Map Code to Name
+                 st_name = STATION_MAP.get(k, {}).get("name", k)
+                 top_st.append({"name": st_name, "count": v})
+
+            # Top Alarm Types
+            sorted_alarms = sorted(stat_obj["alarms"].items(), key=lambda x: x[1]["count"], reverse=True)[:10]
+            
+            top_al = []
+            for aname, adata in sorted_alarms:
+                # Top devices (specific alarmdes)
+                top_specs = sorted(adata["specifics"].items(), key=lambda x: x[1], reverse=True)[:5]
+                fmt_specs = [{"dev_desc": k, "count": v} for k, v in top_specs]
+                
+                top_al.append({
+                    "name": aname,
+                    "count": adata["count"],
+                    "top_devices": fmt_specs
+                })
+
             category_analysis[cat_key] = {
-                "top_alarm_types": get_top_n(stat_obj.alarms, 6),
-                "top_faulty_stations": get_top_n(stat_obj.stations, 6, translate_station=True)
+                "top_alarm_types": top_al,
+                "top_faulty_stations": top_st
             }
 
         result = {
@@ -572,8 +732,29 @@ def report_part3_trends(req: ReportRequest):
         
         # Previous Period
         duration = curr_e_excl - curr_s
-        prev_s = curr_s - duration
+        
+        # 智能识别自然月逻辑：如果开始日期是1号，且结束日期（excl）也是1号，则认为是整月比较
+        # 这种情况下，上一周期应取自然月的前几个月，而不是简单的减去天数
+        prev_s = None
         prev_e_excl = curr_s
+
+        if curr_s.day == 1 and curr_e_excl.day == 1:
+            try:
+                # 计算跨越的月数
+                num_months = (curr_e_excl.year - curr_s.year) * 12 + (curr_e_excl.month - curr_s.month)
+                if num_months > 0:
+                    # 计算前一周期的起始时间： curr_s 减去 num_months
+                    # 公式：Month = month - 1 - delta, Year = year + month // 12, Month = month % 12 + 1
+                    m_new = curr_s.month - 1 - num_months
+                    y_new = curr_s.year + m_new // 12
+                    m_new = m_new % 12 + 1
+                    prev_s = datetime.datetime(y_new, m_new, 1)
+            except Exception as e:
+                print(f"Error in month calculation: {str(e)}, falling back to day diff")
+        
+        # 如果不是整月或计算失败，使用按天平移
+        if prev_s is None:
+            prev_s = curr_s - duration
         
         prev_s_ts = int(prev_s.replace(tzinfo=datetime.timezone.utc).timestamp())
         prev_e_ts = int(prev_e_excl.replace(tzinfo=datetime.timezone.utc).timestamp())
