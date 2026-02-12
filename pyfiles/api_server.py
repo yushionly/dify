@@ -952,6 +952,15 @@ def report_part3_trends(req: ReportRequest):
         prev_dev = aggregate_devices(prev_data["devices"])
         
         device_trends = []
+        # Chinese Name Mapping
+        cat_cn_map = {
+            "switch": "道岔设备",
+            "signal": "信号设备",
+            "track": "轨道电路",
+            "control": "控制系统",
+            "power": "电源设备"
+        }
+
         for cat in ["switch", "signal", "track", "control", "power"]:
             c_cnt = curr_dev[cat]
             p_cnt = prev_dev[cat]
@@ -963,7 +972,7 @@ def report_part3_trends(req: ReportRequest):
                 trend_pct = "+100%"
                 
             device_trends.append({
-                "device_type": cat,
+                "device_type": cat_cn_map.get(cat, cat),
                 "curr_count": c_cnt,
                 "prev_count": p_cnt,
                 "trend": trend_pct

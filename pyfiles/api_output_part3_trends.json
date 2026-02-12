@@ -26,13 +26,6 @@
         "red_board_candidates": {
             "lowest_process_rate": [
                 {
-                    "workshop": "来舟信号车间",
-                    "total_alarms": 1113,
-                    "curr_rate": 0.4,
-                    "prev_rate": 0.0,
-                    "diff_pp": 0.4
-                },
-                {
                     "workshop": "新余信号车间",
                     "total_alarms": 2369,
                     "curr_rate": 0.4,
@@ -45,6 +38,13 @@
                     "curr_rate": 0.4,
                     "prev_rate": 20.6,
                     "diff_pp": -20.2
+                },
+                {
+                    "workshop": "来舟信号车间",
+                    "total_alarms": 1113,
+                    "curr_rate": 0.4,
+                    "prev_rate": 0.0,
+                    "diff_pp": 0.4
                 },
                 {
                     "workshop": "武夷山信号车间",
@@ -102,36 +102,36 @@
         "green_board_candidates": {
             "highest_process_rate": [
                 {
-                    "workshop": "鹰潭北综合维修车间",
-                    "total_alarms": 1979,
+                    "workshop": "赣州西高铁车间",
+                    "total_alarms": 6458,
                     "curr_rate": 100.0,
                     "prev_rate": 100.0,
                     "diff_pp": 0.0
                 },
                 {
-                    "workshop": "屏南信号车间",
-                    "total_alarms": 2389,
+                    "workshop": "景德镇信号车间",
+                    "total_alarms": 1616,
                     "curr_rate": 100.0,
                     "prev_rate": 100.0,
                     "diff_pp": 0.0
                 },
                 {
-                    "workshop": "新余北综合维修车间",
-                    "total_alarms": 2344,
+                    "workshop": "永泰信号车间",
+                    "total_alarms": 2429,
                     "curr_rate": 100.0,
-                    "prev_rate": 99.6,
-                    "diff_pp": 0.4
-                },
-                {
-                    "workshop": "井冈山信号车间",
-                    "total_alarms": 532,
-                    "curr_rate": 100.0,
-                    "prev_rate": 100.0,
-                    "diff_pp": 0.0
+                    "prev_rate": 83.1,
+                    "diff_pp": 16.9
                 },
                 {
                     "workshop": "吉安信号车间",
                     "total_alarms": 2499,
+                    "curr_rate": 100.0,
+                    "prev_rate": 100.0,
+                    "diff_pp": 0.0
+                },
+                {
+                    "workshop": "永安南普速信号车间",
+                    "total_alarms": 1046,
                     "curr_rate": 100.0,
                     "prev_rate": 100.0,
                     "diff_pp": 0.0
@@ -184,13 +184,6 @@
                 "diff_pp": -100.0
             },
             {
-                "workshop": "来舟信号车间",
-                "total_alarms": 1113,
-                "curr_rate": 0.4,
-                "prev_rate": 0.0,
-                "diff_pp": 0.4
-            },
-            {
                 "workshop": "新余信号车间",
                 "total_alarms": 2369,
                 "curr_rate": 0.4,
@@ -203,6 +196,13 @@
                 "curr_rate": 0.4,
                 "prev_rate": 20.6,
                 "diff_pp": -20.2
+            },
+            {
+                "workshop": "来舟信号车间",
+                "total_alarms": 1113,
+                "curr_rate": 0.4,
+                "prev_rate": 0.0,
+                "diff_pp": 0.4
             },
             {
                 "workshop": "武夷山信号车间",
@@ -499,13 +499,6 @@
                 "diff_pp": 0.7
             },
             {
-                "workshop": "上饶信号车间",
-                "total_alarms": 3986,
-                "curr_rate": 99.9,
-                "prev_rate": 90.9,
-                "diff_pp": 9.0
-            },
-            {
                 "workshop": "景德镇北信号车间",
                 "total_alarms": 3494,
                 "curr_rate": 99.9,
@@ -513,36 +506,22 @@
                 "diff_pp": 0.9
             },
             {
-                "workshop": "鹰潭北综合维修车间",
-                "total_alarms": 1979,
+                "workshop": "上饶信号车间",
+                "total_alarms": 3986,
+                "curr_rate": 99.9,
+                "prev_rate": 90.9,
+                "diff_pp": 9.0
+            },
+            {
+                "workshop": "赣州西高铁车间",
+                "total_alarms": 6458,
                 "curr_rate": 100.0,
                 "prev_rate": 100.0,
                 "diff_pp": 0.0
             },
             {
-                "workshop": "屏南信号车间",
-                "total_alarms": 2389,
-                "curr_rate": 100.0,
-                "prev_rate": 100.0,
-                "diff_pp": 0.0
-            },
-            {
-                "workshop": "新余北综合维修车间",
-                "total_alarms": 2344,
-                "curr_rate": 100.0,
-                "prev_rate": 99.6,
-                "diff_pp": 0.4
-            },
-            {
-                "workshop": "井冈山信号车间",
-                "total_alarms": 532,
-                "curr_rate": 100.0,
-                "prev_rate": 100.0,
-                "diff_pp": 0.0
-            },
-            {
-                "workshop": "吉安信号车间",
-                "total_alarms": 2499,
+                "workshop": "景德镇信号车间",
+                "total_alarms": 1616,
                 "curr_rate": 100.0,
                 "prev_rate": 100.0,
                 "diff_pp": 0.0
@@ -555,8 +534,8 @@
                 "diff_pp": 16.9
             },
             {
-                "workshop": "景德镇信号车间",
-                "total_alarms": 1616,
+                "workshop": "吉安信号车间",
+                "total_alarms": 2499,
                 "curr_rate": 100.0,
                 "prev_rate": 100.0,
                 "diff_pp": 0.0
@@ -569,15 +548,22 @@
                 "diff_pp": 0.0
             },
             {
-                "workshop": "宁都信号车间",
-                "total_alarms": 556,
-                "curr_rate": 100.0,
-                "prev_rate": 99.7,
-                "diff_pp": 0.3
-            },
-            {
                 "workshop": "庐山城际车间",
                 "total_alarms": 1629,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "井冈山信号车间",
+                "total_alarms": 532,
+                "curr_rate": 100.0,
+                "prev_rate": 100.0,
+                "diff_pp": 0.0
+            },
+            {
+                "workshop": "屏南信号车间",
+                "total_alarms": 2389,
                 "curr_rate": 100.0,
                 "prev_rate": 100.0,
                 "diff_pp": 0.0
@@ -597,41 +583,55 @@
                 "diff_pp": 0.0
             },
             {
-                "workshop": "赣州西高铁车间",
-                "total_alarms": 6458,
+                "workshop": "宁都信号车间",
+                "total_alarms": 556,
+                "curr_rate": 100.0,
+                "prev_rate": 99.7,
+                "diff_pp": 0.3
+            },
+            {
+                "workshop": "鹰潭北综合维修车间",
+                "total_alarms": 1979,
                 "curr_rate": 100.0,
                 "prev_rate": 100.0,
                 "diff_pp": 0.0
+            },
+            {
+                "workshop": "新余北综合维修车间",
+                "total_alarms": 2344,
+                "curr_rate": 100.0,
+                "prev_rate": 99.6,
+                "diff_pp": 0.4
             }
         ]
     },
     "device_trends": [
         {
-            "device_type": "switch",
+            "device_type": "道岔设备",
             "curr_count": 24181,
             "prev_count": 11968,
             "trend": "+102.0%"
         },
         {
-            "device_type": "signal",
+            "device_type": "信号设备",
             "curr_count": 603,
             "prev_count": 382,
             "trend": "+57.9%"
         },
         {
-            "device_type": "track",
+            "device_type": "轨道电路",
             "curr_count": 7179,
             "prev_count": 6447,
             "trend": "+11.4%"
         },
         {
-            "device_type": "control",
+            "device_type": "控制系统",
             "curr_count": 9428,
             "prev_count": 6162,
             "trend": "+53.0%"
         },
         {
-            "device_type": "power",
+            "device_type": "电源设备",
             "curr_count": 6246,
             "prev_count": 4667,
             "trend": "+33.8%"
